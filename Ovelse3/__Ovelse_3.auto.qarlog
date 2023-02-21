@@ -1,0 +1,31 @@
+Quartus II Archive log --	C:/dsd/Ovelse3/__Ovelse_3.auto.qarlog
+
+Archive:	C:/dsd/Ovelse3/__Ovelse_3.auto.qar
+Date:		Tue Feb 21 09:57:00 2023
+Quartus II 64-Bit		13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/dsd/Lektion2/and_2.vhd
+C:/dsd/Lektion2/four_bit_adder.vhd
+C:/dsd/Lektion2/four_bit_adder_simple.vhd
+C:/dsd/Lektion2/full_adder.vhd
+C:/dsd/Lektion2/half_adder_and.vhd
+C:/dsd/Lektion2/half_adder_beh.vhd
+C:/dsd/Lektion2/half_adder_dataflow.vhd
+C:/dsd/Lektion2/half_adder_struct.vhd
+C:/dsd/Lektion2/half_adder_struct2.vhd
+C:/dsd/Lektion2/half_adder_xor.vhd
+C:/dsd/Lektion2/oevelse2_fullAdder.vhd
+C:/dsd/Lektion2/or_2_input.vhd
+C:/dsd/Lektion2/xor_2.vhd
+C:/dsd/Ovelse3/db/Ovelse_3.cbx.xml
+C:/dsd/Ovelse3/db/Ovelse_3.qpf
+C:/dsd/Ovelse3/output_files/Ovelse_3.flow.rpt
+C:/dsd/Ovelse3/output_files/Ovelse_3.map.rpt
+C:/dsd/Ovelse3/output_files/Ovelse_3.map.summary
+Ovelse_3.qsf
+c:/altera/13.0sp1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 20 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
