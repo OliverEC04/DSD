@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Gitte\DSD\Ovelse3\simulation\qsim
+vfour_bit_adder_tester
+Z1 IX<G_EX4^GhYLe4PfSa@1S3
+Z2 V>glWAc72>dIg^<UbZgShd2
+Z3 dC:\Gitte\DSD\Ovelse3\simulation\qsim
+Z4 w1676976047
+Z5 8Ovelse_3.vo
+Z6 FOvelse_3.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 @Z_JTaZm;40S>Wjh:eE4C3
+!s85 0
+Z10 !s108 1676976048.329000
+Z11 !s107 Ovelse_3.vo|
+Z12 !s90 -work|work|Ovelse_3.vo|
+!s101 -O0
+vfour_bit_adder_tester_vlg_check_tst
+!i10b 1
+!s100 l?Gn_=RDGHZVZ]V?KGFJE0
+IRMj_8`WD01WI?GzY^OZVB2
+V3N5ii[@oe9U6U6KTjh9W70
+R3
+Z13 w1676976046
+Z14 8Ovelse_3.vt
+Z15 FOvelse_3.vt
+L0 57
+R7
+r1
+!s85 0
+31
+Z16 !s108 1676976048.463000
+Z17 !s107 Ovelse_3.vt|
+Z18 !s90 -work|work|Ovelse_3.vt|
+!s101 -O0
+R8
+vfour_bit_adder_tester_vlg_sample_tst
+!i10b 1
+!s100 VQ7UG?2zOEeQ70LlObLIz2
+IYVTH>3ZM6IfREXTfeXgZh0
+V9c_fYLkBOZ5QDfoQi;:=a3
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+vfour_bit_adder_tester_vlg_vec_tst
+!i10b 1
+!s100 gi:b;dO^h3LPVWlKgPYVK3
+ILEHPED<0Gd9AdJ_S`6o>_3
+V2CR1A72Pi`0mna<OR^a183
+R3
+R13
+R14
+R15
+L0 209
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
