@@ -1,0 +1,49 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+USE ieee.numeric_std.ALL;
+USE work.ALL;
+ENTITY bin_to_7_seg_tester IS
+	PORT (
+		-- Input ports
+		sw0 : IN STD_LOGIC;
+		sw1 : IN STD_LOGIC;
+		sw2 : IN STD_LOGIC;
+		sw3 : IN STD_LOGIC;
+
+		-- Output ports
+		hex0 : OUT STD_LOGIC;
+		hex1 : OUT STD_LOGIC;
+		hex2 : OUT STD_LOGIC;
+		hex3 : OUT STD_LOGIC;
+		hex4 : OUT STD_LOGIC;
+		hex5 : OUT STD_LOGIC;
+		hex6 : OUT STD_LOGIC
+	);
+END bin_to_7_seg_tester;
+
+-- Library Clause(s) (optional)
+-- Use Clause(s) (optional)
+
+ARCHITECTURE bin_to_7_seg_tester_impl OF bin_to_7_seg_tester IS
+
+	-- Declarations (optional)
+
+BEGIN
+
+	
+
+	-- Process Statement (optional)
+
+	-- Concurrent Procedure Call (optional)
+
+	-- Concurrent Signal Assignment (optional)
+
+	-- Conditional Signal Assignment (optional)
+
+	-- Selected Signal Assignment (optional)
+
+	-- Component Instantiation Statement (optional)
+
+	-- Generate Statement (optional)
+
+END bin_to_7_seg_tester_impl;

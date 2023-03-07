@@ -1,0 +1,32 @@
+|bin_to_7_seg_tester
+sw[0] => bin_to_7_seg:dut.bin[0]
+sw[1] => bin_to_7_seg:dut.bin[1]
+sw[2] => bin_to_7_seg:dut.bin[2]
+sw[3] => bin_to_7_seg:dut.bin[3]
+hex0[0] <= bin_to_7_seg:dut.sSeg[0]
+hex0[1] <= bin_to_7_seg:dut.sSeg[1]
+hex0[2] <= bin_to_7_seg:dut.sSeg[2]
+hex0[3] <= bin_to_7_seg:dut.sSeg[3]
+hex0[4] <= bin_to_7_seg:dut.sSeg[4]
+hex0[5] <= bin_to_7_seg:dut.sSeg[5]
+hex0[6] <= bin_to_7_seg:dut.sSeg[6]
+
+
+|bin_to_7_seg_tester|bin_to_7_seg:dut
+bin[0] => Mux0.IN19
+bin[0] => Mux1.IN19
+bin[1] => Mux0.IN18
+bin[1] => Mux1.IN18
+bin[2] => Mux0.IN17
+bin[2] => Mux1.IN17
+bin[3] => Mux0.IN16
+bin[3] => Mux1.IN16
+sSeg[0] <= <VCC>
+sSeg[1] <= <VCC>
+sSeg[2] <= <VCC>
+sSeg[3] <= <VCC>
+sSeg[4] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+sSeg[5] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+sSeg[6] <= <VCC>
+
+
