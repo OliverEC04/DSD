@@ -1,5 +1,5 @@
 Flow report for Ovelse4
-Tue Mar 07 11:07:05 2023
+Tue Mar 14 09:56:27 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Tue Mar 07 11:07:04 2023           ;
+; Flow Status                        ; Successful - Tue Mar 14 09:56:25 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Ovelse4                                         ;
 ; Top-level Entity Name              ; bin_to_7_seg_tester                             ;
@@ -64,26 +64,26 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/07/2023 11:06:55 ;
+; Start date & time ; 03/14/2023 09:56:17 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Ovelse4             ;
 +-------------------+---------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                       ;
-+-------------------------------------+-------------------------------+---------------+---------------------+------------+
-; Assignment Name                     ; Value                         ; Default Value ; Entity Name         ; Section Id ;
-+-------------------------------------+-------------------------------+---------------+---------------------+------------+
-; COMPILER_SIGNATURE_ID               ; 5288375304200.167818361524348 ; --            ; --                  ; --         ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                            ; --            ; --                  ; --         ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                             ; --            ; --                  ; --         ;
-; PARTITION_COLOR                     ; 16764057                      ; --            ; bin_to_7_seg_tester ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING         ; --            ; bin_to_7_seg_tester ; Top        ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                        ; --            ; bin_to_7_seg_tester ; Top        ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                  ; --            ; --                  ; --         ;
-; TOP_LEVEL_ENTITY                    ; bin_to_7_seg_tester           ; Ovelse4       ; --                  ; --         ;
-+-------------------------------------+-------------------------------+---------------+---------------------+------------+
++-----------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                      ;
++-------------------------------------+------------------------------+---------------+---------------------+------------+
+; Assignment Name                     ; Value                        ; Default Value ; Entity Name         ; Section Id ;
++-------------------------------------+------------------------------+---------------+---------------------+------------+
+; COMPILER_SIGNATURE_ID               ; 113780617491.167878417603000 ; --            ; --                  ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                           ; --            ; --                  ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                            ; --            ; --                  ; --         ;
+; PARTITION_COLOR                     ; 16764057                     ; --            ; bin_to_7_seg_tester ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING        ; --            ; bin_to_7_seg_tester ; Top        ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                       ; --            ; bin_to_7_seg_tester ; Top        ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                 ; --            ; --                  ; --         ;
+; TOP_LEVEL_ENTITY                    ; bin_to_7_seg_tester          ; Ovelse4       ; --                  ; --         ;
++-------------------------------------+------------------------------+---------------+---------------------+------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -91,11 +91,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4632 MB             ; 00:00:00                           ;
-; Fitter                    ; 00:00:05     ; 1.0                     ; 4877 MB             ; 00:00:01                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 4562 MB             ; 00:00:00                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4540 MB             ; 00:00:00                           ;
-; Total                     ; 00:00:09     ; --                      ; --                  ; 00:00:01                           ;
+; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4638 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:04     ; 1.0                     ; 4877 MB             ; 00:00:04                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 4556 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4535 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:08     ; --                      ; --                  ; 00:00:08                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -104,10 +104,10 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; Oliver-XPS       ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; Oliver-XPS       ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; Oliver-XPS       ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; Oliver-XPS       ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; Oliver-PC        ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; Oliver-PC        ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; Oliver-PC        ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; Oliver-PC        ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
