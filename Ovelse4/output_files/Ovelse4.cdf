@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP2C35F672) Path("C:/Users/igors/OneDrive/Pulpit/AU/DSD/Git/DSD/Ovelse4/output_files/") File("Ovelse4.sof") MfrSpec(OpMask(1));
+		Device PartName(EP2C35F672) Path("C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse4/output_files/") File("Ovelse4.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

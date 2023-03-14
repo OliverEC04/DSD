@@ -1,9 +1,5 @@
 Analysis & Synthesis report for Ovelse4
-<<<<<<< HEAD
-Tue Mar 14 09:56:18 2023
-=======
-Tue Mar 07 12:04:30 2023
->>>>>>> d87803d5d7aeb4da1b26819197f1428b96dbb143
+Tue Mar 14 10:21:17 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -45,11 +41,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-<<<<<<< HEAD
-; Analysis & Synthesis Status        ; Successful - Tue Mar 14 09:56:18 2023           ;
-=======
-; Analysis & Synthesis Status        ; Successful - Tue Mar 07 12:04:30 2023           ;
->>>>>>> d87803d5d7aeb4da1b26819197f1428b96dbb143
+; Analysis & Synthesis Status        ; Successful - Tue Mar 14 10:21:17 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Ovelse4                                         ;
 ; Top-level Entity Name              ; bin_to_7_seg_tester                             ;
@@ -162,14 +154,14 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                  ; Library ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------+---------+
-; bin_to_7_seg.vhd                 ; yes             ; User VHDL File  ; C:/Users/igors/OneDrive/Pulpit/AU/DSD/Git/DSD/Ovelse4/bin_to_7_seg.vhd        ;         ;
-; bin_to_7_seg_tester.vhd          ; yes             ; User VHDL File  ; C:/Users/igors/OneDrive/Pulpit/AU/DSD/Git/DSD/Ovelse4/bin_to_7_seg_tester.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                        ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                 ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------+---------+
+; bin_to_7_seg.vhd                 ; yes             ; User VHDL File  ; C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse4/bin_to_7_seg.vhd        ;         ;
+; bin_to_7_seg_tester.vhd          ; yes             ; User VHDL File  ; C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse4/bin_to_7_seg_tester.vhd ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -243,11 +235,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-<<<<<<< HEAD
-    Info: Processing started: Tue Mar 14 09:56:16 2023
-=======
-    Info: Processing started: Tue Mar 07 12:04:29 2023
->>>>>>> d87803d5d7aeb4da1b26819197f1428b96dbb143
+    Info: Processing started: Tue Mar 14 10:21:15 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Ovelse4 -c Ovelse4
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file bin_to_7_seg.vhd
@@ -263,20 +251,11 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
 Info (21057): Implemented 18 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 7 output pins
-<<<<<<< HEAD
-    Info (21061): Implemented 1 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4645 megabytes
-    Info: Processing ended: Tue Mar 14 09:56:18 2023
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
-=======
     Info (21061): Implemented 7 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4643 megabytes
-    Info: Processing ended: Tue Mar 07 12:04:30 2023
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:00
->>>>>>> d87803d5d7aeb4da1b26819197f1428b96dbb143
+    Info: Peak virtual memory: 4645 megabytes
+    Info: Processing ended: Tue Mar 14 10:21:17 2023
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 
