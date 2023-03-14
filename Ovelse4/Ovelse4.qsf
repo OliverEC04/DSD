@@ -477,4 +477,15 @@ set_location_assignment PIN_W23 -to GPIO_1[35]
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_N25 -to sw[0]
+set_location_assignment PIN_N26 -to sw[1]
+set_location_assignment PIN_P25 -to sw[2]
+set_location_assignment PIN_AE14 -to sw[3]
+set_location_assignment PIN_AF10 -to hex0[1]
+set_location_assignment PIN_AB12 -to hex0[2]
+set_location_assignment PIN_AC12 -to hex0[3]
+set_location_assignment PIN_AD11 -to hex0[4]
+set_location_assignment PIN_AE11 -to hex0[5]
+set_location_assignment PIN_V14 -to hex0[6]
+set_location_assignment PIN_V13 -to hex0[0]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
