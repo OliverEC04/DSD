@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "02/21/2023 11:40:46"
+// Generated on "02/28/2023 09:35:47"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    four_bit_adder_tester
 // 
@@ -226,42 +226,42 @@ four_bit_adder_tester i1 (
 initial
 begin
 	SW[1] = 1'b0;
-	SW[1] = #80000 1'b1;
+	SW[1] = #90000 1'b1;
 	SW[1] = #110000 1'b0;
-	SW[1] = #60000 1'b1;
-	SW[1] = #100000 1'b0;
 end 
 
 // SW[2]
 initial
 begin
 	SW[2] = 1'b0;
-	SW[2] = #190000 1'b1;
-	SW[2] = #160000 1'b0;
+	SW[2] = #130000 1'b1;
+	SW[2] = #110000 1'b0;
 end 
 
 // SW[3]
 initial
 begin
 	SW[3] = 1'b0;
+	SW[3] = #130000 1'b1;
+	SW[3] = #110000 1'b0;
 end 
 
 // SW[4]
 initial
 begin
 	SW[4] = 1'b0;
-	SW[4] = #390000 1'b1;
-	SW[4] = #60000 1'b0;
+	SW[4] = #130000 1'b1;
+	SW[4] = #110000 1'b0;
+	SW[4] = #70000 1'b1;
+	SW[4] = #90000 1'b0;
 end 
 
 // SW[5]
 initial
 begin
 	SW[5] = 1'b0;
-	SW[5] = #130000 1'b1;
-	SW[5] = #60000 1'b0;
-	SW[5] = #100000 1'b1;
-	SW[5] = #60000 1'b0;
+	SW[5] = #210000 1'b1;
+	SW[5] = #30000 1'b0;
 end 
 
 // SW[6]
@@ -280,8 +280,8 @@ end
 initial
 begin
 	SW[8] = 1'b0;
-	SW[8] = #420000 1'b1;
-	SW[8] = #70000 1'b0;
+	SW[8] = #270000 1'b1;
+	SW[8] = #140000 1'b0;
 end 
 
 four_bit_adder_tester_vlg_sample_tst tb_sample (
