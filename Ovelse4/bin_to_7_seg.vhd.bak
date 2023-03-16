@@ -1,0 +1,49 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+USE ieee.numeric_std.ALL;
+USE work.ALL;
+ENTITY bin_to_7_seg IS
+	PORT (
+		-- Input ports
+		bin0 : IN STD_LOGIC;
+		bin1 : IN STD_LOGIC;
+		bin2 : IN STD_LOGIC;
+		bin3 : IN STD_LOGIC;
+
+		-- Output ports
+		sSeg0 : OUT STD_LOGIC;
+		sSeg1 : OUT STD_LOGIC;
+		sSeg2 : OUT STD_LOGIC;
+		sSeg3 : OUT STD_LOGIC;
+		sSeg4 : OUT STD_LOGIC;
+		sSeg5 : OUT STD_LOGIC;
+		sSeg6 : OUT STD_LOGIC
+	);
+END bin_to_7_seg;
+
+-- Library Clause(s) (optional)
+-- Use Clause(s) (optional)
+
+ARCHITECTURE bin_to_7_seg_impl OF bin_to_7_seg IS
+
+	-- Declarations (optional)
+
+BEGIN
+
+	
+
+	-- Process Statement (optional)
+
+	-- Concurrent Procedure Call (optional)
+
+	-- Concurrent Signal Assignment (optional)
+
+	-- Conditional Signal Assignment (optional)
+
+	-- Selected Signal Assignment (optional)
+
+	-- Component Instantiation Statement (optional)
+
+	-- Generate Statement (optional)
+
+END bin_to_7_seg_impl;
