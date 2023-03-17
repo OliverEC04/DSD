@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Ovelse4
-Fri Mar 17 13:25:11 2023
+Fri Mar 17 13:33:03 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Mar 17 13:25:11 2023           ;
+; Analysis & Synthesis Status        ; Successful - Fri Mar 17 13:33:03 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Ovelse4                                         ;
 ; Top-level Entity Name              ; hex_mux_tester                                  ;
@@ -149,21 +149,21 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 20     ;
+; Number detected on machine ; 4      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                        ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                 ; Library ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------+---------+
-; hex_mux_tester.vhd               ; yes             ; User VHDL File  ; C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse4/hex_mux_tester.vhd      ;         ;
-; hex_mux.vhd                      ; yes             ; User VHDL File  ; C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse4/hex_mux.vhd             ;         ;
-; bin_to_7_seg.vhd                 ; yes             ; User VHDL File  ; C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse4/bin_to_7_seg.vhd        ;         ;
-; bin_to_7_seg_tester.vhd          ; yes             ; User VHDL File  ; C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse4/bin_to_7_seg_tester.vhd ;         ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                        ;
++----------------------------------+-----------------+-----------------+----------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                 ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------------+---------+
+; hex_mux_tester.vhd               ; yes             ; User VHDL File  ; C:/Gitte/DSD/Ovelse4/hex_mux_tester.vhd      ;         ;
+; hex_mux.vhd                      ; yes             ; User VHDL File  ; C:/Gitte/DSD/Ovelse4/hex_mux.vhd             ;         ;
+; bin_to_7_seg.vhd                 ; yes             ; User VHDL File  ; C:/Gitte/DSD/Ovelse4/bin_to_7_seg.vhd        ;         ;
+; bin_to_7_seg_tester.vhd          ; yes             ; User VHDL File  ; C:/Gitte/DSD/Ovelse4/bin_to_7_seg_tester.vhd ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------------+---------+
 
 
 +------------------------------------------------------------------+
@@ -237,7 +237,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Mar 17 13:25:09 2023
+    Info: Processing started: Fri Mar 17 13:33:00 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Ovelse4 -c Ovelse4
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file hex_mux_tester.vhd
@@ -281,9 +281,9 @@ Info (21057): Implemented 37 device resources after synthesis - the final resour
     Info (21059): Implemented 21 output pins
     Info (21061): Implemented 2 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 21 warnings
-    Info: Peak virtual memory: 4643 megabytes
-    Info: Processing ended: Fri Mar 17 13:25:11 2023
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Peak virtual memory: 4637 megabytes
+    Info: Processing ended: Fri Mar 17 13:33:03 2023
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
 
 
