@@ -16,23 +16,28 @@ ENTITY hex_mux IS
 END hex_mux;
 
 ARCHITECTURE hex_mux_impl OF hex_mux IS
-BEGIN	
+BEGIN
+	dec0 : bin_to_7_seg
+		port map (
+			bin => bin,
+			sSeg0 => sSeg
+		);
 	process(sel)
 		begin
 			case sel is
-				when "01" =>
+				when "01" => -- Err
 					sSeg0 <= "0101111";
 					sSeg1 <= "0101111";
 					sSeg2 <= "0000110";
-				when "10" =>
+				when "10" => -- bin2sev
 					sSeg0 <= "1111111";
 					sSeg1 <= "1111111";
 					sSeg2 <= "1111111";
-				when "11" =>
+				when "11" => -- On
 					sSeg0 <= "0101011";
 					sSeg1 <= "1000000";
 					sSeg2 <= "1111111";
-				when others =>
+				when others => -- Slukker naar andet
 					sSeg0 <= "1111111";
 					sSeg1 <= "1111111";
 					sSeg2 <= "1111111";
