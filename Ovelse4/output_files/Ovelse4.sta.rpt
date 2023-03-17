@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for Ovelse4
-Fri Mar 17 13:33:15 2023
+Fri Mar 17 23:13:49 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -16,23 +16,19 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   8. Slow Model Recovery Summary
   9. Slow Model Removal Summary
  10. Slow Model Minimum Pulse Width Summary
- 11. Propagation Delay
- 12. Minimum Propagation Delay
- 13. Fast Model Setup Summary
- 14. Fast Model Hold Summary
- 15. Fast Model Recovery Summary
- 16. Fast Model Removal Summary
- 17. Fast Model Minimum Pulse Width Summary
- 18. Propagation Delay
- 19. Minimum Propagation Delay
- 20. Multicorner Timing Analysis Summary
- 21. Progagation Delay
- 22. Minimum Progagation Delay
- 23. Clock Transfers
- 24. Report TCCS
- 25. Report RSKM
- 26. Unconstrained Paths
- 27. TimeQuest Timing Analyzer Messages
+ 11. Slow Model Datasheet Report
+ 12. Fast Model Setup Summary
+ 13. Fast Model Hold Summary
+ 14. Fast Model Recovery Summary
+ 15. Fast Model Removal Summary
+ 16. Fast Model Minimum Pulse Width Summary
+ 17. Fast Model Datasheet Report
+ 18. Multicorner Timing Analysis Summary
+ 19. Clock Transfers
+ 20. Report TCCS
+ 21. Report RSKM
+ 22. Unconstrained Paths
+ 23. TimeQuest Timing Analyzer Messages
 
 
 
@@ -74,7 +70,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 4      ;
+; Number detected on machine ; 8      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
@@ -121,74 +117,10 @@ No paths to report.
 No paths to report.
 
 
-+--------------------------------------------------------------+
-; Propagation Delay                                            ;
-+------------+-------------+--------+--------+--------+--------+
-; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
-+------------+-------------+--------+--------+--------+--------+
-; key[0]     ; hex0[2]     ;        ; 13.641 ; 13.641 ;        ;
-; key[0]     ; hex0[4]     ;        ; 10.279 ; 10.279 ;        ;
-; key[0]     ; hex0[6]     ;        ; 10.269 ; 10.269 ;        ;
-; key[0]     ; hex1[0]     ;        ; 10.824 ; 10.824 ;        ;
-; key[0]     ; hex1[1]     ;        ; 10.824 ; 10.824 ;        ;
-; key[0]     ; hex1[2]     ;        ; 10.643 ; 10.643 ;        ;
-; key[0]     ; hex1[3]     ;        ; 10.643 ; 10.643 ;        ;
-; key[0]     ; hex1[4]     ;        ; 9.955  ; 9.955  ;        ;
-; key[0]     ; hex1[5]     ;        ; 10.370 ; 10.370 ;        ;
-; key[0]     ; hex1[6]     ;        ; 10.386 ; 10.386 ;        ;
-; key[0]     ; hex2[0]     ;        ; 10.386 ; 10.386 ;        ;
-; key[0]     ; hex2[3]     ;        ; 10.692 ; 10.692 ;        ;
-; key[0]     ; hex2[4]     ;        ; 10.634 ; 10.634 ;        ;
-; key[0]     ; hex2[5]     ;        ; 10.634 ; 10.634 ;        ;
-; key[0]     ; hex2[6]     ;        ; 10.624 ; 10.624 ;        ;
-; key[1]     ; hex0[2]     ;        ; 13.234 ; 13.234 ;        ;
-; key[1]     ; hex1[0]     ;        ; 10.417 ; 10.417 ;        ;
-; key[1]     ; hex1[1]     ;        ; 10.417 ; 10.417 ;        ;
-; key[1]     ; hex1[2]     ;        ; 10.236 ; 10.236 ;        ;
-; key[1]     ; hex1[3]     ;        ; 10.236 ; 10.236 ;        ;
-; key[1]     ; hex1[5]     ;        ; 9.963  ; 9.963  ;        ;
-; key[1]     ; hex1[6]     ; 9.943  ;        ;        ; 9.943  ;
-; key[1]     ; hex2[0]     ; 9.943  ;        ;        ; 9.943  ;
-; key[1]     ; hex2[3]     ; 10.249 ;        ;        ; 10.249 ;
-; key[1]     ; hex2[4]     ; 10.191 ;        ;        ; 10.191 ;
-; key[1]     ; hex2[5]     ; 10.191 ;        ;        ; 10.191 ;
-; key[1]     ; hex2[6]     ; 10.181 ;        ;        ; 10.181 ;
-+------------+-------------+--------+--------+--------+--------+
-
-
-+--------------------------------------------------------------+
-; Minimum Propagation Delay                                    ;
-+------------+-------------+--------+--------+--------+--------+
-; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
-+------------+-------------+--------+--------+--------+--------+
-; key[0]     ; hex0[2]     ;        ; 13.641 ; 13.641 ;        ;
-; key[0]     ; hex0[4]     ;        ; 10.279 ; 10.279 ;        ;
-; key[0]     ; hex0[6]     ;        ; 10.269 ; 10.269 ;        ;
-; key[0]     ; hex1[0]     ;        ; 10.824 ; 10.824 ;        ;
-; key[0]     ; hex1[1]     ;        ; 10.824 ; 10.824 ;        ;
-; key[0]     ; hex1[2]     ;        ; 10.643 ; 10.643 ;        ;
-; key[0]     ; hex1[3]     ;        ; 10.643 ; 10.643 ;        ;
-; key[0]     ; hex1[4]     ;        ; 9.955  ; 9.955  ;        ;
-; key[0]     ; hex1[5]     ;        ; 10.370 ; 10.370 ;        ;
-; key[0]     ; hex1[6]     ;        ; 10.386 ; 10.386 ;        ;
-; key[0]     ; hex2[0]     ;        ; 10.386 ; 10.386 ;        ;
-; key[0]     ; hex2[3]     ;        ; 10.692 ; 10.692 ;        ;
-; key[0]     ; hex2[4]     ;        ; 10.634 ; 10.634 ;        ;
-; key[0]     ; hex2[5]     ;        ; 10.634 ; 10.634 ;        ;
-; key[0]     ; hex2[6]     ;        ; 10.624 ; 10.624 ;        ;
-; key[1]     ; hex0[2]     ;        ; 13.234 ; 13.234 ;        ;
-; key[1]     ; hex1[0]     ;        ; 10.417 ; 10.417 ;        ;
-; key[1]     ; hex1[1]     ;        ; 10.417 ; 10.417 ;        ;
-; key[1]     ; hex1[2]     ;        ; 10.236 ; 10.236 ;        ;
-; key[1]     ; hex1[3]     ;        ; 10.236 ; 10.236 ;        ;
-; key[1]     ; hex1[5]     ;        ; 9.963  ; 9.963  ;        ;
-; key[1]     ; hex1[6]     ; 9.943  ;        ;        ; 9.943  ;
-; key[1]     ; hex2[0]     ; 9.943  ;        ;        ; 9.943  ;
-; key[1]     ; hex2[3]     ; 10.249 ;        ;        ; 10.249 ;
-; key[1]     ; hex2[4]     ; 10.191 ;        ;        ; 10.191 ;
-; key[1]     ; hex2[5]     ; 10.191 ;        ;        ; 10.191 ;
-; key[1]     ; hex2[6]     ; 10.181 ;        ;        ; 10.181 ;
-+------------+-------------+--------+--------+--------+--------+
+-------------------------------
+; Slow Model Datasheet Report ;
+-------------------------------
+Nothing to report.
 
 
 ----------------------------
@@ -221,74 +153,10 @@ No paths to report.
 No paths to report.
 
 
-+----------------------------------------------------------+
-; Propagation Delay                                        ;
-+------------+-------------+-------+-------+-------+-------+
-; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
-+------------+-------------+-------+-------+-------+-------+
-; key[0]     ; hex0[2]     ;       ; 7.483 ; 7.483 ;       ;
-; key[0]     ; hex0[4]     ;       ; 5.902 ; 5.902 ;       ;
-; key[0]     ; hex0[6]     ;       ; 5.892 ; 5.892 ;       ;
-; key[0]     ; hex1[0]     ;       ; 6.023 ; 6.023 ;       ;
-; key[0]     ; hex1[1]     ;       ; 6.023 ; 6.023 ;       ;
-; key[0]     ; hex1[2]     ;       ; 5.881 ; 5.881 ;       ;
-; key[0]     ; hex1[3]     ;       ; 5.881 ; 5.881 ;       ;
-; key[0]     ; hex1[4]     ;       ; 5.611 ; 5.611 ;       ;
-; key[0]     ; hex1[5]     ;       ; 5.763 ; 5.763 ;       ;
-; key[0]     ; hex1[6]     ;       ; 5.784 ; 5.784 ;       ;
-; key[0]     ; hex2[0]     ;       ; 5.784 ; 5.784 ;       ;
-; key[0]     ; hex2[3]     ;       ; 5.932 ; 5.932 ;       ;
-; key[0]     ; hex2[4]     ;       ; 5.899 ; 5.899 ;       ;
-; key[0]     ; hex2[5]     ;       ; 5.899 ; 5.899 ;       ;
-; key[0]     ; hex2[6]     ;       ; 5.889 ; 5.889 ;       ;
-; key[1]     ; hex0[2]     ;       ; 7.248 ; 7.248 ;       ;
-; key[1]     ; hex1[0]     ;       ; 5.788 ; 5.788 ;       ;
-; key[1]     ; hex1[1]     ;       ; 5.788 ; 5.788 ;       ;
-; key[1]     ; hex1[2]     ;       ; 5.646 ; 5.646 ;       ;
-; key[1]     ; hex1[3]     ;       ; 5.646 ; 5.646 ;       ;
-; key[1]     ; hex1[5]     ;       ; 5.528 ; 5.528 ;       ;
-; key[1]     ; hex1[6]     ; 5.543 ;       ;       ; 5.543 ;
-; key[1]     ; hex2[0]     ; 5.543 ;       ;       ; 5.543 ;
-; key[1]     ; hex2[3]     ; 5.691 ;       ;       ; 5.691 ;
-; key[1]     ; hex2[4]     ; 5.658 ;       ;       ; 5.658 ;
-; key[1]     ; hex2[5]     ; 5.658 ;       ;       ; 5.658 ;
-; key[1]     ; hex2[6]     ; 5.648 ;       ;       ; 5.648 ;
-+------------+-------------+-------+-------+-------+-------+
-
-
-+----------------------------------------------------------+
-; Minimum Propagation Delay                                ;
-+------------+-------------+-------+-------+-------+-------+
-; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
-+------------+-------------+-------+-------+-------+-------+
-; key[0]     ; hex0[2]     ;       ; 7.483 ; 7.483 ;       ;
-; key[0]     ; hex0[4]     ;       ; 5.902 ; 5.902 ;       ;
-; key[0]     ; hex0[6]     ;       ; 5.892 ; 5.892 ;       ;
-; key[0]     ; hex1[0]     ;       ; 6.023 ; 6.023 ;       ;
-; key[0]     ; hex1[1]     ;       ; 6.023 ; 6.023 ;       ;
-; key[0]     ; hex1[2]     ;       ; 5.881 ; 5.881 ;       ;
-; key[0]     ; hex1[3]     ;       ; 5.881 ; 5.881 ;       ;
-; key[0]     ; hex1[4]     ;       ; 5.611 ; 5.611 ;       ;
-; key[0]     ; hex1[5]     ;       ; 5.763 ; 5.763 ;       ;
-; key[0]     ; hex1[6]     ;       ; 5.784 ; 5.784 ;       ;
-; key[0]     ; hex2[0]     ;       ; 5.784 ; 5.784 ;       ;
-; key[0]     ; hex2[3]     ;       ; 5.932 ; 5.932 ;       ;
-; key[0]     ; hex2[4]     ;       ; 5.899 ; 5.899 ;       ;
-; key[0]     ; hex2[5]     ;       ; 5.899 ; 5.899 ;       ;
-; key[0]     ; hex2[6]     ;       ; 5.889 ; 5.889 ;       ;
-; key[1]     ; hex0[2]     ;       ; 7.248 ; 7.248 ;       ;
-; key[1]     ; hex1[0]     ;       ; 5.788 ; 5.788 ;       ;
-; key[1]     ; hex1[1]     ;       ; 5.788 ; 5.788 ;       ;
-; key[1]     ; hex1[2]     ;       ; 5.646 ; 5.646 ;       ;
-; key[1]     ; hex1[3]     ;       ; 5.646 ; 5.646 ;       ;
-; key[1]     ; hex1[5]     ;       ; 5.528 ; 5.528 ;       ;
-; key[1]     ; hex1[6]     ; 5.543 ;       ;       ; 5.543 ;
-; key[1]     ; hex2[0]     ; 5.543 ;       ;       ; 5.543 ;
-; key[1]     ; hex2[3]     ; 5.691 ;       ;       ; 5.691 ;
-; key[1]     ; hex2[4]     ; 5.658 ;       ;       ; 5.658 ;
-; key[1]     ; hex2[5]     ; 5.658 ;       ;       ; 5.658 ;
-; key[1]     ; hex2[6]     ; 5.648 ;       ;       ; 5.648 ;
-+------------+-------------+-------+-------+-------+-------+
+-------------------------------
+; Fast Model Datasheet Report ;
+-------------------------------
+Nothing to report.
 
 
 +----------------------------------------------------------------------------+
@@ -299,76 +167,6 @@ No paths to report.
 ; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
 ; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
 +------------------+-------+------+----------+---------+---------------------+
-
-
-+--------------------------------------------------------------+
-; Progagation Delay                                            ;
-+------------+-------------+--------+--------+--------+--------+
-; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
-+------------+-------------+--------+--------+--------+--------+
-; key[0]     ; hex0[2]     ;        ; 13.641 ; 13.641 ;        ;
-; key[0]     ; hex0[4]     ;        ; 10.279 ; 10.279 ;        ;
-; key[0]     ; hex0[6]     ;        ; 10.269 ; 10.269 ;        ;
-; key[0]     ; hex1[0]     ;        ; 10.824 ; 10.824 ;        ;
-; key[0]     ; hex1[1]     ;        ; 10.824 ; 10.824 ;        ;
-; key[0]     ; hex1[2]     ;        ; 10.643 ; 10.643 ;        ;
-; key[0]     ; hex1[3]     ;        ; 10.643 ; 10.643 ;        ;
-; key[0]     ; hex1[4]     ;        ; 9.955  ; 9.955  ;        ;
-; key[0]     ; hex1[5]     ;        ; 10.370 ; 10.370 ;        ;
-; key[0]     ; hex1[6]     ;        ; 10.386 ; 10.386 ;        ;
-; key[0]     ; hex2[0]     ;        ; 10.386 ; 10.386 ;        ;
-; key[0]     ; hex2[3]     ;        ; 10.692 ; 10.692 ;        ;
-; key[0]     ; hex2[4]     ;        ; 10.634 ; 10.634 ;        ;
-; key[0]     ; hex2[5]     ;        ; 10.634 ; 10.634 ;        ;
-; key[0]     ; hex2[6]     ;        ; 10.624 ; 10.624 ;        ;
-; key[1]     ; hex0[2]     ;        ; 13.234 ; 13.234 ;        ;
-; key[1]     ; hex1[0]     ;        ; 10.417 ; 10.417 ;        ;
-; key[1]     ; hex1[1]     ;        ; 10.417 ; 10.417 ;        ;
-; key[1]     ; hex1[2]     ;        ; 10.236 ; 10.236 ;        ;
-; key[1]     ; hex1[3]     ;        ; 10.236 ; 10.236 ;        ;
-; key[1]     ; hex1[5]     ;        ; 9.963  ; 9.963  ;        ;
-; key[1]     ; hex1[6]     ; 9.943  ;        ;        ; 9.943  ;
-; key[1]     ; hex2[0]     ; 9.943  ;        ;        ; 9.943  ;
-; key[1]     ; hex2[3]     ; 10.249 ;        ;        ; 10.249 ;
-; key[1]     ; hex2[4]     ; 10.191 ;        ;        ; 10.191 ;
-; key[1]     ; hex2[5]     ; 10.191 ;        ;        ; 10.191 ;
-; key[1]     ; hex2[6]     ; 10.181 ;        ;        ; 10.181 ;
-+------------+-------------+--------+--------+--------+--------+
-
-
-+----------------------------------------------------------+
-; Minimum Progagation Delay                                ;
-+------------+-------------+-------+-------+-------+-------+
-; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
-+------------+-------------+-------+-------+-------+-------+
-; key[0]     ; hex0[2]     ;       ; 7.483 ; 7.483 ;       ;
-; key[0]     ; hex0[4]     ;       ; 5.902 ; 5.902 ;       ;
-; key[0]     ; hex0[6]     ;       ; 5.892 ; 5.892 ;       ;
-; key[0]     ; hex1[0]     ;       ; 6.023 ; 6.023 ;       ;
-; key[0]     ; hex1[1]     ;       ; 6.023 ; 6.023 ;       ;
-; key[0]     ; hex1[2]     ;       ; 5.881 ; 5.881 ;       ;
-; key[0]     ; hex1[3]     ;       ; 5.881 ; 5.881 ;       ;
-; key[0]     ; hex1[4]     ;       ; 5.611 ; 5.611 ;       ;
-; key[0]     ; hex1[5]     ;       ; 5.763 ; 5.763 ;       ;
-; key[0]     ; hex1[6]     ;       ; 5.784 ; 5.784 ;       ;
-; key[0]     ; hex2[0]     ;       ; 5.784 ; 5.784 ;       ;
-; key[0]     ; hex2[3]     ;       ; 5.932 ; 5.932 ;       ;
-; key[0]     ; hex2[4]     ;       ; 5.899 ; 5.899 ;       ;
-; key[0]     ; hex2[5]     ;       ; 5.899 ; 5.899 ;       ;
-; key[0]     ; hex2[6]     ;       ; 5.889 ; 5.889 ;       ;
-; key[1]     ; hex0[2]     ;       ; 7.248 ; 7.248 ;       ;
-; key[1]     ; hex1[0]     ;       ; 5.788 ; 5.788 ;       ;
-; key[1]     ; hex1[1]     ;       ; 5.788 ; 5.788 ;       ;
-; key[1]     ; hex1[2]     ;       ; 5.646 ; 5.646 ;       ;
-; key[1]     ; hex1[3]     ;       ; 5.646 ; 5.646 ;       ;
-; key[1]     ; hex1[5]     ;       ; 5.528 ; 5.528 ;       ;
-; key[1]     ; hex1[6]     ; 5.543 ;       ;       ; 5.543 ;
-; key[1]     ; hex2[0]     ; 5.543 ;       ;       ; 5.543 ;
-; key[1]     ; hex2[3]     ; 5.691 ;       ;       ; 5.691 ;
-; key[1]     ; hex2[4]     ; 5.658 ;       ;       ; 5.658 ;
-; key[1]     ; hex2[5]     ; 5.658 ;       ;       ; 5.658 ;
-; key[1]     ; hex2[6]     ; 5.648 ;       ;       ; 5.648 ;
-+------------+-------------+-------+-------+-------+-------+
 
 
 -------------------
@@ -396,10 +194,10 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 2     ; 2    ;
-; Unconstrained Input Port Paths  ; 27    ; 27   ;
-; Unconstrained Output Ports      ; 15    ; 15   ;
-; Unconstrained Output Port Paths ; 27    ; 27   ;
+; Unconstrained Input Ports       ; 0     ; 0    ;
+; Unconstrained Input Port Paths  ; 0     ; 0    ;
+; Unconstrained Output Ports      ; 0     ; 0    ;
+; Unconstrained Output Port Paths ; 0     ; 0    ;
 +---------------------------------+-------+------+
 
 
@@ -409,7 +207,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Mar 17 13:33:14 2023
+    Info: Processing started: Fri Mar 17 23:13:48 2023
 Info: Command: quartus_sta Ovelse4 -c Ovelse4
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -439,11 +237,11 @@ Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332140): No Minimum Pulse Width paths to report
 Info (332001): The selected device family is not supported by the report_metastability command.
-Info (332102): Design is not fully constrained for setup requirements
-Info (332102): Design is not fully constrained for hold requirements
+Info (332101): Design is fully constrained for setup requirements
+Info (332101): Design is fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4534 megabytes
-    Info: Processing ended: Fri Mar 17 13:33:15 2023
+    Info: Peak virtual memory: 4535 megabytes
+    Info: Processing ended: Fri Mar 17 23:13:49 2023
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
