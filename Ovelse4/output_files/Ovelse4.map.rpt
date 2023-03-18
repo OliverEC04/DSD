@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Ovelse4
-Fri Mar 17 23:38:27 2023
+Sat Mar 18 16:42:28 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -42,7 +42,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Mar 17 23:38:27 2023           ;
+; Analysis & Synthesis Status        ; Successful - Sat Mar 18 16:42:28 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Ovelse4                                         ;
 ; Top-level Entity Name              ; hex_mux_tester                                  ;
@@ -272,7 +272,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Mar 17 23:38:26 2023
+    Info: Processing started: Sat Mar 18 16:42:27 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Ovelse4 -c Ovelse4
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file hex_mux_tester.vhd
@@ -320,11 +320,11 @@ Warning (13012): Latch hex_mux:dut|tsseg[2] has unsafe behavior
 Warning (13012): Latch hex_mux:dut|tsseg[3] has unsafe behavior
     Warning (13013): Ports ENA and PRE on the latch are fed by the same signal key[1]
 Warning (13012): Latch hex_mux:dut|tsseg[4] has unsafe behavior
-    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal key[1]
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal key[1]
 Warning (13012): Latch hex_mux:dut|tsseg[5] has unsafe behavior
     Warning (13013): Ports ENA and PRE on the latch are fed by the same signal key[1]
 Warning (13012): Latch hex_mux:dut|tsseg[6] has unsafe behavior
-    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal key[1]
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal key[1]
 Warning (13012): Latch hex_mux:dut|tsseg[7] has unsafe behavior
     Warning (13013): Ports ENA and PRE on the latch are fed by the same signal key[1]
 Warning (13012): Latch hex_mux:dut|tsseg[8] has unsafe behavior
@@ -334,25 +334,25 @@ Warning (13012): Latch hex_mux:dut|tsseg[9] has unsafe behavior
 Warning (13012): Latch hex_mux:dut|tsseg[10] has unsafe behavior
     Warning (13013): Ports ENA and PRE on the latch are fed by the same signal key[1]
 Warning (13012): Latch hex_mux:dut|tsseg[11] has unsafe behavior
-    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal key[1]
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal key[1]
 Warning (13012): Latch hex_mux:dut|tsseg[12] has unsafe behavior
     Warning (13013): Ports ENA and PRE on the latch are fed by the same signal key[1]
 Warning (13012): Latch hex_mux:dut|tsseg[13] has unsafe behavior
-    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal key[1]
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal key[1]
 Warning (13012): Latch hex_mux:dut|tsseg[14] has unsafe behavior
-    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal key[1]
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal key[1]
 Warning (13012): Latch hex_mux:dut|tsseg[15] has unsafe behavior
     Warning (13013): Ports ENA and PRE on the latch are fed by the same signal key[1]
 Warning (13012): Latch hex_mux:dut|tsseg[16] has unsafe behavior
     Warning (13013): Ports ENA and PRE on the latch are fed by the same signal key[1]
 Warning (13012): Latch hex_mux:dut|tsseg[17] has unsafe behavior
-    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal key[1]
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal key[1]
 Warning (13012): Latch hex_mux:dut|tsseg[18] has unsafe behavior
-    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal key[1]
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal key[1]
 Warning (13012): Latch hex_mux:dut|tsseg[19] has unsafe behavior
-    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal key[1]
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal key[1]
 Warning (13012): Latch hex_mux:dut|tsseg[20] has unsafe behavior
-    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal key[1]
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal key[1]
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 99 device resources after synthesis - the final resource count might be different
@@ -361,7 +361,7 @@ Info (21057): Implemented 99 device resources after synthesis - the final resour
     Info (21061): Implemented 64 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 43 warnings
     Info: Peak virtual memory: 4633 megabytes
-    Info: Processing ended: Fri Mar 17 23:38:27 2023
+    Info: Processing ended: Sat Mar 18 16:42:28 2023
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:02
 

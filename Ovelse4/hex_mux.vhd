@@ -17,9 +17,9 @@ ARCHITECTURE hex_mux_impl OF hex_mux IS
 	signal tissesek : STD_LOGIC_VECTOR (20 downto 0);
 	
 BEGIN
-	tsseg <= "111111111111111111111" when sel = "01" else
+	tsseg <= "000011001011110101111" when sel = "01" else
 				tissesek 					when sel = "10" else
-				"111111111111111111111" when sel = "11";
+				"111111110000000101011" when sel = "11";
 					
 	dec0 : entity work.bin_to_7_seg
 		port map(

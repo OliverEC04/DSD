@@ -1,5 +1,5 @@
 Fitter report for Ovelse4
-Fri Mar 17 23:38:34 2023
+Sat Mar 18 16:42:34 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -65,7 +65,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Fri Mar 17 23:38:34 2023           ;
+; Fitter Status                      ; Successful - Sat Mar 18 16:42:34 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Ovelse4                                         ;
 ; Top-level Entity Name              ; hex_mux_tester                                  ;
@@ -636,7 +636,7 @@ The pin-out file can be found in C:/Users/olive/Nextcloud/Seagate Hub/Libraries/
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )         ;
 ; CRC blocks                                  ; 0 / 1 ( 0 % )         ;
 ; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%          ;
-; Peak interconnect usage (total/H/V)         ; 1% / 1% / 1%          ;
+; Peak interconnect usage (total/H/V)         ; 1% / 1% / 2%          ;
 ; Maximum fan-out                             ; 22                    ;
 ; Highest non-global fan-out                  ; 22                    ;
 ; Total fan-out                               ; 235                   ;
@@ -1573,28 +1573,28 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Source Pin / Fanout             ; Pad To Core Index ; Setting ;
 +---------------------------------+-------------------+---------+
 ; key[0]                          ;                   ;         ;
-;      - hex_mux:dut|tsseg[0]~0   ; 0                 ; 6       ;
-;      - hex_mux:dut|Equal2~0     ; 0                 ; 6       ;
-;      - hex_mux:dut|tsseg[1]~1   ; 0                 ; 6       ;
-;      - hex_mux:dut|tsseg[2]~2   ; 0                 ; 6       ;
-;      - hex_mux:dut|tsseg[3]~3   ; 0                 ; 6       ;
-;      - hex_mux:dut|tsseg[4]~4   ; 0                 ; 6       ;
-;      - hex_mux:dut|tsseg[5]~5   ; 0                 ; 6       ;
-;      - hex_mux:dut|tsseg[6]~6   ; 0                 ; 6       ;
-;      - hex_mux:dut|tsseg[7]~7   ; 0                 ; 6       ;
-;      - hex_mux:dut|tsseg[8]~8   ; 0                 ; 6       ;
-;      - hex_mux:dut|tsseg[9]~9   ; 0                 ; 6       ;
-;      - hex_mux:dut|tsseg[10]~10 ; 0                 ; 6       ;
-;      - hex_mux:dut|tsseg[11]~11 ; 0                 ; 6       ;
-;      - hex_mux:dut|tsseg[12]~12 ; 0                 ; 6       ;
-;      - hex_mux:dut|tsseg[13]~13 ; 0                 ; 6       ;
-;      - hex_mux:dut|tsseg[14]~14 ; 0                 ; 6       ;
-;      - hex_mux:dut|tsseg[15]~15 ; 0                 ; 6       ;
-;      - hex_mux:dut|tsseg[16]~16 ; 0                 ; 6       ;
-;      - hex_mux:dut|tsseg[17]~17 ; 0                 ; 6       ;
-;      - hex_mux:dut|tsseg[18]~18 ; 0                 ; 6       ;
-;      - hex_mux:dut|tsseg[19]~19 ; 0                 ; 6       ;
-;      - hex_mux:dut|tsseg[20]~20 ; 0                 ; 6       ;
+;      - hex_mux:dut|tsseg[0]~0   ; 1                 ; 6       ;
+;      - hex_mux:dut|Equal2~0     ; 1                 ; 6       ;
+;      - hex_mux:dut|tsseg[1]~1   ; 1                 ; 6       ;
+;      - hex_mux:dut|tsseg[2]~2   ; 1                 ; 6       ;
+;      - hex_mux:dut|tsseg[3]~3   ; 1                 ; 6       ;
+;      - hex_mux:dut|tsseg[4]~4   ; 1                 ; 6       ;
+;      - hex_mux:dut|tsseg[5]~5   ; 1                 ; 6       ;
+;      - hex_mux:dut|tsseg[6]~6   ; 1                 ; 6       ;
+;      - hex_mux:dut|tsseg[7]~7   ; 1                 ; 6       ;
+;      - hex_mux:dut|tsseg[8]~8   ; 1                 ; 6       ;
+;      - hex_mux:dut|tsseg[9]~9   ; 1                 ; 6       ;
+;      - hex_mux:dut|tsseg[10]~10 ; 1                 ; 6       ;
+;      - hex_mux:dut|tsseg[11]~11 ; 1                 ; 6       ;
+;      - hex_mux:dut|tsseg[12]~12 ; 1                 ; 6       ;
+;      - hex_mux:dut|tsseg[13]~13 ; 1                 ; 6       ;
+;      - hex_mux:dut|tsseg[14]~14 ; 1                 ; 6       ;
+;      - hex_mux:dut|tsseg[15]~15 ; 1                 ; 6       ;
+;      - hex_mux:dut|tsseg[16]~16 ; 1                 ; 6       ;
+;      - hex_mux:dut|tsseg[17]~17 ; 1                 ; 6       ;
+;      - hex_mux:dut|tsseg[18]~18 ; 1                 ; 6       ;
+;      - hex_mux:dut|tsseg[19]~19 ; 1                 ; 6       ;
+;      - hex_mux:dut|tsseg[20]~20 ; 1                 ; 6       ;
 ; sw[0]                           ;                   ;         ;
 ; sw[1]                           ;                   ;         ;
 ; sw[2]                           ;                   ;         ;
@@ -1722,14 +1722,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------+-----------------------+
 ; Other Routing Resource Type ; Usage                 ;
 +-----------------------------+-----------------------+
-; Block interconnects         ; 72 / 94,460 ( < 1 % ) ;
-; C16 interconnects           ; 22 / 3,315 ( < 1 % )  ;
-; C4 interconnects            ; 82 / 60,840 ( < 1 % ) ;
-; Direct links                ; 10 / 94,460 ( < 1 % ) ;
+; Block interconnects         ; 68 / 94,460 ( < 1 % ) ;
+; C16 interconnects           ; 21 / 3,315 ( < 1 % )  ;
+; C4 interconnects            ; 83 / 60,840 ( < 1 % ) ;
+; Direct links                ; 6 / 94,460 ( < 1 % )  ;
 ; Global clocks               ; 1 / 16 ( 6 % )        ;
-; Local interconnects         ; 37 / 33,216 ( < 1 % ) ;
-; R24 interconnects           ; 24 / 3,091 ( < 1 % )  ;
-; R4 interconnects            ; 69 / 81,294 ( < 1 % ) ;
+; Local interconnects         ; 41 / 33,216 ( < 1 % ) ;
+; R24 interconnects           ; 26 / 3,091 ( < 1 % )  ;
+; R4 interconnects            ; 64 / 81,294 ( < 1 % ) ;
 +-----------------------------+-----------------------+
 
 
@@ -1741,17 +1741,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 1                                           ; 0                           ;
 ; 2                                           ; 0                           ;
 ; 3                                           ; 0                           ;
-; 4                                           ; 1                           ;
+; 4                                           ; 0                           ;
 ; 5                                           ; 0                           ;
-; 6                                           ; 0                           ;
+; 6                                           ; 1                           ;
 ; 7                                           ; 0                           ;
 ; 8                                           ; 0                           ;
 ; 9                                           ; 0                           ;
 ; 10                                          ; 0                           ;
 ; 11                                          ; 0                           ;
-; 12                                          ; 0                           ;
+; 12                                          ; 1                           ;
 ; 13                                          ; 0                           ;
-; 14                                          ; 2                           ;
+; 14                                          ; 1                           ;
 ; 15                                          ; 0                           ;
 ; 16                                          ; 2                           ;
 +---------------------------------------------+-----------------------------+
@@ -1766,17 +1766,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 1                                            ; 0                           ;
 ; 2                                            ; 0                           ;
 ; 3                                            ; 0                           ;
-; 4                                            ; 1                           ;
+; 4                                            ; 0                           ;
 ; 5                                            ; 0                           ;
-; 6                                            ; 0                           ;
+; 6                                            ; 1                           ;
 ; 7                                            ; 0                           ;
 ; 8                                            ; 0                           ;
 ; 9                                            ; 0                           ;
 ; 10                                           ; 0                           ;
 ; 11                                           ; 0                           ;
-; 12                                           ; 0                           ;
+; 12                                           ; 1                           ;
 ; 13                                           ; 0                           ;
-; 14                                           ; 2                           ;
+; 14                                           ; 1                           ;
 ; 15                                           ; 0                           ;
 ; 16                                           ; 2                           ;
 +----------------------------------------------+-----------------------------+
@@ -1785,22 +1785,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                       ;
 +-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 9.40) ; Number of LABs  (Total = 5) ;
+; Number of Signals Sourced Out  (Average = 9.00) ; Number of LABs  (Total = 5) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 0                           ;
 ; 1                                               ; 0                           ;
 ; 2                                               ; 0                           ;
 ; 3                                               ; 0                           ;
-; 4                                               ; 1                           ;
+; 4                                               ; 0                           ;
 ; 5                                               ; 0                           ;
-; 6                                               ; 0                           ;
+; 6                                               ; 1                           ;
 ; 7                                               ; 2                           ;
 ; 8                                               ; 0                           ;
-; 9                                               ; 0                           ;
+; 9                                               ; 1                           ;
 ; 10                                              ; 0                           ;
 ; 11                                              ; 0                           ;
 ; 12                                              ; 0                           ;
-; 13                                              ; 1                           ;
+; 13                                              ; 0                           ;
 ; 14                                              ; 0                           ;
 ; 15                                              ; 0                           ;
 ; 16                                              ; 1                           ;
@@ -1810,22 +1810,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 9.20) ; Number of LABs  (Total = 5) ;
+; Number of Distinct Inputs  (Average = 8.60) ; Number of LABs  (Total = 5) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
 ; 1                                           ; 0                           ;
 ; 2                                           ; 0                           ;
 ; 3                                           ; 0                           ;
 ; 4                                           ; 0                           ;
-; 5                                           ; 3                           ;
+; 5                                           ; 2                           ;
 ; 6                                           ; 0                           ;
-; 7                                           ; 0                           ;
-; 8                                           ; 0                           ;
+; 7                                           ; 1                           ;
+; 8                                           ; 1                           ;
 ; 9                                           ; 0                           ;
 ; 10                                          ; 0                           ;
 ; 11                                          ; 0                           ;
 ; 12                                          ; 0                           ;
-; 13                                          ; 1                           ;
+; 13                                          ; 0                           ;
 ; 14                                          ; 0                           ;
 ; 15                                          ; 0                           ;
 ; 16                                          ; 0                           ;
@@ -1868,7 +1868,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------+----------------------+-------------------+
 ; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
 +-----------------+----------------------+-------------------+
-; I/O             ; key[1]               ; 2.8               ;
+; I/O             ; key[1]               ; 2.9               ;
 +-----------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using either the TimeQuest Timing Analyzer or the Classic Timing Analyzer.
@@ -1879,8 +1879,8 @@ This will disable optimization of problematic paths and expose them for further 
 +-----------------+-----------------------+-------------------+
 ; Source Register ; Destination Register  ; Delay Added in ns ;
 +-----------------+-----------------------+-------------------+
-; key[1]          ; hex_mux:dut|tsseg[20] ; 0.190             ;
-; key[0]          ; hex_mux:dut|tsseg[20] ; 0.190             ;
+; key[1]          ; hex_mux:dut|tsseg[16] ; 0.191             ;
+; key[0]          ; hex_mux:dut|tsseg[16] ; 0.191             ;
 +-----------------+-----------------------+-------------------+
 Note: This table only shows the top 2 path(s) that have the largest delay added for hold.
 
@@ -2314,7 +2314,7 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "sw[1]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "sw[2]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "sw[3]" is assigned to location or region, but does not exist in design
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
@@ -2358,10 +2358,10 @@ Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments 
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info (144001): Generated suppressed messages file C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse4/output_files/Ovelse4.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 409 warnings
-    Info: Peak virtual memory: 4879 megabytes
-    Info: Processing ended: Fri Mar 17 23:38:34 2023
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:06
+    Info: Peak virtual memory: 4881 megabytes
+    Info: Processing ended: Sat Mar 18 16:42:34 2023
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:05
 
 
 +----------------------------+
