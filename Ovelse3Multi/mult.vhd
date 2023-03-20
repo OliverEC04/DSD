@@ -15,12 +15,14 @@ generic
 port 
 (
 	A, B : in std_logic_vector(7 downto 0);
-	Produkt: out std_logic_vector(7 downto 0)
+	Produkt: out std_logic_vector(2*DATA_WIDTH-1 downto 0)
 );
-end;
+end entity;
 
 
 architecture mult_impl of mult is
 begin
 
-end;
+Produkt <= std_logic_vector(unsigned(A) * unsigned(B));
+
+end mult_impl;

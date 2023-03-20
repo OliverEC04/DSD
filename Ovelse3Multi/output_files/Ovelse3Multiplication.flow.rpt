@@ -1,5 +1,5 @@
 Flow report for Ovelse3Multiplication
-Mon Mar 20 09:53:59 2023
+Mon Mar 20 10:42:24 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,16 +40,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Mon Mar 20 09:53:59 2023           ;
+; Flow Status                        ; Successful - Mon Mar 20 10:42:24 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Ovelse3Multiplication                           ;
 ; Top-level Entity Name              ; mult                                            ;
 ; Family                             ; Cyclone IV GX                                   ;
-; Total logic elements               ; 0                                               ;
-;     Total combinational functions  ; 0                                               ;
+; Total logic elements               ; 103                                             ;
+;     Total combinational functions  ; 103                                             ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 24                                              ;
+; Total pins                         ; 32                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -66,7 +66,7 @@ applicable agreement for further details.
 +-------------------+-----------------------+
 ; Option            ; Setting               ;
 +-------------------+-----------------------+
-; Start date & time ; 03/20/2023 09:53:57   ;
+; Start date & time ; 03/20/2023 10:42:21   ;
 ; Main task         ; Compilation           ;
 ; Revision Name     ; Ovelse3Multiplication ;
 +-------------------+-----------------------+
@@ -77,7 +77,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------+-----------------------+-------------+------------+
 ; Assignment Name                     ; Value                           ; Default Value         ; Entity Name ; Section Id ;
 +-------------------------------------+---------------------------------+-----------------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 145862428432652.167930243712272 ; --                    ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 145862428432652.167930534110536 ; --                    ; --          ; --         ;
 ; PARTITION_COLOR                     ; 16764057                        ; --                    ; mult        ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --                    ; mult        ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --                    ; mult        ; Top        ;
@@ -91,8 +91,8 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:02     ; 1.0                     ; 4672 MB             ; 00:00:02                           ;
-; Total                ; 00:00:02     ; --                      ; --                  ; 00:00:02                           ;
+; Analysis & Synthesis ; 00:00:04     ; 1.0                     ; 4687 MB             ; 00:00:03                           ;
+; Total                ; 00:00:04     ; --                      ; --                  ; 00:00:03                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
