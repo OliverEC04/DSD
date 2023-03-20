@@ -22,9 +22,9 @@ dut: entity work.hex_mux
 	(
 		bin => sw,
 		sel => key,
-		sSeg0 => hex0,
-		sSeg1 => hex1,
-		sSeg2 => hex2
+		tsseg(6 downto 0) => hex0,
+		tsseg(13 downto 7) => hex1,
+		tsseg(20 downto 14) => hex2
 	);
 
 END hex_mux_tester_impl;

@@ -1,0 +1,414 @@
+TimeQuest Timing Analyzer report for Concatenation
+Fri Mar 17 17:33:18 2023
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Propagation Delay
+ 12. Minimum Propagation Delay
+ 13. Fast Model Setup Summary
+ 14. Fast Model Hold Summary
+ 15. Fast Model Recovery Summary
+ 16. Fast Model Removal Summary
+ 17. Fast Model Minimum Pulse Width Summary
+ 18. Propagation Delay
+ 19. Minimum Propagation Delay
+ 20. Multicorner Timing Analysis Summary
+ 21. Progagation Delay
+ 22. Minimum Progagation Delay
+ 23. Clock Transfers
+ 24. Report TCCS
+ 25. Report RSKM
+ 26. Unconstrained Paths
+ 27. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; Concatenation                                                     ;
+; Device Family      ; Cyclone II                                                        ;
+; Device Name        ; EP2C35F672C6                                                      ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
+----------
+; Clocks ;
+----------
+No clocks to report.
+
+
+---------------------------
+; Slow Model Fmax Summary ;
+---------------------------
+No paths to report.
+
+
+----------------------------
+; Slow Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Slow Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Slow Model Minimum Pulse Width Summary ;
+------------------------------------------
+No paths to report.
+
+
++------------------------------------------------------+
+; Propagation Delay                                    ;
++-------------+--------------+-------+----+----+-------+
+; Input Port  ; Output Port  ; RR    ; RF ; FR ; FF    ;
++-------------+--------------+-------+----+----+-------+
+; Switches[0] ; RedLeds[5]   ; 6.438 ;    ;    ; 6.438 ;
+; Switches[0] ; RedLeds[9]   ; 5.976 ;    ;    ; 5.976 ;
+; Switches[1] ; RedLeds[6]   ; 5.515 ;    ;    ; 5.515 ;
+; Switches[1] ; RedLeds[10]  ; 6.043 ;    ;    ; 6.043 ;
+; Switches[2] ; GreenLeds[0] ; 5.204 ;    ;    ; 5.204 ;
+; Switches[2] ; RedLeds[7]   ; 5.407 ;    ;    ; 5.407 ;
+; Switches[2] ; RedLeds[11]  ; 5.653 ;    ;    ; 5.653 ;
+; Switches[3] ; GreenLeds[1] ; 6.059 ;    ;    ; 6.059 ;
+; Switches[3] ; RedLeds[0]   ; 5.807 ;    ;    ; 5.807 ;
+; Switches[3] ; RedLeds[12]  ; 4.812 ;    ;    ; 4.812 ;
+; Switches[4] ; GreenLeds[2] ; 5.346 ;    ;    ; 5.346 ;
+; Switches[4] ; RedLeds[1]   ; 5.477 ;    ;    ; 5.477 ;
+; Switches[4] ; RedLeds[13]  ; 4.844 ;    ;    ; 4.844 ;
+; Switches[5] ; GreenLeds[3] ; 5.039 ;    ;    ; 5.039 ;
+; Switches[5] ; RedLeds[2]   ; 5.349 ;    ;    ; 5.349 ;
+; Switches[5] ; RedLeds[14]  ; 4.792 ;    ;    ; 4.792 ;
+; Switches[6] ; GreenLeds[4] ; 5.399 ;    ;    ; 5.399 ;
+; Switches[6] ; RedLeds[3]   ; 5.422 ;    ;    ; 5.422 ;
+; Switches[6] ; RedLeds[15]  ; 4.747 ;    ;    ; 4.747 ;
+; Switches[7] ; GreenLeds[5] ; 6.765 ;    ;    ; 6.765 ;
+; Switches[7] ; RedLeds[4]   ; 6.294 ;    ;    ; 6.294 ;
++-------------+--------------+-------+----+----+-------+
+
+
++------------------------------------------------------+
+; Minimum Propagation Delay                            ;
++-------------+--------------+-------+----+----+-------+
+; Input Port  ; Output Port  ; RR    ; RF ; FR ; FF    ;
++-------------+--------------+-------+----+----+-------+
+; Switches[0] ; RedLeds[5]   ; 6.438 ;    ;    ; 6.438 ;
+; Switches[0] ; RedLeds[9]   ; 5.976 ;    ;    ; 5.976 ;
+; Switches[1] ; RedLeds[6]   ; 5.515 ;    ;    ; 5.515 ;
+; Switches[1] ; RedLeds[10]  ; 6.043 ;    ;    ; 6.043 ;
+; Switches[2] ; GreenLeds[0] ; 5.204 ;    ;    ; 5.204 ;
+; Switches[2] ; RedLeds[7]   ; 5.407 ;    ;    ; 5.407 ;
+; Switches[2] ; RedLeds[11]  ; 5.653 ;    ;    ; 5.653 ;
+; Switches[3] ; GreenLeds[1] ; 6.059 ;    ;    ; 6.059 ;
+; Switches[3] ; RedLeds[0]   ; 5.807 ;    ;    ; 5.807 ;
+; Switches[3] ; RedLeds[12]  ; 4.812 ;    ;    ; 4.812 ;
+; Switches[4] ; GreenLeds[2] ; 5.346 ;    ;    ; 5.346 ;
+; Switches[4] ; RedLeds[1]   ; 5.477 ;    ;    ; 5.477 ;
+; Switches[4] ; RedLeds[13]  ; 4.844 ;    ;    ; 4.844 ;
+; Switches[5] ; GreenLeds[3] ; 5.039 ;    ;    ; 5.039 ;
+; Switches[5] ; RedLeds[2]   ; 5.349 ;    ;    ; 5.349 ;
+; Switches[5] ; RedLeds[14]  ; 4.792 ;    ;    ; 4.792 ;
+; Switches[6] ; GreenLeds[4] ; 5.399 ;    ;    ; 5.399 ;
+; Switches[6] ; RedLeds[3]   ; 5.422 ;    ;    ; 5.422 ;
+; Switches[6] ; RedLeds[15]  ; 4.747 ;    ;    ; 4.747 ;
+; Switches[7] ; GreenLeds[5] ; 6.765 ;    ;    ; 6.765 ;
+; Switches[7] ; RedLeds[4]   ; 6.294 ;    ;    ; 6.294 ;
++-------------+--------------+-------+----+----+-------+
+
+
+----------------------------
+; Fast Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Fast Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Fast Model Minimum Pulse Width Summary ;
+------------------------------------------
+No paths to report.
+
+
++------------------------------------------------------+
+; Propagation Delay                                    ;
++-------------+--------------+-------+----+----+-------+
+; Input Port  ; Output Port  ; RR    ; RF ; FR ; FF    ;
++-------------+--------------+-------+----+----+-------+
+; Switches[0] ; RedLeds[5]   ; 3.477 ;    ;    ; 3.477 ;
+; Switches[0] ; RedLeds[9]   ; 3.227 ;    ;    ; 3.227 ;
+; Switches[1] ; RedLeds[6]   ; 2.986 ;    ;    ; 2.986 ;
+; Switches[1] ; RedLeds[10]  ; 3.269 ;    ;    ; 3.269 ;
+; Switches[2] ; GreenLeds[0] ; 2.843 ;    ;    ; 2.843 ;
+; Switches[2] ; RedLeds[7]   ; 2.927 ;    ;    ; 2.927 ;
+; Switches[2] ; RedLeds[11]  ; 3.072 ;    ;    ; 3.072 ;
+; Switches[3] ; GreenLeds[1] ; 3.228 ;    ;    ; 3.228 ;
+; Switches[3] ; RedLeds[0]   ; 3.119 ;    ;    ; 3.119 ;
+; Switches[3] ; RedLeds[12]  ; 2.581 ;    ;    ; 2.581 ;
+; Switches[4] ; GreenLeds[2] ; 2.881 ;    ;    ; 2.881 ;
+; Switches[4] ; RedLeds[1]   ; 2.955 ;    ;    ; 2.955 ;
+; Switches[4] ; RedLeds[13]  ; 2.605 ;    ;    ; 2.605 ;
+; Switches[5] ; GreenLeds[3] ; 2.725 ;    ;    ; 2.725 ;
+; Switches[5] ; RedLeds[2]   ; 2.862 ;    ;    ; 2.862 ;
+; Switches[5] ; RedLeds[14]  ; 2.567 ;    ;    ; 2.567 ;
+; Switches[6] ; GreenLeds[4] ; 2.926 ;    ;    ; 2.926 ;
+; Switches[6] ; RedLeds[3]   ; 2.909 ;    ;    ; 2.909 ;
+; Switches[6] ; RedLeds[15]  ; 2.587 ;    ;    ; 2.587 ;
+; Switches[7] ; GreenLeds[5] ; 3.661 ;    ;    ; 3.661 ;
+; Switches[7] ; RedLeds[4]   ; 3.444 ;    ;    ; 3.444 ;
++-------------+--------------+-------+----+----+-------+
+
+
++------------------------------------------------------+
+; Minimum Propagation Delay                            ;
++-------------+--------------+-------+----+----+-------+
+; Input Port  ; Output Port  ; RR    ; RF ; FR ; FF    ;
++-------------+--------------+-------+----+----+-------+
+; Switches[0] ; RedLeds[5]   ; 3.477 ;    ;    ; 3.477 ;
+; Switches[0] ; RedLeds[9]   ; 3.227 ;    ;    ; 3.227 ;
+; Switches[1] ; RedLeds[6]   ; 2.986 ;    ;    ; 2.986 ;
+; Switches[1] ; RedLeds[10]  ; 3.269 ;    ;    ; 3.269 ;
+; Switches[2] ; GreenLeds[0] ; 2.843 ;    ;    ; 2.843 ;
+; Switches[2] ; RedLeds[7]   ; 2.927 ;    ;    ; 2.927 ;
+; Switches[2] ; RedLeds[11]  ; 3.072 ;    ;    ; 3.072 ;
+; Switches[3] ; GreenLeds[1] ; 3.228 ;    ;    ; 3.228 ;
+; Switches[3] ; RedLeds[0]   ; 3.119 ;    ;    ; 3.119 ;
+; Switches[3] ; RedLeds[12]  ; 2.581 ;    ;    ; 2.581 ;
+; Switches[4] ; GreenLeds[2] ; 2.881 ;    ;    ; 2.881 ;
+; Switches[4] ; RedLeds[1]   ; 2.955 ;    ;    ; 2.955 ;
+; Switches[4] ; RedLeds[13]  ; 2.605 ;    ;    ; 2.605 ;
+; Switches[5] ; GreenLeds[3] ; 2.725 ;    ;    ; 2.725 ;
+; Switches[5] ; RedLeds[2]   ; 2.862 ;    ;    ; 2.862 ;
+; Switches[5] ; RedLeds[14]  ; 2.567 ;    ;    ; 2.567 ;
+; Switches[6] ; GreenLeds[4] ; 2.926 ;    ;    ; 2.926 ;
+; Switches[6] ; RedLeds[3]   ; 2.909 ;    ;    ; 2.909 ;
+; Switches[6] ; RedLeds[15]  ; 2.587 ;    ;    ; 2.587 ;
+; Switches[7] ; GreenLeds[5] ; 3.661 ;    ;    ; 3.661 ;
+; Switches[7] ; RedLeds[4]   ; 3.444 ;    ;    ; 3.444 ;
++-------------+--------------+-------+----+----+-------+
+
+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
++------------------+-------+------+----------+---------+---------------------+
+
+
++------------------------------------------------------+
+; Progagation Delay                                    ;
++-------------+--------------+-------+----+----+-------+
+; Input Port  ; Output Port  ; RR    ; RF ; FR ; FF    ;
++-------------+--------------+-------+----+----+-------+
+; Switches[0] ; RedLeds[5]   ; 6.438 ;    ;    ; 6.438 ;
+; Switches[0] ; RedLeds[9]   ; 5.976 ;    ;    ; 5.976 ;
+; Switches[1] ; RedLeds[6]   ; 5.515 ;    ;    ; 5.515 ;
+; Switches[1] ; RedLeds[10]  ; 6.043 ;    ;    ; 6.043 ;
+; Switches[2] ; GreenLeds[0] ; 5.204 ;    ;    ; 5.204 ;
+; Switches[2] ; RedLeds[7]   ; 5.407 ;    ;    ; 5.407 ;
+; Switches[2] ; RedLeds[11]  ; 5.653 ;    ;    ; 5.653 ;
+; Switches[3] ; GreenLeds[1] ; 6.059 ;    ;    ; 6.059 ;
+; Switches[3] ; RedLeds[0]   ; 5.807 ;    ;    ; 5.807 ;
+; Switches[3] ; RedLeds[12]  ; 4.812 ;    ;    ; 4.812 ;
+; Switches[4] ; GreenLeds[2] ; 5.346 ;    ;    ; 5.346 ;
+; Switches[4] ; RedLeds[1]   ; 5.477 ;    ;    ; 5.477 ;
+; Switches[4] ; RedLeds[13]  ; 4.844 ;    ;    ; 4.844 ;
+; Switches[5] ; GreenLeds[3] ; 5.039 ;    ;    ; 5.039 ;
+; Switches[5] ; RedLeds[2]   ; 5.349 ;    ;    ; 5.349 ;
+; Switches[5] ; RedLeds[14]  ; 4.792 ;    ;    ; 4.792 ;
+; Switches[6] ; GreenLeds[4] ; 5.399 ;    ;    ; 5.399 ;
+; Switches[6] ; RedLeds[3]   ; 5.422 ;    ;    ; 5.422 ;
+; Switches[6] ; RedLeds[15]  ; 4.747 ;    ;    ; 4.747 ;
+; Switches[7] ; GreenLeds[5] ; 6.765 ;    ;    ; 6.765 ;
+; Switches[7] ; RedLeds[4]   ; 6.294 ;    ;    ; 6.294 ;
++-------------+--------------+-------+----+----+-------+
+
+
++------------------------------------------------------+
+; Minimum Progagation Delay                            ;
++-------------+--------------+-------+----+----+-------+
+; Input Port  ; Output Port  ; RR    ; RF ; FR ; FF    ;
++-------------+--------------+-------+----+----+-------+
+; Switches[0] ; RedLeds[5]   ; 3.477 ;    ;    ; 3.477 ;
+; Switches[0] ; RedLeds[9]   ; 3.227 ;    ;    ; 3.227 ;
+; Switches[1] ; RedLeds[6]   ; 2.986 ;    ;    ; 2.986 ;
+; Switches[1] ; RedLeds[10]  ; 3.269 ;    ;    ; 3.269 ;
+; Switches[2] ; GreenLeds[0] ; 2.843 ;    ;    ; 2.843 ;
+; Switches[2] ; RedLeds[7]   ; 2.927 ;    ;    ; 2.927 ;
+; Switches[2] ; RedLeds[11]  ; 3.072 ;    ;    ; 3.072 ;
+; Switches[3] ; GreenLeds[1] ; 3.228 ;    ;    ; 3.228 ;
+; Switches[3] ; RedLeds[0]   ; 3.119 ;    ;    ; 3.119 ;
+; Switches[3] ; RedLeds[12]  ; 2.581 ;    ;    ; 2.581 ;
+; Switches[4] ; GreenLeds[2] ; 2.881 ;    ;    ; 2.881 ;
+; Switches[4] ; RedLeds[1]   ; 2.955 ;    ;    ; 2.955 ;
+; Switches[4] ; RedLeds[13]  ; 2.605 ;    ;    ; 2.605 ;
+; Switches[5] ; GreenLeds[3] ; 2.725 ;    ;    ; 2.725 ;
+; Switches[5] ; RedLeds[2]   ; 2.862 ;    ;    ; 2.862 ;
+; Switches[5] ; RedLeds[14]  ; 2.567 ;    ;    ; 2.567 ;
+; Switches[6] ; GreenLeds[4] ; 2.926 ;    ;    ; 2.926 ;
+; Switches[6] ; RedLeds[3]   ; 2.909 ;    ;    ; 2.909 ;
+; Switches[6] ; RedLeds[15]  ; 2.587 ;    ;    ; 2.587 ;
+; Switches[7] ; GreenLeds[5] ; 3.661 ;    ;    ; 3.661 ;
+; Switches[7] ; RedLeds[4]   ; 3.444 ;    ;    ; 3.444 ;
++-------------+--------------+-------+----+----+-------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 8     ; 8    ;
+; Unconstrained Input Port Paths  ; 21    ; 21   ;
+; Unconstrained Output Ports      ; 21    ; 21   ;
+; Unconstrained Output Port Paths ; 21    ; 21   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Fri Mar 17 17:33:17 2023
+Info: Command: quartus_sta ConcatenationProject -c Concatenation
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'Concatenation.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
+Info: Analyzing Slow Model
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4540 megabytes
+    Info: Processing ended: Fri Mar 17 17:33:18 2023
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

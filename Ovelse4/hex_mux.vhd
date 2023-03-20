@@ -9,33 +9,35 @@ ENTITY hex_mux IS
 		sel : IN STD_LOGIC_VECTOR (1 downto 0);
 
 		-- Output ports
-		sSeg0 : OUT STD_LOGIC_VECTOR (6 downto 0);
-		sSeg1 : OUT STD_LOGIC_VECTOR (6 downto 0);
-		sSeg2 : OUT STD_LOGIC_VECTOR (6 downto 0)
+		tsseg : OUT STD_LOGIC_VECTOR (20 downto 0)
 	);
 END hex_mux;
 
 ARCHITECTURE hex_mux_impl OF hex_mux IS
-BEGIN	
-	process(sel)
-		begin
-			case sel is
-				when "01" =>
-					sSeg0 <= "0101111";
-					sSeg1 <= "0101111";
-					sSeg2 <= "0000110";
-				when "10" =>
-					sSeg0 <= "1111111";
-					sSeg1 <= "1111111";
-					sSeg2 <= "1111111";
-				when "11" =>
-					sSeg0 <= "0101011";
-					sSeg1 <= "1000000";
-					sSeg2 <= "1111111";
-				when others =>
-					sSeg0 <= "1111111";
-					sSeg1 <= "1111111";
-					sSeg2 <= "1111111";
-			end case;
-	end process;
+	signal tissesek : STD_LOGIC_VECTOR (20 downto 0);
+	
+BEGIN
+	tsseg <= "000011001011110101111" when sel = "01" else -- Err
+				tissesek 					when sel = "10" else -- decoder
+				"111111110000000101011" when sel = "11" else -- On
+				"100011110000001000111"; -- LOL
+					
+	dec0 : entity work.bin_to_7_seg
+		port map(
+			bin(3 downto 0) => bin(3 downto 0),
+			sSeg(6 downto 0) => tissesek(6 downto 0)
+		);
+		
+	dec1 : entity work.bin_to_7_seg
+		port map(
+			bin(3 downto 0) => bin(7 downto 4),
+			sSeg(6 downto 0) => tissesek(13 downto 7)
+		);
+		
+	dec2 : entity work.bin_to_7_seg
+		port map(
+			bin(3 downto 0) => bin(11 downto 8),
+			sSeg(6 downto 0) => tissesek(20 downto 14)
+		);
+	
 END hex_mux_impl;
