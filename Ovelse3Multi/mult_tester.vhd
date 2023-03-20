@@ -12,7 +12,7 @@ end entity;
 
 architecture dataflow of mult_tester is
 begin
-  mul: entity work.mult
+  mult: entity work.mult
   port map(
   Produkt(15 downto 0) => LEDR(15 downto 0),
   A(7 downto 0) => SW(7 downto 0),

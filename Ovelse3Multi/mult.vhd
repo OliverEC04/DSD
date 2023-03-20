@@ -4,8 +4,6 @@ use ieee.numeric_std.all;
 use work.all;
 
 entity mult is
-
-
 port 
 (
 	A, B : in std_logic_vector(7 downto 0);

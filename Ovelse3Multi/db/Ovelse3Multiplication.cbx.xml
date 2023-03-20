@@ -2,7 +2,5 @@
 <LOG_ROOT>
 	<PROJECT NAME="Ovelse3Multiplication">
 		<CBX_INST_ENTRY INSTANCE_NAME="|mult|lpm_mult:Mult0" CBX_FILE_NAME="mult_o5t.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|mult|lpm_mult:Mult0|mult_o5t:auto_generated|alt_mac_mult:mac_mult1" CBX_FILE_NAME="mac_mult_jng1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|mult|lpm_mult:Mult0|mult_o5t:auto_generated|alt_mac_out:mac_out2" CBX_FILE_NAME="mac_out_cn82.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
