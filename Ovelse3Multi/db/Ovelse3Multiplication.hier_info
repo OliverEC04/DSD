@@ -1,0 +1,27 @@
+|mult
+A[0] => ~NO_FANOUT~
+A[1] => ~NO_FANOUT~
+A[2] => ~NO_FANOUT~
+A[3] => ~NO_FANOUT~
+A[4] => ~NO_FANOUT~
+A[5] => ~NO_FANOUT~
+A[6] => ~NO_FANOUT~
+A[7] => ~NO_FANOUT~
+B[0] => ~NO_FANOUT~
+B[1] => ~NO_FANOUT~
+B[2] => ~NO_FANOUT~
+B[3] => ~NO_FANOUT~
+B[4] => ~NO_FANOUT~
+B[5] => ~NO_FANOUT~
+B[6] => ~NO_FANOUT~
+B[7] => ~NO_FANOUT~
+Produkt[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Produkt[1] <= Produkt[1].DB_MAX_OUTPUT_PORT_TYPE
+Produkt[2] <= Produkt[2].DB_MAX_OUTPUT_PORT_TYPE
+Produkt[3] <= Produkt[3].DB_MAX_OUTPUT_PORT_TYPE
+Produkt[4] <= Produkt[4].DB_MAX_OUTPUT_PORT_TYPE
+Produkt[5] <= Produkt[5].DB_MAX_OUTPUT_PORT_TYPE
+Produkt[6] <= Produkt[6].DB_MAX_OUTPUT_PORT_TYPE
+Produkt[7] <= Produkt[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
