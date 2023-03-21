@@ -1,0 +1,14 @@
+|binToHex
+bin[0] => ~NO_FANOUT~
+bin[1] => ~NO_FANOUT~
+bin[2] => ~NO_FANOUT~
+bin[3] => ~NO_FANOUT~
+segment[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+segment[1] <= segment[1].DB_MAX_OUTPUT_PORT_TYPE
+segment[2] <= segment[2].DB_MAX_OUTPUT_PORT_TYPE
+segment[3] <= segment[3].DB_MAX_OUTPUT_PORT_TYPE
+segment[4] <= segment[4].DB_MAX_OUTPUT_PORT_TYPE
+segment[5] <= segment[5].DB_MAX_OUTPUT_PORT_TYPE
+segment[6] <= segment[6].DB_MAX_OUTPUT_PORT_TYPE
+
+
