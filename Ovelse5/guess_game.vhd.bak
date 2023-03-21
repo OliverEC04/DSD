@@ -9,6 +9,4 @@ try : in std_logic; -- Sammenlign gaet
 hex1 : out std_logic_vector(6 downto 0); -- 7-segment enere
 hex10: out std_logic_vector(6 downto 0) -- 7-segment tiere
 );
-
 end;
-

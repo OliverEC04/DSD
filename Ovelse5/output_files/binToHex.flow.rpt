@@ -1,5 +1,5 @@
 Flow report for binToHex
-Tue Mar 21 09:58:07 2023
+Tue Mar 21 10:12:17 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Tue Mar 21 09:58:05 2023           ;
+; Flow Status                        ; Successful - Tue Mar 21 10:12:15 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; binToHex                                        ;
 ; Top-level Entity Name              ; binToHex_tester                                 ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/21/2023 09:57:56 ;
+; Start date & time ; 03/21/2023 10:12:06 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; binToHex            ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-----------------+------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name     ; Section Id ;
 +-------------------------------------+---------------------------------+---------------+-----------------+------------+
-; COMPILER_SIGNATURE_ID               ; 123260066961461.167938907603460 ; --            ; --              ; --         ;
+; COMPILER_SIGNATURE_ID               ; 145862428432652.167938992605424 ; --            ; --              ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --              ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                               ; --            ; --              ; --         ;
 ; PARTITION_COLOR                     ; 16764057                        ; --            ; binToHex_tester ; Top        ;
@@ -91,11 +91,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4629 MB             ; 00:00:00                           ;
-; Fitter                    ; 00:00:05     ; 1.0                     ; 4874 MB             ; 00:00:02                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 4550 MB             ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4538 MB             ; 00:00:00                           ;
-; Total                     ; 00:00:08     ; --                      ; --                  ; 00:00:03                           ;
+; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4634 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:05     ; 1.0                     ; 4871 MB             ; 00:00:05                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4560 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4534 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:08     ; --                      ; --                  ; 00:00:09                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -104,10 +104,10 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; Igor-S           ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; Igor-S           ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; Igor-S           ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; Igor-S           ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; MTSW             ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; MTSW             ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; MTSW             ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; MTSW             ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 

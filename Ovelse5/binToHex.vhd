@@ -18,38 +18,22 @@ begin
 	process(bin)
 	begin
 		case bin is
-		when "0000" =>
-		segment <= "1000000";
-		when "0001" =>
-		segment <= "1111001";
-		when "0010" =>
-		segment <= "0100100";
-		when "0011" =>
-		segment <= "0110000";
-		when "0100" =>
-		segment <= "0011001";
-		when "0101" =>
-		segment <= "0010010";
-		when "0110" =>
-		segment <= "0000010";
-		when "0111" =>
-		segment <= "1111000";
-		when "1000" =>
-		segment <= "0000000";
-		when "1001" =>
-		segment <= "0010000";
-		when "1010" =>
-		segment <= "0001000";
-		when "1011" =>
-		segment <= "0000011";
-		when "1100" =>
-		segment <= "1000110";
-		when "1101" =>
-		segment <= "0100001";
-		when "1110" =>
-		segment <= "0000110";
-		when "1111" =>
-		segment <= "0001110";
+		when "0000" => segment <= "1000000"; -- 0
+		when "0001" => segment <= "1111001"; -- 1
+		when "0010" => segment <= "0100100"; -- 2
+		when "0011" => segment <= "0110000"; -- 3
+		when "0100" => segment <= "0011001"; -- 4
+		when "0101" => segment <= "0010010"; -- 5
+		when "0110" => segment <= "0000010"; -- 6
+		when "0111" => segment <= "1111000"; -- 7
+		when "1000" => segment <= "0000000"; -- 8
+		when "1001" => segment <= "0010000"; -- 9
+		when "1010" => segment <= "0001000"; -- A
+		when "1011" => segment <= "0000011"; -- B
+		when "1100" => segment <= "1000110"; -- C
+		when "1101" => segment <= "0100001"; -- D
+		when "1110" => segment <= "0000110"; -- E
+		when "1111" => segment <= "0001110"; -- F
 		end case;
 	end process;
 	
