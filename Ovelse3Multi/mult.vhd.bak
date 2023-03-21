@@ -1,0 +1,6 @@
+entity shift_div is
+port (
+a : in std_logic_vector(7 downto 0);
+a_shl, a_shr, a_ror: out std_logic_vector(7 downto 0)
+);
+end;
