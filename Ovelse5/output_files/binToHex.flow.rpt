@@ -1,5 +1,5 @@
 Flow report for binToHex
-Tue Mar 21 11:51:02 2023
+Tue Mar 21 11:45:40 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,10 +40,10 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Flow Failed - Tue Mar 21 11:51:02 2023          ;
+; Flow Status                        ; Flow Failed - Tue Mar 21 11:45:40 2023          ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; binToHex                                        ;
-; Top-level Entity Name              ; binToHex_tester                                 ;
+; Top-level Entity Name              ; compare_logic                                   ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C35F672C6                                    ;
 ; Timing Models                      ; Final                                           ;
@@ -64,26 +64,26 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/21/2023 11:51:02 ;
+; Start date & time ; 03/21/2023 11:45:39 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; binToHex            ;
 +-------------------+---------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                     ;
-+-------------------------------------+---------------------------------+---------------+-----------------+------------+
-; Assignment Name                     ; Value                           ; Default Value ; Entity Name     ; Section Id ;
-+-------------------------------------+---------------------------------+---------------+-----------------+------------+
-; COMPILER_SIGNATURE_ID               ; 145862428432652.167939586112928 ; --            ; --              ; --         ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --              ; --         ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                               ; --            ; --              ; --         ;
-; PARTITION_COLOR                     ; 16764057                        ; --            ; binToHex_tester ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; binToHex_tester ; Top        ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; binToHex_tester ; Top        ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                    ; --            ; --              ; --         ;
-; TOP_LEVEL_ENTITY                    ; binToHex_tester                 ; binToHex      ; --              ; --         ;
-+-------------------------------------+---------------------------------+---------------+-----------------+------------+
++------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                 ;
++-------------------------------------+-------------------------------+---------------+---------------+------------+
+; Assignment Name                     ; Value                         ; Default Value ; Entity Name   ; Section Id ;
++-------------------------------------+-------------------------------+---------------+---------------+------------+
+; COMPILER_SIGNATURE_ID               ; 5288375304200.167939553902136 ; --            ; --            ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                            ; --            ; --            ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                             ; --            ; --            ; --         ;
+; PARTITION_COLOR                     ; 16764057                      ; --            ; compare_logic ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING         ; --            ; compare_logic ; Top        ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                        ; --            ; compare_logic ; Top        ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                  ; --            ; --            ; --         ;
+; TOP_LEVEL_ENTITY                    ; compare_logic                 ; binToHex      ; --            ; --         ;
++-------------------------------------+-------------------------------+---------------+---------------+------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -91,8 +91,8 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:01     ; 1.0                     ; 4624 MB             ; 00:00:01                           ;
-; Total                ; 00:00:01     ; --                      ; --                  ; 00:00:01                           ;
+; Analysis & Synthesis ; 00:00:01     ; 1.0                     ; 4630 MB             ; 00:00:00                           ;
+; Total                ; 00:00:01     ; --                      ; --                  ; 00:00:00                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -101,7 +101,7 @@ applicable agreement for further details.
 +----------------------+------------------+-----------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +----------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis ; MTSW             ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis ; Oliver-XPS       ; Windows 7 ; 6.2        ; x86_64         ;
 +----------------------+------------------+-----------+------------+----------------+
 
 
