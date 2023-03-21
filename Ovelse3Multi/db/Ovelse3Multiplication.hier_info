@@ -1,4 +1,39 @@
-|mult
+|mult_tester
+LEDR[0] <= mult:mult.Produkt[0]
+LEDR[1] <= mult:mult.Produkt[1]
+LEDR[2] <= mult:mult.Produkt[2]
+LEDR[3] <= mult:mult.Produkt[3]
+LEDR[4] <= mult:mult.Produkt[4]
+LEDR[5] <= mult:mult.Produkt[5]
+LEDR[6] <= mult:mult.Produkt[6]
+LEDR[7] <= mult:mult.Produkt[7]
+LEDR[8] <= mult:mult.Produkt[8]
+LEDR[9] <= mult:mult.Produkt[9]
+LEDR[10] <= mult:mult.Produkt[10]
+LEDR[11] <= mult:mult.Produkt[11]
+LEDR[12] <= mult:mult.Produkt[12]
+LEDR[13] <= mult:mult.Produkt[13]
+LEDR[14] <= mult:mult.Produkt[14]
+LEDR[15] <= mult:mult.Produkt[15]
+SW[0] => mult:mult.A[0]
+SW[1] => mult:mult.A[1]
+SW[2] => mult:mult.A[2]
+SW[3] => mult:mult.A[3]
+SW[4] => mult:mult.A[4]
+SW[5] => mult:mult.A[5]
+SW[6] => mult:mult.A[6]
+SW[7] => mult:mult.A[7]
+SW[8] => mult:mult.B[0]
+SW[9] => mult:mult.B[1]
+SW[10] => mult:mult.B[2]
+SW[11] => mult:mult.B[3]
+SW[12] => mult:mult.B[4]
+SW[13] => mult:mult.B[5]
+SW[14] => mult:mult.B[6]
+SW[15] => mult:mult.B[7]
+
+
+|mult_tester|mult:mult
 A[0] => Mult0.IN7
 A[1] => Mult0.IN6
 A[2] => Mult0.IN5

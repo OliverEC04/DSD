@@ -1,5 +1,5 @@
 Flow report for Ovelse3Multiplication
-Mon Mar 20 12:03:16 2023
+Mon Mar 20 13:13:50 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,21 +40,21 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Mon Mar 20 12:03:15 2023           ;
+; Flow Status                        ; Successful - Mon Mar 20 13:13:50 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Ovelse3Multiplication                           ;
-; Top-level Entity Name              ; mult                                            ;
+; Top-level Entity Name              ; mult_tester                                     ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C35F672C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 1 / 33,216 ( < 1 % )                            ;
-;     Total combinational functions  ; 1 / 33,216 ( < 1 % )                            ;
+; Total logic elements               ; 101 / 33,216 ( < 1 % )                          ;
+;     Total combinational functions  ; 101 / 33,216 ( < 1 % )                          ;
 ;     Dedicated logic registers      ; 0 / 33,216 ( 0 % )                              ;
 ; Total registers                    ; 0                                               ;
 ; Total pins                         ; 32 / 475 ( 7 % )                                ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 483,840 ( 0 % )                             ;
-; Embedded Multiplier 9-bit elements ; 1 / 70 ( 1 % )                                  ;
+; Embedded Multiplier 9-bit elements ; 0 / 70 ( 0 % )                                  ;
 ; Total PLLs                         ; 0 / 4 ( 0 % )                                   ;
 +------------------------------------+-------------------------------------------------+
 
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+-----------------------+
 ; Option            ; Setting               ;
 +-------------------+-----------------------+
-; Start date & time ; 03/20/2023 12:02:55   ;
+; Start date & time ; 03/20/2023 13:13:35   ;
 ; Main task         ; Compilation           ;
 ; Revision Name     ; Ovelse3Multiplication ;
 +-------------------+-----------------------+
@@ -75,17 +75,17 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------+-----------------------+-------------+----------------+
 ; Assignment Name                     ; Value                           ; Default Value         ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------+-----------------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 145862428432652.167931017501076 ; --                    ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 145862428432652.167931441515684 ; --                    ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                              ; --                    ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                     ; --                    ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)       ; <None>                ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --                    ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                               ; --                    ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                        ; --                    ; mult        ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --                    ; mult        ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --                    ; mult        ; Top            ;
+; PARTITION_COLOR                     ; 16764057                        ; --                    ; mult_tester ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --                    ; mult_tester ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --                    ; mult_tester ; Top            ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                    ; --                    ; --          ; --             ;
-; TOP_LEVEL_ENTITY                    ; mult                            ; Ovelse3Multiplication ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; mult_tester                     ; Ovelse3Multiplication ; --          ; --             ;
 +-------------------------------------+---------------------------------+-----------------------+-------------+----------------+
 
 
@@ -94,12 +94,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 4649 MB             ; 00:00:02                           ;
-; Fitter                    ; 00:00:09     ; 1.0                     ; 4879 MB             ; 00:00:07                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 4564 MB             ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4539 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4507 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:17     ; --                      ; --                  ; 00:00:14                           ;
+; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4644 MB             ; 00:00:02                           ;
+; Fitter                    ; 00:00:05     ; 1.0                     ; 4873 MB             ; 00:00:05                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 4559 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4539 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4507 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:11     ; --                      ; --                  ; 00:00:11                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
