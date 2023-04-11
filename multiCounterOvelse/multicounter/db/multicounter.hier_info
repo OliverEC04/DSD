@@ -1,0 +1,22 @@
+|multi_counter
+clk => \counter_proc:cnt[0].CLK
+clk => \counter_proc:cnt[1].CLK
+clk => \counter_proc:cnt[2].CLK
+clk => \counter_proc:cnt[3].CLK
+mode[0] => ~NO_FANOUT~
+mode[1] => ~NO_FANOUT~
+reset => \counter_proc:cnt[0].ACLR
+reset => \counter_proc:cnt[1].ACLR
+reset => \counter_proc:cnt[2].ACLR
+reset => \counter_proc:cnt[3].ACLR
+clken => \counter_proc:cnt[0].ENA
+clken => \counter_proc:cnt[3].ENA
+clken => \counter_proc:cnt[2].ENA
+clken => \counter_proc:cnt[1].ENA
+count[0] <= \counter_proc:cnt[0].DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= \counter_proc:cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= \counter_proc:cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= \counter_proc:cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
