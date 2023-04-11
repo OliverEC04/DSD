@@ -3,6 +3,7 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use work.all;
 
+
 entity multi_counter is
 generic
 	(
@@ -31,6 +32,13 @@ architecture multi_counter_impl of multi_counter is
 
 begin
 	
+	bth: entity binToHex port map
+	(
+	bin 
+	segment 
+	);
+	
+	
 	counter_proc: 
 	process (clk,reset) --process reagerer både clk og reset
 		variable   cnt		 : integer range MIN_COUNT to MAX_COUNT; -- bruger "variable" for øjeblikkelig opdatering af counter variable
@@ -58,6 +66,7 @@ begin
 
 		-- Output the current count
 		count<= std_logic_vector(to_unsigned(cnt, count'length));
+		
 	end process;
 
 end multi_counter_impl;
