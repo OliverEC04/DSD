@@ -1,0 +1,12 @@
+
+
+
+
+
+
+signal secret_value : std_logic_vector(7 downto 0);
+process()
+begin
+if (set = '0') then
+	secret_value <= inputs;
+end process;

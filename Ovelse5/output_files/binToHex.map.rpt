@@ -1,5 +1,5 @@
 Analysis & Synthesis report for binToHex
-Tue Apr 18 09:29:27 2023
+Tue Mar 21 11:45:40 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,10 +36,10 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Tue Apr 18 09:29:27 2023               ;
+; Analysis & Synthesis Status        ; Failed - Tue Mar 21 11:45:40 2023               ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; binToHex                                        ;
-; Top-level Entity Name              ; mux1                                            ;
+; Top-level Entity Name              ; compare_logic                                   ;
 ; Family                             ; Cyclone II                                      ;
 ; Total logic elements               ; N/A until Partition Merge                       ;
 ;     Total combinational functions  ; N/A until Partition Merge                       ;
@@ -59,7 +59,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C35F672C6       ;                    ;
-; Top-level entity name                                                      ; mux1               ; binToHex           ;
+; Top-level entity name                                                      ; compare_logic      ; binToHex           ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -144,7 +144,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 8      ;
+; Number detected on machine ; 20     ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
@@ -155,30 +155,26 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Apr 18 09:29:26 2023
+    Info: Processing started: Tue Mar 21 11:45:39 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Ovelse5 -c binToHex
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 2 design units, including 1 entities, in source file mux1.vhd
-    Info (12022): Found design unit 1: mux1-mux1_impl
-    Info (12023): Found entity 1: mux1
+Info (12021): Found 2 design units, including 1 entities, in source file bintohex_tester.vhd
+    Info (12022): Found design unit 1: bintoHex_tester-bintoHex_tester_impl
+    Info (12023): Found entity 1: binToHex_tester
 Info (12021): Found 2 design units, including 1 entities, in source file bintohex.vhd
     Info (12022): Found design unit 1: binToHex-binToHex_impl
     Info (12023): Found entity 1: binToHex
 Info (12021): Found 1 design units, including 1 entities, in source file guess_game.vhd
     Info (12023): Found entity 1: guess_game
-Info (12021): Found 2 design units, including 1 entities, in source file mux2.vhd
-    Info (12022): Found design unit 1: mux2-mux2_impl
-    Info (12023): Found entity 1: mux2
-Info (12127): Elaborating entity "mux1" for the top level hierarchy
-Error (10028): Can't resolve multiple constant drivers for net "bin[3]" at mux1.vhd(25) File: C:/Users/igors/OneDrive/Pulpit/AU/DSD/Git/DSD/Ovelse5/mux1.vhd Line: 25
-Error (10029): Constant driver at mux1.vhd(21) File: C:/Users/igors/OneDrive/Pulpit/AU/DSD/Git/DSD/Ovelse5/mux1.vhd Line: 21
-Error (10028): Can't resolve multiple constant drivers for net "bin[2]" at mux1.vhd(25) File: C:/Users/igors/OneDrive/Pulpit/AU/DSD/Git/DSD/Ovelse5/mux1.vhd Line: 25
-Error (10028): Can't resolve multiple constant drivers for net "bin[1]" at mux1.vhd(25) File: C:/Users/igors/OneDrive/Pulpit/AU/DSD/Git/DSD/Ovelse5/mux1.vhd Line: 25
-Error (10028): Can't resolve multiple constant drivers for net "bin[0]" at mux1.vhd(25) File: C:/Users/igors/OneDrive/Pulpit/AU/DSD/Git/DSD/Ovelse5/mux1.vhd Line: 25
-Error (12153): Can't elaborate top-level user hierarchy
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 6 errors, 1 warning
-    Error: Peak virtual memory: 4625 megabytes
-    Error: Processing ended: Tue Apr 18 09:29:27 2023
+Error (10500): VHDL syntax error at compare_logic.vhd(20) near text "if";  expecting "end", or "(", or an identifier ("if" is a reserved keyword), or a concurrent statement File: C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse5/compare_logic.vhd Line: 20
+Error (10500): VHDL syntax error at compare_logic.vhd(24) near text "elsif";  expecting "end", or "(", or an identifier ("elsif" is a reserved keyword), or a concurrent statement File: C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse5/compare_logic.vhd Line: 24
+Error (10500): VHDL syntax error at compare_logic.vhd(27) near text "elsif";  expecting "end", or "(", or an identifier ("elsif" is a reserved keyword), or a concurrent statement File: C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse5/compare_logic.vhd Line: 27
+Error (10500): VHDL syntax error at compare_logic.vhd(29) near text "if";  expecting ";", or an identifier ("if" is a reserved keyword), or "architecture" File: C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse5/compare_logic.vhd Line: 29
+Error (10500): VHDL syntax error at compare_logic.vhd(33) near text "end";  expecting ";" File: C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse5/compare_logic.vhd Line: 33
+Info (12021): Found 0 design units, including 0 entities, in source file compare_logic.vhd
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 5 errors, 1 warning
+    Error: Peak virtual memory: 4630 megabytes
+    Error: Processing ended: Tue Mar 21 11:45:40 2023
     Error: Elapsed time: 00:00:01
     Error: Total CPU time (on all processors): 00:00:00
 
