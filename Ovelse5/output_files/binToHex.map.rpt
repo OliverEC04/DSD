@@ -1,5 +1,5 @@
 Analysis & Synthesis report for binToHex
-Tue Mar 21 11:45:40 2023
+Tue Apr 18 11:34:06 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,10 +36,10 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Tue Mar 21 11:45:40 2023               ;
+; Analysis & Synthesis Status        ; Failed - Tue Apr 18 11:34:06 2023               ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; binToHex                                        ;
-; Top-level Entity Name              ; compare_logic                                   ;
+; Top-level Entity Name              ; guess_game_tester                               ;
 ; Family                             ; Cyclone II                                      ;
 ; Total logic elements               ; N/A until Partition Merge                       ;
 ;     Total combinational functions  ; N/A until Partition Merge                       ;
@@ -59,7 +59,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C35F672C6       ;                    ;
-; Top-level entity name                                                      ; compare_logic      ; binToHex           ;
+; Top-level entity name                                                      ; guess_game_tester  ; binToHex           ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -155,26 +155,43 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Mar 21 11:45:39 2023
+    Info: Processing started: Tue Apr 18 11:34:05 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Ovelse5 -c binToHex
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file mux2.vhd
+    Info (12022): Found design unit 1: mux2-mux2_impl
+    Info (12023): Found entity 1: mux2
+Info (12021): Found 2 design units, including 1 entities, in source file mux1.vhd
+    Info (12022): Found design unit 1: mux1-mux1_impl
+    Info (12023): Found entity 1: mux1
 Info (12021): Found 2 design units, including 1 entities, in source file bintohex_tester.vhd
     Info (12022): Found design unit 1: bintoHex_tester-bintoHex_tester_impl
     Info (12023): Found entity 1: binToHex_tester
 Info (12021): Found 2 design units, including 1 entities, in source file bintohex.vhd
     Info (12022): Found design unit 1: binToHex-binToHex_impl
     Info (12023): Found entity 1: binToHex
-Info (12021): Found 1 design units, including 1 entities, in source file guess_game.vhd
-    Info (12023): Found entity 1: guess_game
-Error (10500): VHDL syntax error at compare_logic.vhd(20) near text "if";  expecting "end", or "(", or an identifier ("if" is a reserved keyword), or a concurrent statement File: C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse5/compare_logic.vhd Line: 20
-Error (10500): VHDL syntax error at compare_logic.vhd(24) near text "elsif";  expecting "end", or "(", or an identifier ("elsif" is a reserved keyword), or a concurrent statement File: C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse5/compare_logic.vhd Line: 24
-Error (10500): VHDL syntax error at compare_logic.vhd(27) near text "elsif";  expecting "end", or "(", or an identifier ("elsif" is a reserved keyword), or a concurrent statement File: C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse5/compare_logic.vhd Line: 27
-Error (10500): VHDL syntax error at compare_logic.vhd(29) near text "if";  expecting ";", or an identifier ("if" is a reserved keyword), or "architecture" File: C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse5/compare_logic.vhd Line: 29
-Error (10500): VHDL syntax error at compare_logic.vhd(33) near text "end";  expecting ";" File: C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse5/compare_logic.vhd Line: 33
+Error (10500): VHDL syntax error at guess_game.vhd(24) near text "std_logic_vector";  expecting ")", or "," File: C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse5/guess_game.vhd Line: 24
+Error (10500): VHDL syntax error at guess_game.vhd(30) near text "std_logic_vector";  expecting ")", or "," File: C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse5/guess_game.vhd Line: 30
+Error (10500): VHDL syntax error at guess_game.vhd(36) near text "std_logic_vector";  expecting ")", or "," File: C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse5/guess_game.vhd Line: 36
+Error (10500): VHDL syntax error at guess_game.vhd(37) near text ",";  expecting "(", or "'", or "." File: C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse5/guess_game.vhd Line: 37
+Error (10500): VHDL syntax error at guess_game.vhd(39) near text ")";  expecting "(", or "'", or "." File: C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse5/guess_game.vhd Line: 39
+Error (10500): VHDL syntax error at guess_game.vhd(42) near text "std_logic_vector";  expecting ")", or "," File: C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse5/guess_game.vhd Line: 42
+Error (10500): VHDL syntax error at guess_game.vhd(43) near text ",";  expecting "(", or "'", or "." File: C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse5/guess_game.vhd Line: 43
+Error (10500): VHDL syntax error at guess_game.vhd(44) near text ",";  expecting "(", or "'", or "." File: C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse5/guess_game.vhd Line: 44
+Error (10500): VHDL syntax error at guess_game.vhd(45) near text ",";  expecting "(", or "'", or "." File: C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse5/guess_game.vhd Line: 45
+Info (12021): Found 0 design units, including 0 entities, in source file guess_game.vhd
+Error (10500): VHDL syntax error at compare_logic.vhd(37) near text "end";  expecting ";" File: C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse5/compare_logic.vhd Line: 37
 Info (12021): Found 0 design units, including 0 entities, in source file compare_logic.vhd
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 5 errors, 1 warning
+Error (10500): VHDL syntax error at latch.vhd(7) near text "input";  expecting "end", or "begin", or a declaration statement File: C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse5/latch.vhd Line: 7
+Error (10523): Ignored construct latch at latch.vhd(5) due to previous errors File: C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse5/latch.vhd Line: 5
+Info (12021): Found 0 design units, including 0 entities, in source file latch.vhd
+Error (10500): VHDL syntax error at guess_game_tester.vhd(23) near text "std_logic_vector";  expecting ")", or "," File: C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse5/guess_game_tester.vhd Line: 23
+Error (10500): VHDL syntax error at guess_game_tester.vhd(29) near text ",";  expecting "(", or "'", or "." File: C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse5/guess_game_tester.vhd Line: 29
+Error (10500): VHDL syntax error at guess_game_tester.vhd(31) near text ")";  expecting "(", or "'", or "." File: C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse5/guess_game_tester.vhd Line: 31
+Info (12021): Found 0 design units, including 0 entities, in source file guess_game_tester.vhd
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 15 errors, 1 warning
     Error: Peak virtual memory: 4630 megabytes
-    Error: Processing ended: Tue Mar 21 11:45:40 2023
+    Error: Processing ended: Tue Apr 18 11:34:06 2023
     Error: Elapsed time: 00:00:01
     Error: Total CPU time (on all processors): 00:00:00
 
