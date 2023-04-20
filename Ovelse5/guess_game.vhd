@@ -23,9 +23,10 @@ architecture guess_game_beh of guess_game is
 	signal secret_value : std_logic_vector(7 downto 0);		-- værdi indtastet af spiller
 	signal display_value : std_logic_vector(7 downto 0);		-- 
 	signal binToHexOut : std_logic_vector(13 downto 8);		-- 
-
+	
+	
 begin
-
+	
 		--Processen for at saette secret value fra input switches
     process(set)
     begin
@@ -49,6 +50,27 @@ begin
                 compare_logic <= "00"; -- No comparison made
             end if;
         end if;
+   end process;
+	-- Process to update the display_value based on the show signal
+	process(show)
+    begin
+        if show = '0' then
+            display_value <= secret_value;
+        else
+            display_value <= inputs;
+        end if;
     end process;
-
+	 -- Instantiate bin2hex entity for ones place
+    hex1 : entity work.binToHex port map (
+        bin => display_value(3 downto 0),
+        segment => binToHexOut(6 downto 0)
+    );
+     
+    -- Instantiate bin2hex entity for tens place
+    hex10 : entity work.binToHex port map (
+        bin => display_value(7 downto 4),
+        segment => binToHexOut(13 downto 7)
+    );
+	 
+	 
 end guess_game_beh;
