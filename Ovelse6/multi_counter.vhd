@@ -18,7 +18,7 @@ entity multi_counter is
 end multi_counter;
 
 architecture multi_counter_impl of multi_counter is
-signal count_alt : std_logic_vector(3 downto 0); -- alternative counter used inside logic
+signal count_alt : unsigned(3 downto 0); -- alternative counter used inside logic
 begin
 	counter_proc:
 	process (clk,reset,mode)
@@ -49,7 +49,7 @@ begin
 			end if;
 		end if;
 		
-		count (3 downto 0) <= std_logic_vector (count_alt);
+		count (3 downto 0) <= std_logic_vector(count_alt);
 	
 	end process;
 end multi_counter_impl;
