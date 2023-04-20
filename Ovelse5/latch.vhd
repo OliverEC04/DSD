@@ -15,5 +15,5 @@ end;
 
 architecture latch_impl of latch is
 begin
-secret_value <= input WHEN set = '0';
+	secret_value <= input WHEN set = '0';
 end;
