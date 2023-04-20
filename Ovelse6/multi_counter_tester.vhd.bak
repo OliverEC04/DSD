@@ -1,0 +1,38 @@
+LIBRARY ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+use work.all;
+
+entity multi_counter_tester is
+	port
+	(
+		 -- inputs
+		 SW : in std_logic_vector (17 downto 16);
+		 KEY : in std_logic_vector (3 downto 0);
+
+		 -- outputs
+		 HEX0 : out std_logic_vector (6 downto 0);
+		 LEDR : out std_logic_vector (0 downto 0)
+	);
+end;
+
+architecture multi_counter_tester_impl of multi_counter_tester is
+signal counte : std_logic_vector (3 downto 0);
+
+begin
+counter : entity work.multi_counter port map
+(
+clken => '1',                -- Enable clock
+clk => KEY(0),               -- Clock input
+mode(1 downto 0) => SW (17 downto 16), -- Mode select
+reset => KEY(3),             -- Reset signal
+count => counte,             -- Counter output
+cout => LEDR(0)              -- Carry out to LEDR
+);
+
+hex : entity work.bin2hex port map
+(
+bin => counte, -- Binary input
+seg(6 downto 0) => HEX0(6 downto 0) -- Hexadecimal output
+);
+end;
