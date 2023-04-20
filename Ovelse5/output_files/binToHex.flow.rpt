@@ -1,5 +1,9 @@
 Flow report for binToHex
+<<<<<<< HEAD
 Thu Apr 20 10:41:33 2023
+=======
+Thu Apr 20 13:03:40 2023
+>>>>>>> 43c99374de18ee3221b38fd095ff7d52d333e1c1
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,22 +44,26 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
+<<<<<<< HEAD
 ; Flow Status                        ; Flow Failed - Thu Apr 20 10:41:33 2023          ;
+=======
+; Flow Status                        ; Successful - Thu Apr 20 13:03:40 2023           ;
+>>>>>>> 43c99374de18ee3221b38fd095ff7d52d333e1c1
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; binToHex                                        ;
 ; Top-level Entity Name              ; guess_game_tester                               ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C35F672C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; N/A until Partition Merge                       ;
-;     Total combinational functions  ; N/A until Partition Merge                       ;
-;     Dedicated logic registers      ; N/A until Partition Merge                       ;
-; Total registers                    ; N/A until Partition Merge                       ;
-; Total pins                         ; N/A until Partition Merge                       ;
-; Total virtual pins                 ; N/A until Partition Merge                       ;
-; Total memory bits                  ; N/A until Partition Merge                       ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
-; Total PLLs                         ; N/A until Partition Merge                       ;
+; Total logic elements               ; 0                                               ;
+;     Total combinational functions  ; 0                                               ;
+;     Dedicated logic registers      ; 0                                               ;
+; Total registers                    ; 0                                               ;
+; Total pins                         ; 27                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
 +------------------------------------+-------------------------------------------------+
 
 
@@ -64,7 +72,11 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
+<<<<<<< HEAD
 ; Start date & time ; 04/20/2023 10:41:32 ;
+=======
+; Start date & time ; 04/20/2023 13:03:39 ;
+>>>>>>> 43c99374de18ee3221b38fd095ff7d52d333e1c1
 ; Main task         ; Compilation         ;
 ; Revision Name     ; binToHex            ;
 +-------------------+---------------------+
@@ -75,7 +87,11 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------------+------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name       ; Section Id ;
 +-------------------------------------+---------------------------------+---------------+-------------------+------------+
+<<<<<<< HEAD
 ; COMPILER_SIGNATURE_ID               ; 123260066961461.168198009205944 ; --            ; --                ; --         ;
+=======
+; COMPILER_SIGNATURE_ID               ; 145862428432652.168198861902436 ; --            ; --                ; --         ;
+>>>>>>> 43c99374de18ee3221b38fd095ff7d52d333e1c1
 ; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --                ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                               ; --            ; --                ; --         ;
 ; PARTITION_COLOR                     ; 16764057                        ; --            ; guess_game_tester ; Top        ;
@@ -91,8 +107,13 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
+<<<<<<< HEAD
 ; Analysis & Synthesis ; 00:00:02     ; 1.0                     ; 4631 MB             ; 00:00:00                           ;
 ; Total                ; 00:00:02     ; --                      ; --                  ; 00:00:00                           ;
+=======
+; Analysis & Synthesis ; 00:00:01     ; 1.0                     ; 4638 MB             ; 00:00:01                           ;
+; Total                ; 00:00:01     ; --                      ; --                  ; 00:00:01                           ;
+>>>>>>> 43c99374de18ee3221b38fd095ff7d52d333e1c1
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -101,7 +122,11 @@ applicable agreement for further details.
 +----------------------+------------------+-----------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +----------------------+------------------+-----------+------------+----------------+
+<<<<<<< HEAD
 ; Analysis & Synthesis ; Igor-S           ; Windows 7 ; 6.2        ; x86_64         ;
+=======
+; Analysis & Synthesis ; MTSW             ; Windows 7 ; 6.2        ; x86_64         ;
+>>>>>>> 43c99374de18ee3221b38fd095ff7d52d333e1c1
 +----------------------+------------------+-----------+------------+----------------+
 
 
