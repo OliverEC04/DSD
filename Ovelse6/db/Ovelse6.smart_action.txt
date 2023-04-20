@@ -1,9 +1,0 @@
-<<<<<<< HEAD
-SOURCE
-=======
-<<<<<<< HEAD
-SOURCE
-=======
-FIT
->>>>>>> 63701898cae43ccdadb173b6a1422f505f779818
->>>>>>> 53fffa1cc3b38fe2bc9f142b7026ccbbe49764db
