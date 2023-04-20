@@ -19,23 +19,16 @@ architecture compare_logic_impl of compare_logic is
 begin
 	process(input, secret_value)
 	begin
-		if try = "1" then
+		if try = '0' then
 			if input < secret_value then
 				result <= "01";
-				
 			elsif input > secret_value then
 				result <= "10";
-				
 			elsif input = secret_value then
 				result <= "11";
-				
 			end if;
-			
 		else
-			result <= "00"
-			
+			result <= "00";
 		end if;
-		
 	end process;
-	
-end compare_logic_impl;
+end architecture compare_logic_impl;
