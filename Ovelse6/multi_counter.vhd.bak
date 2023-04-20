@@ -1,0 +1,63 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity multi_counter is
+	Port
+	( 
+		-- inputs
+		clken : in STD_LOGIC;
+		clk : in STD_LOGIC;
+		mode : in STD_LOGIC_VECTOR(1 downto 0);
+		reset : in STD_LOGIC;
+			  
+		-- outputs
+      count : out STD_LOGIC_VECTOR(3 downto 0);
+      cout : out STD_LOGIC;
+	);
+end multi_counter;
+
+architecture Behavioral of binary_circular_counter is
+    component seven_segment_decoder is
+        Port ( a : in STD_LOGIC;
+               b : in STD_LOGIC;
+               c : in STD_LOGIC;
+               d : in STD_LOGIC;
+               e : in STD_LOGIC;
+               f : in STD_LOGIC;
+               g : in STD_LOGIC;
+               seg : out STD_LOGIC_VECTOR(6 downto 0));
+    end component;
+    
+    signal counter : unsigned(3 downto 0) := (others => '0');
+    signal count_max : unsigned(3 downto 0);
+    signal count_mode : unsigned(1 downto 0);
+    signal count_zero : STD_LOGIC;
+    
+begin
+    count_max <= "0010" when (mode = "10" or mode = "11") else
+                 "0101" when mode = "01" else
+                 "1001"; -- default mode is "00"
+    count_mode <= unsigned(mode);
+    count_zero <= '1' when counter = 0 else '0';
+    
+    process (clk, reset)
+    begin
+        if reset = '0' then
+            counter <= (others => '0');
+        elsif rising_edge(clk) then
+            if counter = count_max then
+                counter <= (others => '0');
+            else
+                counter <= counter + 1;
+            end if;
+        end if;
+    end process;
+    
+    seven_seg : seven_segment_decoder
+        port map (a => '0', b => '0', c => '0', d => '0', e => '0', f => '0', g => '0', seg => seg);
+    
+    count <= std_logic_vector(counter);
+    cout <= count_zero;
+    
+end Behavioral;
