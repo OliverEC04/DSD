@@ -1,3 +1,7 @@
 Quartus_Version = Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 Version_Index = 302049280
-Creation_Time = Thu Apr 20 13:12:44 2023
+<<<<<<< HEAD
+Creation_Time = Thu Apr 20 13:25:03 2023
+=======
+Creation_Time = Thu Apr 20 13:25:46 2023
+>>>>>>> 63701898cae43ccdadb173b6a1422f505f779818
