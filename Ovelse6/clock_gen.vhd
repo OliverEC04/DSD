@@ -16,24 +16,31 @@ entity clock_gen is
 end clock_gen;
 
 architecture clock_gen_impl of clock_gen is
-variable tick : integer := 0;
 begin
 	clock_proc:
 	process (clk,reset,speed)
+		variable tick : integer := 0;
 	begin
 		if (reset = '0') then -- Reset 
-			tick <= 0;
-			clk_out <= 0;
+			tick := 0;
+			clk_out <= '0';
 		
 		elsif (rising_edge(clk)) then -- Clock pulse
-			clk_out <= 0;
+			if (tick = 0) then
+				clk_out <= '0';
 			
-			if (speed = 0 and tick = 250000) then
-				clk_out <= 1;
+			elsif (speed = '0' and tick = 250000) then
+				clk_out <= '1';
+				tick := 0;
 				
-			elsif (speed = 1 and tick = 50000000) then
-				clk_out <= 1;
+			elsif (speed = '1' and tick = 50000000) then
+				clk_out <= '1';
+				tick := 0;
 				
 			end if;
+			
+			tick := tick + 1;
+			
 		end if;
+	end process;
 end clock_gen_impl;

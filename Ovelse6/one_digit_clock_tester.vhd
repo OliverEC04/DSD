@@ -6,12 +6,18 @@ entity one_digit_clock_tester is
 	port
 	( 
 		-- inputs
-			  
+		SW : in std_logic_vector (17 downto 16);
+		KEY : in std_logic_vector (3 downto 0);
+		CLOCK_50 : in std_logic;
+
 		-- outputs
+		HEX0 : out std_logic_vector (6 downto 0);
+		LEDR : out std_logic_vector (0 downto 0)
 	);
 end one_digit_clock_tester;
 
 architecture one_digit_clock_tester_impl of one_digit_clock_tester is
+signal count_alt : std_logic_vector (3 downto 0);
 signal clk_en_out : STD_LOGIC;
 begin
 	counter : entity work.multi_counter port map

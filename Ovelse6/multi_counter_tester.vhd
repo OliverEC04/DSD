@@ -21,7 +21,7 @@ signal count_alt : std_logic_vector (3 downto 0);
 begin
 counter : entity work.multi_counter port map
 (
-	clken => '1', -- clock enable
+	clken => '0', -- clock enable
 	clk => KEY(0), -- clock
 	mode(1 downto 0) => SW (17 downto 16), -- mode
 	reset => KEY(3), -- reset

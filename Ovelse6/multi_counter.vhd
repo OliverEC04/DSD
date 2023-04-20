@@ -27,7 +27,7 @@ begin
 			count_alt <= "0000";
 			cout <= '0';
 		
-		elsif (rising_edge(clk)) then -- Clock pulse
+		elsif (rising_edge(clk) and clken = '1') then -- Clock pulse
 			cout <= '0';
 			count_alt <= count_alt+1; -- Increment counter
 			 
