@@ -1,5 +1,5 @@
 Analysis & Synthesis report for binToHex
-Thu Apr 20 13:31:25 2023
+Thu Apr 20 14:36:57 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Thu Apr 20 13:31:25 2023               ;
+; Analysis & Synthesis Status        ; Failed - Thu Apr 20 14:36:57 2023               ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; binToHex                                        ;
 ; Top-level Entity Name              ; guess_game_tester                               ;
@@ -144,7 +144,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 8      ;
+; Number detected on machine ; 4      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
@@ -155,7 +155,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Apr 20 13:31:25 2023
+    Info: Processing started: Thu Apr 20 14:36:55 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Ovelse5 -c binToHex
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file mux2.vhd
@@ -182,11 +182,13 @@ Info (12021): Found 2 design units, including 1 entities, in source file latch.v
 Info (12021): Found 2 design units, including 1 entities, in source file guess_game_tester.vhd
     Info (12022): Found design unit 1: guess_game_tester-guess_game_tester_beh
     Info (12023): Found entity 1: guess_game_tester
-Error (10465): VHDL error at guess_game.vhd(64): name "hex1" cannot be used because it is already used for a previously declared item File: C:/Users/igors/OneDrive/Pulpit/AU/DSD/Git/DSD/Ovelse5/guess_game.vhd Line: 64
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 1 error, 2 warnings
-    Error: Peak virtual memory: 4627 megabytes
-    Error: Processing ended: Thu Apr 20 13:31:26 2023
-    Error: Elapsed time: 00:00:01
-    Error: Total CPU time (on all processors): 00:00:00
+Error (10348): VHDL type mismatch error at guess_game.vhd(33): type of formal parameter "set" does not match port type of value File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 33
+Error (10348): VHDL type mismatch error at guess_game.vhd(34): type of formal parameter "secret_value" does not match port type of value File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 34
+Error (10348): VHDL type mismatch error at guess_game.vhd(35): type of formal parameter "input" does not match port type of value File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 35
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 3 errors, 2 warnings
+    Error: Peak virtual memory: 4624 megabytes
+    Error: Processing ended: Thu Apr 20 14:36:57 2023
+    Error: Elapsed time: 00:00:02
+    Error: Total CPU time (on all processors): 00:00:01
 
 

@@ -1,5 +1,5 @@
 Flow report for binToHex
-Thu Apr 20 13:31:25 2023
+Thu Apr 20 14:36:57 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Flow Failed - Thu Apr 20 13:31:25 2023          ;
+; Flow Status                        ; Flow Failed - Thu Apr 20 14:36:57 2023          ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; binToHex                                        ;
 ; Top-level Entity Name              ; guess_game_tester                               ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/20/2023 13:31:25 ;
+; Start date & time ; 04/20/2023 14:36:56 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; binToHex            ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------------+------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name       ; Section Id ;
 +-------------------------------------+---------------------------------+---------------+-------------------+------------+
-; COMPILER_SIGNATURE_ID               ; 123260066961461.168199028504948 ; --            ; --                ; --         ;
+; COMPILER_SIGNATURE_ID               ; 145862428432652.168199421615560 ; --            ; --                ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --                ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                               ; --            ; --                ; --         ;
 ; PARTITION_COLOR                     ; 16764057                        ; --            ; guess_game_tester ; Top        ;
@@ -91,8 +91,8 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:00     ; 1.0                     ; 4627 MB             ; 00:00:00                           ;
-; Total                ; 00:00:00     ; --                      ; --                  ; 00:00:00                           ;
+; Analysis & Synthesis ; 00:00:01     ; 1.0                     ; 4624 MB             ; 00:00:01                           ;
+; Total                ; 00:00:01     ; --                      ; --                  ; 00:00:01                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -101,7 +101,7 @@ applicable agreement for further details.
 +----------------------+------------------+-----------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +----------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis ; Igor-S           ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis ; MTSW             ; Windows 7 ; 6.2        ; x86_64         ;
 +----------------------+------------------+-----------+------------+----------------+
 
 
