@@ -7,7 +7,7 @@ entity compare_logic is
 		-- inputs
 		try : in std_logic;
 		input : in std_logic_vector(7 downto 0);
-		secret_value: std_logic_vector(7 downto 0);
+		secret_value: in std_logic_vector(7 downto 0);
 		
 		-- outputs	
 		result : out std_logic_vector(1 downto 0)

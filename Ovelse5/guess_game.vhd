@@ -1,5 +1,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
+use work.all;
+
 
 entity guess_game is
 port(
@@ -29,18 +31,23 @@ architecture guess_game_beh of guess_game is
 begin
 	
 
-    latch_inst : entity work.latch port map(
+	latch_inst : entity work.latch port map(
         set => set,
         secret_value => secret_value,
         input => inputs
     );	
 	
-	compare_logic : entity work.compare_logic port map(
-	secret_value => secret_value, input => inputs, try => try
+	compare_logic_inst : entity work.compare_logic port map(
+	secret_value => secret_value,
+	input => inputs,
+	try => try
 	);
 	
-	mux1 : entity work.mux1 port map(
-	show => show, input => inputs, secret_value => secret_value, bin => mux1toBinToHex
+	mux1_inst : entity work.mux1 port map(
+	show => show,
+	input => inputs,
+	secret_value => secret_value,
+	bin => mux1toBinToHex
 	);
 	
 --	binToHex : entity work.binToHex port map(
