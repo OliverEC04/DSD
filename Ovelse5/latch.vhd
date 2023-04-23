@@ -3,14 +3,13 @@ use ieee.std_logic_1164.all;
 
 
 entity latch is
-
-signal input : std_logic_vector(7 downto 0);
-signal secret_value : std_logic_vector(7 downto 0);
-signal set : std_logic;
-
-
-
-end;
+		port(
+			input : in std_logic_vector(7 downto 0);
+			secret_value : out std_logic_vector(7 downto 0);
+			set : in std_logic
+		);
+		
+end latch;
 
 
 architecture latch_impl of latch is

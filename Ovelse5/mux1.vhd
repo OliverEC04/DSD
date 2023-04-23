@@ -9,7 +9,7 @@ entity mux1 is
 		show	  		: in std_logic;
 		secret_value: in std_logic_vector(7 downto 0);
 		input 		: in std_logic_vector(7 downto 0);
-		bin 			: out std_logic_vector (3 downto 0)
+		bin 			: out std_logic_vector (7 downto 0)
 	);
 
 end entity;

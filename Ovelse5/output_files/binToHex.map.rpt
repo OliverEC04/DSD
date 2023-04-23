@@ -1,5 +1,5 @@
 Analysis & Synthesis report for binToHex
-Thu Apr 20 14:36:57 2023
+Sun Apr 23 14:52:17 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Thu Apr 20 14:36:57 2023               ;
+; Analysis & Synthesis Status        ; Failed - Sun Apr 23 14:52:17 2023               ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; binToHex                                        ;
 ; Top-level Entity Name              ; guess_game_tester                               ;
@@ -155,7 +155,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Apr 20 14:36:55 2023
+    Info: Processing started: Sun Apr 23 14:52:16 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Ovelse5 -c binToHex
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file mux2.vhd
@@ -182,13 +182,33 @@ Info (12021): Found 2 design units, including 1 entities, in source file latch.v
 Info (12021): Found 2 design units, including 1 entities, in source file guess_game_tester.vhd
     Info (12022): Found design unit 1: guess_game_tester-guess_game_tester_beh
     Info (12023): Found entity 1: guess_game_tester
-Error (10348): VHDL type mismatch error at guess_game.vhd(33): type of formal parameter "set" does not match port type of value File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 33
-Error (10348): VHDL type mismatch error at guess_game.vhd(34): type of formal parameter "secret_value" does not match port type of value File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 34
-Error (10348): VHDL type mismatch error at guess_game.vhd(35): type of formal parameter "input" does not match port type of value File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 35
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 3 errors, 2 warnings
+Info (12127): Elaborating entity "guess_game_tester" for the top level hierarchy
+Info (12128): Elaborating entity "guess_game" for hierarchy "guess_game:guess_game"
+Warning (10541): VHDL Signal Declaration warning at guess_game.vhd(15): used implicit default value for signal "hexEt" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at guess_game.vhd(16): used implicit default value for signal "hexTi" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10036): Verilog HDL or VHDL warning at guess_game.vhd(26): object "mux1toBinToHex" assigned a value but never read
+Error (12004): Port "input[0]" does not exist in primitive "latch" of instance "latch_inst" File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 34
+Error (12004): Port "input[1]" does not exist in primitive "latch" of instance "latch_inst" File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 34
+Error (12004): Port "input[2]" does not exist in primitive "latch" of instance "latch_inst" File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 34
+Error (12004): Port "input[3]" does not exist in primitive "latch" of instance "latch_inst" File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 34
+Error (12004): Port "input[4]" does not exist in primitive "latch" of instance "latch_inst" File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 34
+Error (12004): Port "input[5]" does not exist in primitive "latch" of instance "latch_inst" File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 34
+Error (12004): Port "input[6]" does not exist in primitive "latch" of instance "latch_inst" File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 34
+Error (12004): Port "input[7]" does not exist in primitive "latch" of instance "latch_inst" File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 34
+Error (12004): Port "secret_value[0]" does not exist in primitive "latch" of instance "latch_inst" File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 34
+Error (12004): Port "secret_value[1]" does not exist in primitive "latch" of instance "latch_inst" File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 34
+Error (12004): Port "secret_value[2]" does not exist in primitive "latch" of instance "latch_inst" File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 34
+Error (12004): Port "secret_value[3]" does not exist in primitive "latch" of instance "latch_inst" File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 34
+Error (12004): Port "secret_value[4]" does not exist in primitive "latch" of instance "latch_inst" File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 34
+Error (12004): Port "secret_value[5]" does not exist in primitive "latch" of instance "latch_inst" File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 34
+Error (12004): Port "secret_value[6]" does not exist in primitive "latch" of instance "latch_inst" File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 34
+Error (12004): Port "secret_value[7]" does not exist in primitive "latch" of instance "latch_inst" File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 34
+Error (12004): Port "set" does not exist in primitive "latch" of instance "latch_inst" File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 34
+Error (12152): Can't elaborate user hierarchy "guess_game:guess_game" File: C:/Gitte/DSD/Ovelse5/guess_game_tester.vhd Line: 20
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 18 errors, 5 warnings
     Error: Peak virtual memory: 4624 megabytes
-    Error: Processing ended: Thu Apr 20 14:36:57 2023
-    Error: Elapsed time: 00:00:02
+    Error: Processing ended: Sun Apr 23 14:52:17 2023
+    Error: Elapsed time: 00:00:01
     Error: Total CPU time (on all processors): 00:00:01
 
 
