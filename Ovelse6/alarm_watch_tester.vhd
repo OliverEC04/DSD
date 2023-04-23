@@ -40,9 +40,19 @@ signal alarm_hrs_1 : std_LOGIC_vector (6 downto 0);
 signal alarm_hrs_10 : std_LOGIC_vector (6 downto 0);
 
 begin
-	process()
+	process(KEY(2))
 	begin
+		if (KEY(2) = '1') then
+			HEX2 <= 
+			HEX3 : out std_LOGIC_VECTOR (6 downto 0);
+			HEX4 : out std_LOGIC_VECTOR (6 downto 0);
+			HEX5 : out std_LOGIC_VECTOR (6 downto 0);
+			HEX6 : out std_LOGIC_VECTOR (6 downto 0);
+			HEX7 : out std_LOGIC_VECTOR (6 downto 0);
+			LEDR : out std_LOGIC_VECTOR (0 downto 0)
+		else
 
+		end if;
 	end process;
 
 	input_limiter : entity work.input_limiter port map
