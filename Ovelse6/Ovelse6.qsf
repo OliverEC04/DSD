@@ -474,15 +474,7 @@ set_location_assignment PIN_V24 -to GPIO_1[32]
 set_location_assignment PIN_V23 -to GPIO_1[33]
 set_location_assignment PIN_W25 -to GPIO_1[34]
 set_location_assignment PIN_W23 -to GPIO_1[35]
-<<<<<<< HEAD
 set_global_assignment -name VECTOR_WAVEFORM_FILE funcSimMulticounter.vwf
-=======
-set_global_assignment -name VHDL_FILE clock_gen.vhd
-set_global_assignment -name VHDL_FILE one_digit_clock_tester.vhd
-set_global_assignment -name VHDL_FILE watch.vhd
-set_global_assignment -name VHDL_FILE reset_logic.vhd
-set_global_assignment -name VHDL_FILE watch_tester.vhd
->>>>>>> 08b1e9d005d20a22484d1880d58c3354d885eafb
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
