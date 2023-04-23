@@ -43,15 +43,19 @@ begin
 	process(KEY(2))
 	begin
 		if (KEY(2) = '1') then
-			HEX2 <= 
-			HEX3 : out std_LOGIC_VECTOR (6 downto 0);
-			HEX4 : out std_LOGIC_VECTOR (6 downto 0);
-			HEX5 : out std_LOGIC_VECTOR (6 downto 0);
-			HEX6 : out std_LOGIC_VECTOR (6 downto 0);
-			HEX7 : out std_LOGIC_VECTOR (6 downto 0);
-			LEDR : out std_LOGIC_VECTOR (0 downto 0)
+			HEX2 <= 0;
+			HEX3 <= 0;
+			HEX4 <= alarm_min_1;
+			HEX5 <= alarm_min_10;
+			HEX6 <= alarm_hrs_1;
+			HEX7 <= alarm_hrs_10;
 		else
-
+			HEX2 <= watch_sec_1;
+			HEX3 <= watch_sec_10;
+			HEX4 <= watch_min_1;
+			HEX5 <= watch_min_10;
+			HEX6 <= watch_hrs_1;
+			HEX7 <= watch_hrs_10;
 		end if;
 	end process;
 
@@ -100,7 +104,7 @@ begin
 		bin => alarm_time(3 downto 0),
 
 		-- outputs
-		sSeg => alarm_min_1,
+		sSeg => alarm_min_1
 	);
 
 	b27_min_10 : entity work.bin_to_7_seg port map
@@ -109,7 +113,7 @@ begin
 		bin => alarm_time(7 downto 4),
 
 		-- outputs
-		sSeg => alarm_min_10,
+		sSeg => alarm_min_10
 	);
 
 	b27_hrs_1 : entity work.bin_to_7_seg port map
@@ -118,7 +122,7 @@ begin
 		bin => alarm_time(11 downto 8),
 
 		-- outputs
-		sSeg => alarm_hrs_1,
+		sSeg => alarm_hrs_1
 	);
 
 	b27_hrs_10 : entity work.bin_to_7_seg port map
@@ -127,7 +131,7 @@ begin
 		bin => alarm_time(15 downto 12),
 
 		-- outputs
-		sSeg => alarm_hrs_10,
+		sSeg => alarm_hrs_10
 	);
 
 end alarm_watch_tester_impl;
