@@ -7,8 +7,8 @@ entity watch is
 	( 
 		-- inputs
 		clk : in STD_LOGIC;
-      speed : in STD_LOGIC;
-      reset : in STD_LOGIC;
+		speed : in STD_LOGIC;
+      	reset : in STD_LOGIC;
 
 		-- outputs
 		sec_1 : out std_LOGIC_vector (6 downto 0);
