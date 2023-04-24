@@ -43,8 +43,8 @@ begin
 	process(KEY(2))
 	begin
 		if (KEY(2) = '1') then
-			HEX2 <= 0;
-			HEX3 <= 0;
+			HEX2 <= "0000000";
+			HEX3 <= "0000000";
 			HEX4 <= alarm_min_1;
 			HEX5 <= alarm_min_10;
 			HEX6 <= alarm_hrs_1;
