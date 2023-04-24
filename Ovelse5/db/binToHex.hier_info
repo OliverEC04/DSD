@@ -1,48 +1,77 @@
-|guess_game
-inputs[0] => mylatch:latch_inst.input[0]
-inputs[0] => compare_logic:compare_logic_inst.input[0]
-inputs[0] => mux1:mux1_inst.input[0]
-inputs[1] => mylatch:latch_inst.input[1]
-inputs[1] => compare_logic:compare_logic_inst.input[1]
-inputs[1] => mux1:mux1_inst.input[1]
-inputs[2] => mylatch:latch_inst.input[2]
-inputs[2] => compare_logic:compare_logic_inst.input[2]
-inputs[2] => mux1:mux1_inst.input[2]
-inputs[3] => mylatch:latch_inst.input[3]
-inputs[3] => compare_logic:compare_logic_inst.input[3]
-inputs[3] => mux1:mux1_inst.input[3]
-inputs[4] => mylatch:latch_inst.input[4]
-inputs[4] => compare_logic:compare_logic_inst.input[4]
-inputs[4] => mux1:mux1_inst.input[4]
-inputs[5] => mylatch:latch_inst.input[5]
-inputs[5] => compare_logic:compare_logic_inst.input[5]
-inputs[5] => mux1:mux1_inst.input[5]
-inputs[6] => mylatch:latch_inst.input[6]
-inputs[6] => compare_logic:compare_logic_inst.input[6]
-inputs[6] => mux1:mux1_inst.input[6]
-inputs[7] => mylatch:latch_inst.input[7]
-inputs[7] => compare_logic:compare_logic_inst.input[7]
-inputs[7] => mux1:mux1_inst.input[7]
+|guess_game_tester
+KEY[0] => guess_game:guess_game.set
+KEY[1] => guess_game:guess_game.show
+KEY[2] => guess_game:guess_game.try
+SW[0] => guess_game:guess_game.input[0]
+SW[1] => guess_game:guess_game.input[1]
+SW[2] => guess_game:guess_game.input[2]
+SW[3] => guess_game:guess_game.input[3]
+SW[4] => guess_game:guess_game.input[4]
+SW[5] => guess_game:guess_game.input[5]
+SW[6] => guess_game:guess_game.input[6]
+SW[7] => guess_game:guess_game.input[7]
+HEX6[0] <= guess_game:guess_game.hexEt[0]
+HEX6[1] <= guess_game:guess_game.hexEt[1]
+HEX6[2] <= guess_game:guess_game.hexEt[2]
+HEX6[3] <= guess_game:guess_game.hexEt[3]
+HEX6[4] <= guess_game:guess_game.hexEt[4]
+HEX6[5] <= guess_game:guess_game.hexEt[5]
+HEX6[6] <= guess_game:guess_game.hexEt[6]
+HEX7[0] <= guess_game:guess_game.hexTi[0]
+HEX7[1] <= guess_game:guess_game.hexTi[1]
+HEX7[2] <= guess_game:guess_game.hexTi[2]
+HEX7[3] <= guess_game:guess_game.hexTi[3]
+HEX7[4] <= guess_game:guess_game.hexTi[4]
+HEX7[5] <= guess_game:guess_game.hexTi[5]
+HEX7[6] <= guess_game:guess_game.hexTi[6]
+
+
+|guess_game_tester|guess_game:guess_game
+input[0] => mylatch:latch_inst.input[0]
+input[0] => compare_logic:compare_logic_inst.input[0]
+input[0] => mux1:mux1_inst.input[0]
+input[1] => mylatch:latch_inst.input[1]
+input[1] => compare_logic:compare_logic_inst.input[1]
+input[1] => mux1:mux1_inst.input[1]
+input[2] => mylatch:latch_inst.input[2]
+input[2] => compare_logic:compare_logic_inst.input[2]
+input[2] => mux1:mux1_inst.input[2]
+input[3] => mylatch:latch_inst.input[3]
+input[3] => compare_logic:compare_logic_inst.input[3]
+input[3] => mux1:mux1_inst.input[3]
+input[4] => mylatch:latch_inst.input[4]
+input[4] => compare_logic:compare_logic_inst.input[4]
+input[4] => mux1:mux1_inst.input[4]
+input[5] => mylatch:latch_inst.input[5]
+input[5] => compare_logic:compare_logic_inst.input[5]
+input[5] => mux1:mux1_inst.input[5]
+input[6] => mylatch:latch_inst.input[6]
+input[6] => compare_logic:compare_logic_inst.input[6]
+input[6] => mux1:mux1_inst.input[6]
+input[7] => mylatch:latch_inst.input[7]
+input[7] => compare_logic:compare_logic_inst.input[7]
+input[7] => mux1:mux1_inst.input[7]
 set => mylatch:latch_inst.set
 show => mux1:mux1_inst.show
 try => compare_logic:compare_logic_inst.try
-hexEt[0] <= hexEt[0].DB_MAX_OUTPUT_PORT_TYPE
-hexEt[1] <= hexEt[1].DB_MAX_OUTPUT_PORT_TYPE
-hexEt[2] <= hexEt[2].DB_MAX_OUTPUT_PORT_TYPE
-hexEt[3] <= hexEt[3].DB_MAX_OUTPUT_PORT_TYPE
-hexEt[4] <= hexEt[4].DB_MAX_OUTPUT_PORT_TYPE
-hexEt[5] <= hexEt[5].DB_MAX_OUTPUT_PORT_TYPE
-hexEt[6] <= hexEt[6].DB_MAX_OUTPUT_PORT_TYPE
-hexTi[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
-hexTi[1] <= hexTi[1].DB_MAX_OUTPUT_PORT_TYPE
-hexTi[2] <= hexTi[2].DB_MAX_OUTPUT_PORT_TYPE
-hexTi[3] <= hexTi[3].DB_MAX_OUTPUT_PORT_TYPE
-hexTi[4] <= hexTi[4].DB_MAX_OUTPUT_PORT_TYPE
-hexTi[5] <= hexTi[5].DB_MAX_OUTPUT_PORT_TYPE
-hexTi[6] <= hexTi[6].DB_MAX_OUTPUT_PORT_TYPE
+try => mux2:mux2.try_btn
+hexEt[0] <= mux2:mux2.hexEt[0]
+hexEt[1] <= mux2:mux2.hexEt[1]
+hexEt[2] <= mux2:mux2.hexEt[2]
+hexEt[3] <= mux2:mux2.hexEt[3]
+hexEt[4] <= mux2:mux2.hexEt[4]
+hexEt[5] <= mux2:mux2.hexEt[5]
+hexEt[6] <= mux2:mux2.hexEt[6]
+hexTi[0] <= mux2:mux2.hexTi[0]
+hexTi[1] <= mux2:mux2.hexTi[1]
+hexTi[2] <= mux2:mux2.hexTi[2]
+hexTi[3] <= mux2:mux2.hexTi[3]
+hexTi[4] <= mux2:mux2.hexTi[4]
+hexTi[5] <= mux2:mux2.hexTi[5]
+hexTi[6] <= mux2:mux2.hexTi[6]
 
 
-|guess_game|mylatch:latch_inst
+|guess_game_tester|guess_game:guess_game|mylatch:latch_inst
 input[0] => secret_value[0]$latch.DATAIN
 input[1] => secret_value[1]$latch.DATAIN
 input[2] => secret_value[2]$latch.DATAIN
@@ -69,7 +98,7 @@ set => secret_value[6]$latch.LATCH_ENABLE
 set => secret_value[7]$latch.LATCH_ENABLE
 
 
-|guess_game|compare_logic:compare_logic_inst
+|guess_game_tester|guess_game:guess_game|compare_logic:compare_logic_inst
 try => result[0].OUTPUTSELECT
 try => result[1].IN1
 try => result[1].OUTPUTSELECT
@@ -125,7 +154,7 @@ result[0] <= result[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
 result[1] <= result[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|guess_game|mux1:mux1_inst
+|guess_game_tester|guess_game:guess_game|mux1:mux1_inst
 show => bin.OUTPUTSELECT
 show => bin.OUTPUTSELECT
 show => bin.OUTPUTSELECT
@@ -158,5 +187,125 @@ bin[4] <= bin.DB_MAX_OUTPUT_PORT_TYPE
 bin[5] <= bin.DB_MAX_OUTPUT_PORT_TYPE
 bin[6] <= bin.DB_MAX_OUTPUT_PORT_TYPE
 bin[7] <= bin.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|guess_game_tester|guess_game:guess_game|binToHex:binToHex1
+bin[0] => Mux0.IN19
+bin[0] => Mux1.IN19
+bin[0] => Mux2.IN19
+bin[0] => Mux3.IN19
+bin[0] => Mux4.IN19
+bin[0] => Mux5.IN19
+bin[0] => Mux6.IN19
+bin[1] => Mux0.IN18
+bin[1] => Mux1.IN18
+bin[1] => Mux2.IN18
+bin[1] => Mux3.IN18
+bin[1] => Mux4.IN18
+bin[1] => Mux5.IN18
+bin[1] => Mux6.IN18
+bin[2] => Mux0.IN17
+bin[2] => Mux1.IN17
+bin[2] => Mux2.IN17
+bin[2] => Mux3.IN17
+bin[2] => Mux4.IN17
+bin[2] => Mux5.IN17
+bin[2] => Mux6.IN17
+bin[3] => Mux0.IN16
+bin[3] => Mux1.IN16
+bin[3] => Mux2.IN16
+bin[3] => Mux3.IN16
+bin[3] => Mux4.IN16
+bin[3] => Mux5.IN16
+bin[3] => Mux6.IN16
+segment[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+segment[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+segment[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+segment[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+segment[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+segment[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+segment[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|guess_game_tester|guess_game:guess_game|binToHex:binToHex2
+bin[0] => Mux0.IN19
+bin[0] => Mux1.IN19
+bin[0] => Mux2.IN19
+bin[0] => Mux3.IN19
+bin[0] => Mux4.IN19
+bin[0] => Mux5.IN19
+bin[0] => Mux6.IN19
+bin[1] => Mux0.IN18
+bin[1] => Mux1.IN18
+bin[1] => Mux2.IN18
+bin[1] => Mux3.IN18
+bin[1] => Mux4.IN18
+bin[1] => Mux5.IN18
+bin[1] => Mux6.IN18
+bin[2] => Mux0.IN17
+bin[2] => Mux1.IN17
+bin[2] => Mux2.IN17
+bin[2] => Mux3.IN17
+bin[2] => Mux4.IN17
+bin[2] => Mux5.IN17
+bin[2] => Mux6.IN17
+bin[3] => Mux0.IN16
+bin[3] => Mux1.IN16
+bin[3] => Mux2.IN16
+bin[3] => Mux3.IN16
+bin[3] => Mux4.IN16
+bin[3] => Mux5.IN16
+bin[3] => Mux6.IN16
+segment[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+segment[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+segment[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+segment[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+segment[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+segment[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+segment[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|guess_game_tester|guess_game:guess_game|mux2:mux2
+result[0] => Mux0.IN5
+result[0] => Mux1.IN5
+result[0] => Mux2.IN5
+result[0] => Mux3.IN5
+result[0] => hexEt[2].DATAIN
+result[0] => hexTi[2].DATAIN
+result[1] => Mux0.IN4
+result[1] => Mux1.IN4
+result[1] => Mux2.IN4
+result[1] => Mux3.IN4
+result[1] => hexEt[0].DATAIN
+result[1] => hexTi[0].DATAIN
+segment[0] => ~NO_FANOUT~
+segment[1] => ~NO_FANOUT~
+segment[2] => ~NO_FANOUT~
+segment[3] => ~NO_FANOUT~
+segment[4] => ~NO_FANOUT~
+segment[5] => ~NO_FANOUT~
+segment[6] => ~NO_FANOUT~
+segment[7] => ~NO_FANOUT~
+segment[8] => ~NO_FANOUT~
+segment[9] => ~NO_FANOUT~
+segment[10] => ~NO_FANOUT~
+segment[11] => ~NO_FANOUT~
+segment[12] => ~NO_FANOUT~
+segment[13] => ~NO_FANOUT~
+try_btn => ~NO_FANOUT~
+hexEt[0] <= result[1].DB_MAX_OUTPUT_PORT_TYPE
+hexEt[1] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+hexEt[2] <= result[0].DB_MAX_OUTPUT_PORT_TYPE
+hexEt[3] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+hexEt[4] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+hexEt[5] <= <GND>
+hexEt[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+hexTi[0] <= result[1].DB_MAX_OUTPUT_PORT_TYPE
+hexTi[1] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+hexTi[2] <= result[0].DB_MAX_OUTPUT_PORT_TYPE
+hexTi[3] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+hexTi[4] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+hexTi[5] <= <GND>
+hexTi[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 

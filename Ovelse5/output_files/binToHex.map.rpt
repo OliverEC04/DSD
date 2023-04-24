@@ -1,5 +1,5 @@
 Analysis & Synthesis report for binToHex
-Mon Apr 24 10:21:09 2023
+Mon Apr 24 12:46:48 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -13,11 +13,10 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Port Connectivity Checks: "mux1:mux1_inst"
- 10. Port Connectivity Checks: "compare_logic:compare_logic_inst"
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+  8. User-Specified and Inferred Latches
+  9. General Register Statistics
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -43,13 +42,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Apr 24 10:21:09 2023           ;
+; Analysis & Synthesis Status        ; Successful - Mon Apr 24 12:46:48 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; binToHex                                        ;
-; Top-level Entity Name              ; guess_game                                      ;
+; Top-level Entity Name              ; guess_game_tester                               ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 0                                               ;
-;     Total combinational functions  ; 0                                               ;
+; Total logic elements               ; 38                                              ;
+;     Total combinational functions  ; 38                                              ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
 ; Total pins                         ; 25                                              ;
@@ -66,7 +65,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C35F672C6       ;                    ;
-; Top-level entity name                                                      ; guess_game         ; binToHex           ;
+; Top-level entity name                                                      ; guess_game_tester  ; binToHex           ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -151,61 +150,90 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 4      ;
+; Number detected on machine ; 20     ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                      ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path               ; Library ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------+---------+
-; mux2.vhd                         ; yes             ; User VHDL File  ; C:/Gitte/DSD/Ovelse5/mux2.vhd              ;         ;
-; mux1.vhd                         ; yes             ; User VHDL File  ; C:/Gitte/DSD/Ovelse5/mux1.vhd              ;         ;
-; binToHex_tester.vhd              ; yes             ; User VHDL File  ; C:/Gitte/DSD/Ovelse5/binToHex_tester.vhd   ;         ;
-; binToHex.vhd                     ; yes             ; User VHDL File  ; C:/Gitte/DSD/Ovelse5/binToHex.vhd          ;         ;
-; guess_game.vhd                   ; yes             ; User VHDL File  ; C:/Gitte/DSD/Ovelse5/guess_game.vhd        ;         ;
-; compare_logic.vhd                ; yes             ; User VHDL File  ; C:/Gitte/DSD/Ovelse5/compare_logic.vhd     ;         ;
-; latch.vhd                        ; yes             ; User VHDL File  ; C:/Gitte/DSD/Ovelse5/latch.vhd             ;         ;
-; guess_game_tester.vhd            ; yes             ; User VHDL File  ; C:/Gitte/DSD/Ovelse5/guess_game_tester.vhd ;         ;
-; mylatch.vhd                      ; yes             ; User VHDL File  ; C:/Gitte/DSD/Ovelse5/mylatch.vhd           ;         ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------+---------+
-
-
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-;                                             ;       ;
-; Total combinational functions               ; 0     ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 0     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 0     ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 25    ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-+---------------------------------------------+-------+
-
-
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |guess_game                ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 25   ; 0            ; |guess_game         ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                      ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                               ; Library ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------+---------+
+; mux2.vhd                         ; yes             ; User VHDL File  ; C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse5/mux2.vhd              ;         ;
+; mux1.vhd                         ; yes             ; User VHDL File  ; C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse5/mux1.vhd              ;         ;
+; binToHex_tester.vhd              ; yes             ; User VHDL File  ; C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse5/binToHex_tester.vhd   ;         ;
+; binToHex.vhd                     ; yes             ; User VHDL File  ; C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse5/binToHex.vhd          ;         ;
+; guess_game.vhd                   ; yes             ; User VHDL File  ; C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse5/guess_game.vhd        ;         ;
+; compare_logic.vhd                ; yes             ; User VHDL File  ; C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse5/compare_logic.vhd     ;         ;
+; latch.vhd                        ; yes             ; User VHDL File  ; C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse5/latch.vhd             ;         ;
+; guess_game_tester.vhd            ; yes             ; User VHDL File  ; C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse5/guess_game_tester.vhd ;         ;
+; mylatch.vhd                      ; yes             ; User VHDL File  ; C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse5/mylatch.vhd           ;         ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------+---------+
+
+
++------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary          ;
++---------------------------------------------+--------+
+; Resource                                    ; Usage  ;
++---------------------------------------------+--------+
+; Estimated Total logic elements              ; 38     ;
+;                                             ;        ;
+; Total combinational functions               ; 38     ;
+; Logic element usage by number of LUT inputs ;        ;
+;     -- 4 input functions                    ; 6      ;
+;     -- 3 input functions                    ; 25     ;
+;     -- <=2 input functions                  ; 7      ;
+;                                             ;        ;
+; Logic elements by mode                      ;        ;
+;     -- normal mode                          ; 24     ;
+;     -- arithmetic mode                      ; 14     ;
+;                                             ;        ;
+; Total registers                             ; 0      ;
+;     -- Dedicated logic registers            ; 0      ;
+;     -- I/O registers                        ; 0      ;
+;                                             ;        ;
+; I/O pins                                    ; 25     ;
+; Embedded Multiplier 9-bit elements          ; 0      ;
+; Maximum fan-out node                        ; KEY[0] ;
+; Maximum fan-out                             ; 8      ;
+; Total fan-out                               ; 125    ;
+; Average fan-out                             ; 1.98   ;
++---------------------------------------------+--------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                             ;
++------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node               ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                       ; Library Name ;
++------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------+--------------+
+; |guess_game_tester                       ; 38 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 25   ; 0            ; |guess_game_tester                                                        ; work         ;
+;    |guess_game:guess_game|               ; 38 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |guess_game_tester|guess_game:guess_game                                  ; work         ;
+;       |compare_logic:compare_logic_inst| ; 27 (27)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |guess_game_tester|guess_game:guess_game|compare_logic:compare_logic_inst ; work         ;
+;       |mux2:mux2|                        ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |guess_game_tester|guess_game:guess_game|mux2:mux2                        ; work         ;
+;       |mylatch:latch_inst|               ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |guess_game_tester|guess_game:guess_game|mylatch:latch_inst               ; work         ;
++------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                             ;
++------------------------------------------------------------------+---------------------+------------------------+
+; Latch Name                                                       ; Latch Enable Signal ; Free of Timing Hazards ;
++------------------------------------------------------------------+---------------------+------------------------+
+; guess_game:guess_game|compare_logic:compare_logic_inst|result[1] ; GND                 ; yes                    ;
+; guess_game:guess_game|compare_logic:compare_logic_inst|result[0] ; GND                 ; yes                    ;
+; guess_game:guess_game|mylatch:latch_inst|secret_value[7]         ; KEY[0]              ; yes                    ;
+; guess_game:guess_game|mylatch:latch_inst|secret_value[6]         ; KEY[0]              ; yes                    ;
+; guess_game:guess_game|mylatch:latch_inst|secret_value[5]         ; KEY[0]              ; yes                    ;
+; guess_game:guess_game|mylatch:latch_inst|secret_value[4]         ; KEY[0]              ; yes                    ;
+; guess_game:guess_game|mylatch:latch_inst|secret_value[3]         ; KEY[0]              ; yes                    ;
+; guess_game:guess_game|mylatch:latch_inst|secret_value[2]         ; KEY[0]              ; yes                    ;
+; guess_game:guess_game|mylatch:latch_inst|secret_value[1]         ; KEY[0]              ; yes                    ;
+; guess_game:guess_game|mylatch:latch_inst|secret_value[0]         ; KEY[0]              ; yes                    ;
+; Number of user-specified and inferred latches = 10               ;                     ;                        ;
++------------------------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -223,24 +251,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "mux1:mux1_inst"                                                                     ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; bin  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "compare_logic:compare_logic_inst"                                                     ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; result ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
@@ -256,7 +266,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Apr 24 10:21:08 2023
+    Info: Processing started: Mon Apr 24 12:46:46 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Ovelse5 -c binToHex
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file mux2.vhd
@@ -286,11 +296,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file guess_g
 Info (12021): Found 2 design units, including 1 entities, in source file mylatch.vhd
     Info (12022): Found design unit 1: mylatch-latch_impl
     Info (12023): Found entity 1: mylatch
-Info (12127): Elaborating entity "guess_game" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at guess_game.vhd(15): used implicit default value for signal "hexEt" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at guess_game.vhd(16): used implicit default value for signal "hexTi" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10036): Verilog HDL or VHDL warning at guess_game.vhd(26): object "mux1toBinToHex" assigned a value but never read
-Info (12128): Elaborating entity "mylatch" for hierarchy "mylatch:latch_inst"
+Info (12127): Elaborating entity "guess_game_tester" for the top level hierarchy
+Info (12128): Elaborating entity "guess_game" for hierarchy "guess_game:guess_game"
+Info (12128): Elaborating entity "mylatch" for hierarchy "guess_game:guess_game|mylatch:latch_inst"
 Info (10041): Inferred latch for "secret_value[0]" at mylatch.vhd(17)
 Info (10041): Inferred latch for "secret_value[1]" at mylatch.vhd(17)
 Info (10041): Inferred latch for "secret_value[2]" at mylatch.vhd(17)
@@ -299,48 +307,38 @@ Info (10041): Inferred latch for "secret_value[4]" at mylatch.vhd(17)
 Info (10041): Inferred latch for "secret_value[5]" at mylatch.vhd(17)
 Info (10041): Inferred latch for "secret_value[6]" at mylatch.vhd(17)
 Info (10041): Inferred latch for "secret_value[7]" at mylatch.vhd(17)
-Info (12128): Elaborating entity "compare_logic" for hierarchy "compare_logic:compare_logic_inst"
+Info (12128): Elaborating entity "compare_logic" for hierarchy "guess_game:guess_game|compare_logic:compare_logic_inst"
 Warning (10492): VHDL Process Statement warning at compare_logic.vhd(22): signal "try" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10631): VHDL Process Statement warning at compare_logic.vhd(20): inferring latch(es) for signal or variable "result", which holds its previous value in one or more paths through the process
 Info (10041): Inferred latch for "result[0]" at compare_logic.vhd(20)
 Info (10041): Inferred latch for "result[1]" at compare_logic.vhd(20)
-Info (12128): Elaborating entity "mux1" for hierarchy "mux1:mux1_inst"
+Info (12128): Elaborating entity "mux1" for hierarchy "guess_game:guess_game|mux1:mux1_inst"
+Info (12128): Elaborating entity "binToHex" for hierarchy "guess_game:guess_game|binToHex:binToHex1"
+Info (12128): Elaborating entity "mux2" for hierarchy "guess_game:guess_game|mux2:mux2"
+Warning (10036): Verilog HDL or VHDL warning at mux2.vhd(21): object "guess" assigned a value but never read
+Warning (10492): VHDL Process Statement warning at mux2.vhd(43): signal "try_btn_state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10620): VHDL warning at mux2.vhd(45): comparison between unequal length operands always returns FALSE
+Warning (10620): VHDL warning at mux2.vhd(47): comparison between unequal length operands always returns FALSE
+Warning (10620): VHDL warning at mux2.vhd(49): comparison between unequal length operands always returns FALSE
+Warning (10620): VHDL warning at mux2.vhd(51): comparison between unequal length operands always returns FALSE
+Warning (10492): VHDL Process Statement warning at mux2.vhd(60): signal "hex_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at mux2.vhd(61): signal "hex_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at mux2.vhd(27): inferring latch(es) for signal or variable "guess_var", which holds its previous value in one or more paths through the process
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "hexEt[0]" is stuck at GND
-    Warning (13410): Pin "hexEt[1]" is stuck at GND
-    Warning (13410): Pin "hexEt[2]" is stuck at GND
-    Warning (13410): Pin "hexEt[3]" is stuck at GND
-    Warning (13410): Pin "hexEt[4]" is stuck at GND
-    Warning (13410): Pin "hexEt[5]" is stuck at GND
-    Warning (13410): Pin "hexEt[6]" is stuck at GND
-    Warning (13410): Pin "hexTi[0]" is stuck at GND
-    Warning (13410): Pin "hexTi[1]" is stuck at GND
-    Warning (13410): Pin "hexTi[2]" is stuck at GND
-    Warning (13410): Pin "hexTi[3]" is stuck at GND
-    Warning (13410): Pin "hexTi[4]" is stuck at GND
-    Warning (13410): Pin "hexTi[5]" is stuck at GND
-    Warning (13410): Pin "hexTi[6]" is stuck at GND
+    Warning (13410): Pin "HEX6[5]" is stuck at GND
+    Warning (13410): Pin "HEX7[5]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 11 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "inputs[0]"
-    Warning (15610): No output dependent on input pin "inputs[1]"
-    Warning (15610): No output dependent on input pin "inputs[2]"
-    Warning (15610): No output dependent on input pin "inputs[3]"
-    Warning (15610): No output dependent on input pin "inputs[4]"
-    Warning (15610): No output dependent on input pin "inputs[5]"
-    Warning (15610): No output dependent on input pin "inputs[6]"
-    Warning (15610): No output dependent on input pin "inputs[7]"
-    Warning (15610): No output dependent on input pin "set"
-    Warning (15610): No output dependent on input pin "show"
-    Warning (15610): No output dependent on input pin "try"
-Info (21057): Implemented 25 device resources after synthesis - the final resource count might be different
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "KEY[1]"
+Info (21057): Implemented 63 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
     Info (21059): Implemented 14 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 34 warnings
-    Info: Peak virtual memory: 4631 megabytes
-    Info: Processing ended: Mon Apr 24 10:21:09 2023
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info (21061): Implemented 38 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 18 warnings
+    Info: Peak virtual memory: 4639 megabytes
+    Info: Processing ended: Mon Apr 24 12:46:48 2023
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:00
 
 
