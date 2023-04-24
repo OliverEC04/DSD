@@ -42,7 +42,7 @@ signal alarm_hrs_10 : std_LOGIC_vector (6 downto 0);
 begin
 	process(KEY(2))
 	begin
-		if (KEY(2) = '1') then
+		if (KEY(2) = '0') then
 			HEX2 <= "0000000";
 			HEX3 <= "0000000";
 			HEX4 <= alarm_min_1;
