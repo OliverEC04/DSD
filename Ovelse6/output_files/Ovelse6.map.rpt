@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Ovelse6
-Mon Apr 24 10:43:42 2023
+Mon Apr 24 12:42:07 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -48,13 +48,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Apr 24 10:43:42 2023           ;
+; Analysis & Synthesis Status        ; Successful - Mon Apr 24 12:42:07 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Ovelse6                                         ;
 ; Top-level Entity Name              ; alarm_watch_tester                              ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 229                                             ;
-;     Total combinational functions  ; 229                                             ;
+; Total logic elements               ; 224                                             ;
+;     Total combinational functions  ; 224                                             ;
 ;     Dedicated logic registers      ; 62                                              ;
 ; Total registers                    ; 62                                              ;
 ; Total pins                         ; 64                                              ;
@@ -186,16 +186,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+----------+
 ; Resource                                    ; Usage    ;
 +---------------------------------------------+----------+
-; Estimated Total logic elements              ; 229      ;
+; Estimated Total logic elements              ; 224      ;
 ;                                             ;          ;
-; Total combinational functions               ; 229      ;
+; Total combinational functions               ; 224      ;
 ; Logic element usage by number of LUT inputs ;          ;
-;     -- 4 input functions                    ; 140      ;
-;     -- 3 input functions                    ; 24       ;
-;     -- <=2 input functions                  ; 65       ;
+;     -- 4 input functions                    ; 134      ;
+;     -- 3 input functions                    ; 19       ;
+;     -- <=2 input functions                  ; 71       ;
 ;                                             ;          ;
 ; Logic elements by mode                      ;          ;
-;     -- normal mode                          ; 199      ;
+;     -- normal mode                          ; 194      ;
 ;     -- arithmetic mode                      ; 30       ;
 ;                                             ;          ;
 ; Total registers                             ; 62       ;
@@ -206,8 +206,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Embedded Multiplier 9-bit elements          ; 0        ;
 ; Maximum fan-out node                        ; CLOCK_50 ;
 ; Maximum fan-out                             ; 62       ;
-; Total fan-out                               ; 1002     ;
-; Average fan-out                             ; 2.82     ;
+; Total fan-out                               ; 975      ;
+; Average fan-out                             ; 2.79     ;
 +---------------------------------------------+----------+
 
 
@@ -216,8 +216,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node           ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                ; Library Name ;
 +--------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------+--------------+
-; |alarm_watch_tester                  ; 229 (34)          ; 62 (0)       ; 0           ; 0            ; 0       ; 0         ; 64   ; 0            ; |alarm_watch_tester                                                ; work         ;
-;    |alarm_watch:watch|               ; 155 (0)           ; 62 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alarm_watch_tester|alarm_watch:watch                              ; work         ;
+; |alarm_watch_tester                  ; 224 (43)          ; 62 (0)       ; 0           ; 0            ; 0       ; 0         ; 64   ; 0            ; |alarm_watch_tester                                                ; work         ;
+;    |alarm_watch:watch|               ; 156 (0)           ; 62 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alarm_watch_tester|alarm_watch:watch                              ; work         ;
 ;       |bin_to_7_seg:b27_hrs_10|      ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alarm_watch_tester|alarm_watch:watch|bin_to_7_seg:b27_hrs_10      ; work         ;
 ;       |bin_to_7_seg:b27_hrs_1|       ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alarm_watch_tester|alarm_watch:watch|bin_to_7_seg:b27_hrs_1       ; work         ;
 ;       |bin_to_7_seg:b27_min_10|      ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alarm_watch_tester|alarm_watch:watch|bin_to_7_seg:b27_min_10      ; work         ;
@@ -231,11 +231,10 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |multi_counter:counter_min_1|  ; 6 (6)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alarm_watch_tester|alarm_watch:watch|multi_counter:counter_min_1  ; work         ;
 ;       |multi_counter:counter_sec_10| ; 7 (7)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alarm_watch_tester|alarm_watch:watch|multi_counter:counter_sec_10 ; work         ;
 ;       |multi_counter:counter_sec_1|  ; 6 (6)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alarm_watch_tester|alarm_watch:watch|multi_counter:counter_sec_1  ; work         ;
-;       |reset_logic:reset_logic|      ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alarm_watch_tester|alarm_watch:watch|reset_logic:reset_logic      ; work         ;
-;    |bin_to_7_seg:b27_hrs_1|          ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alarm_watch_tester|bin_to_7_seg:b27_hrs_1                         ; work         ;
-;    |bin_to_7_seg:b27_min_1|          ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alarm_watch_tester|bin_to_7_seg:b27_min_1                         ; work         ;
-;    |compare:compare|                 ; 10 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alarm_watch_tester|compare:compare                                ; work         ;
-;    |input_limiter:input_limiter|     ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alarm_watch_tester|input_limiter:input_limiter                    ; work         ;
+;       |reset_logic:reset_logic|      ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alarm_watch_tester|alarm_watch:watch|reset_logic:reset_logic      ; work         ;
+;    |bin_to_7_seg:b27_min_1|          ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alarm_watch_tester|bin_to_7_seg:b27_min_1                         ; work         ;
+;    |compare:compare|                 ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alarm_watch_tester|compare:compare                                ; work         ;
+;    |input_limiter:input_limiter|     ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alarm_watch_tester|input_limiter:input_limiter                    ; work         ;
 +--------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -336,7 +335,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Apr 24 10:43:40 2023
+    Info: Processing started: Mon Apr 24 12:42:05 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Ovelse6 -c Ovelse6
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file watch_tester.vhd
@@ -399,13 +398,13 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[1]"
-Info (21057): Implemented 310 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 305 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 21 input pins
     Info (21059): Implemented 43 output pins
-    Info (21061): Implemented 246 logic cells
+    Info (21061): Implemented 241 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 15 warnings
-    Info: Peak virtual memory: 4645 megabytes
-    Info: Processing ended: Mon Apr 24 10:43:42 2023
+    Info: Peak virtual memory: 4637 megabytes
+    Info: Processing ended: Mon Apr 24 12:42:07 2023
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
