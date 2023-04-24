@@ -1,5 +1,5 @@
 Analysis & Synthesis report for binToHex
-Sun Apr 23 14:52:17 2023
+Mon Apr 24 10:21:09 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -10,7 +10,14 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Port Connectivity Checks: "mux1:mux1_inst"
+ 10. Port Connectivity Checks: "compare_logic:compare_logic_inst"
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -36,20 +43,20 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Sun Apr 23 14:52:17 2023               ;
+; Analysis & Synthesis Status        ; Successful - Mon Apr 24 10:21:09 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; binToHex                                        ;
-; Top-level Entity Name              ; guess_game_tester                               ;
+; Top-level Entity Name              ; guess_game                                      ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; N/A until Partition Merge                       ;
-;     Total combinational functions  ; N/A until Partition Merge                       ;
-;     Dedicated logic registers      ; N/A until Partition Merge                       ;
-; Total registers                    ; N/A until Partition Merge                       ;
-; Total pins                         ; N/A until Partition Merge                       ;
-; Total virtual pins                 ; N/A until Partition Merge                       ;
-; Total memory bits                  ; N/A until Partition Merge                       ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
-; Total PLLs                         ; N/A until Partition Merge                       ;
+; Total logic elements               ; 0                                               ;
+;     Total combinational functions  ; 0                                               ;
+;     Dedicated logic registers      ; 0                                               ;
+; Total registers                    ; 0                                               ;
+; Total pins                         ; 25                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
 +------------------------------------+-------------------------------------------------+
 
 
@@ -59,7 +66,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C35F672C6       ;                    ;
-; Top-level entity name                                                      ; guess_game_tester  ; binToHex           ;
+; Top-level entity name                                                      ; guess_game         ; binToHex           ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -149,13 +156,107 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
++-----------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                      ;
++----------------------------------+-----------------+-----------------+--------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path               ; Library ;
++----------------------------------+-----------------+-----------------+--------------------------------------------+---------+
+; mux2.vhd                         ; yes             ; User VHDL File  ; C:/Gitte/DSD/Ovelse5/mux2.vhd              ;         ;
+; mux1.vhd                         ; yes             ; User VHDL File  ; C:/Gitte/DSD/Ovelse5/mux1.vhd              ;         ;
+; binToHex_tester.vhd              ; yes             ; User VHDL File  ; C:/Gitte/DSD/Ovelse5/binToHex_tester.vhd   ;         ;
+; binToHex.vhd                     ; yes             ; User VHDL File  ; C:/Gitte/DSD/Ovelse5/binToHex.vhd          ;         ;
+; guess_game.vhd                   ; yes             ; User VHDL File  ; C:/Gitte/DSD/Ovelse5/guess_game.vhd        ;         ;
+; compare_logic.vhd                ; yes             ; User VHDL File  ; C:/Gitte/DSD/Ovelse5/compare_logic.vhd     ;         ;
+; latch.vhd                        ; yes             ; User VHDL File  ; C:/Gitte/DSD/Ovelse5/latch.vhd             ;         ;
+; guess_game_tester.vhd            ; yes             ; User VHDL File  ; C:/Gitte/DSD/Ovelse5/guess_game_tester.vhd ;         ;
+; mylatch.vhd                      ; yes             ; User VHDL File  ; C:/Gitte/DSD/Ovelse5/mylatch.vhd           ;         ;
++----------------------------------+-----------------+-----------------+--------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+;                                             ;       ;
+; Total combinational functions               ; 0     ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- <=2 input functions                  ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 25    ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
++---------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; |guess_game                ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 25   ; 0            ; |guess_game         ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux1:mux1_inst"                                                                     ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; bin  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "compare_logic:compare_logic_inst"                                                     ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; result ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun Apr 23 14:52:16 2023
+    Info: Processing started: Mon Apr 24 10:21:08 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Ovelse5 -c binToHex
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file mux2.vhd
@@ -182,33 +283,64 @@ Info (12021): Found 2 design units, including 1 entities, in source file latch.v
 Info (12021): Found 2 design units, including 1 entities, in source file guess_game_tester.vhd
     Info (12022): Found design unit 1: guess_game_tester-guess_game_tester_beh
     Info (12023): Found entity 1: guess_game_tester
-Info (12127): Elaborating entity "guess_game_tester" for the top level hierarchy
-Info (12128): Elaborating entity "guess_game" for hierarchy "guess_game:guess_game"
+Info (12021): Found 2 design units, including 1 entities, in source file mylatch.vhd
+    Info (12022): Found design unit 1: mylatch-latch_impl
+    Info (12023): Found entity 1: mylatch
+Info (12127): Elaborating entity "guess_game" for the top level hierarchy
 Warning (10541): VHDL Signal Declaration warning at guess_game.vhd(15): used implicit default value for signal "hexEt" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Warning (10541): VHDL Signal Declaration warning at guess_game.vhd(16): used implicit default value for signal "hexTi" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Warning (10036): Verilog HDL or VHDL warning at guess_game.vhd(26): object "mux1toBinToHex" assigned a value but never read
-Error (12004): Port "input[0]" does not exist in primitive "latch" of instance "latch_inst" File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 34
-Error (12004): Port "input[1]" does not exist in primitive "latch" of instance "latch_inst" File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 34
-Error (12004): Port "input[2]" does not exist in primitive "latch" of instance "latch_inst" File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 34
-Error (12004): Port "input[3]" does not exist in primitive "latch" of instance "latch_inst" File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 34
-Error (12004): Port "input[4]" does not exist in primitive "latch" of instance "latch_inst" File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 34
-Error (12004): Port "input[5]" does not exist in primitive "latch" of instance "latch_inst" File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 34
-Error (12004): Port "input[6]" does not exist in primitive "latch" of instance "latch_inst" File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 34
-Error (12004): Port "input[7]" does not exist in primitive "latch" of instance "latch_inst" File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 34
-Error (12004): Port "secret_value[0]" does not exist in primitive "latch" of instance "latch_inst" File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 34
-Error (12004): Port "secret_value[1]" does not exist in primitive "latch" of instance "latch_inst" File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 34
-Error (12004): Port "secret_value[2]" does not exist in primitive "latch" of instance "latch_inst" File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 34
-Error (12004): Port "secret_value[3]" does not exist in primitive "latch" of instance "latch_inst" File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 34
-Error (12004): Port "secret_value[4]" does not exist in primitive "latch" of instance "latch_inst" File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 34
-Error (12004): Port "secret_value[5]" does not exist in primitive "latch" of instance "latch_inst" File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 34
-Error (12004): Port "secret_value[6]" does not exist in primitive "latch" of instance "latch_inst" File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 34
-Error (12004): Port "secret_value[7]" does not exist in primitive "latch" of instance "latch_inst" File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 34
-Error (12004): Port "set" does not exist in primitive "latch" of instance "latch_inst" File: C:/Gitte/DSD/Ovelse5/guess_game.vhd Line: 34
-Error (12152): Can't elaborate user hierarchy "guess_game:guess_game" File: C:/Gitte/DSD/Ovelse5/guess_game_tester.vhd Line: 20
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 18 errors, 5 warnings
-    Error: Peak virtual memory: 4624 megabytes
-    Error: Processing ended: Sun Apr 23 14:52:17 2023
-    Error: Elapsed time: 00:00:01
-    Error: Total CPU time (on all processors): 00:00:01
+Info (12128): Elaborating entity "mylatch" for hierarchy "mylatch:latch_inst"
+Info (10041): Inferred latch for "secret_value[0]" at mylatch.vhd(17)
+Info (10041): Inferred latch for "secret_value[1]" at mylatch.vhd(17)
+Info (10041): Inferred latch for "secret_value[2]" at mylatch.vhd(17)
+Info (10041): Inferred latch for "secret_value[3]" at mylatch.vhd(17)
+Info (10041): Inferred latch for "secret_value[4]" at mylatch.vhd(17)
+Info (10041): Inferred latch for "secret_value[5]" at mylatch.vhd(17)
+Info (10041): Inferred latch for "secret_value[6]" at mylatch.vhd(17)
+Info (10041): Inferred latch for "secret_value[7]" at mylatch.vhd(17)
+Info (12128): Elaborating entity "compare_logic" for hierarchy "compare_logic:compare_logic_inst"
+Warning (10492): VHDL Process Statement warning at compare_logic.vhd(22): signal "try" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at compare_logic.vhd(20): inferring latch(es) for signal or variable "result", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "result[0]" at compare_logic.vhd(20)
+Info (10041): Inferred latch for "result[1]" at compare_logic.vhd(20)
+Info (12128): Elaborating entity "mux1" for hierarchy "mux1:mux1_inst"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "hexEt[0]" is stuck at GND
+    Warning (13410): Pin "hexEt[1]" is stuck at GND
+    Warning (13410): Pin "hexEt[2]" is stuck at GND
+    Warning (13410): Pin "hexEt[3]" is stuck at GND
+    Warning (13410): Pin "hexEt[4]" is stuck at GND
+    Warning (13410): Pin "hexEt[5]" is stuck at GND
+    Warning (13410): Pin "hexEt[6]" is stuck at GND
+    Warning (13410): Pin "hexTi[0]" is stuck at GND
+    Warning (13410): Pin "hexTi[1]" is stuck at GND
+    Warning (13410): Pin "hexTi[2]" is stuck at GND
+    Warning (13410): Pin "hexTi[3]" is stuck at GND
+    Warning (13410): Pin "hexTi[4]" is stuck at GND
+    Warning (13410): Pin "hexTi[5]" is stuck at GND
+    Warning (13410): Pin "hexTi[6]" is stuck at GND
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 11 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "inputs[0]"
+    Warning (15610): No output dependent on input pin "inputs[1]"
+    Warning (15610): No output dependent on input pin "inputs[2]"
+    Warning (15610): No output dependent on input pin "inputs[3]"
+    Warning (15610): No output dependent on input pin "inputs[4]"
+    Warning (15610): No output dependent on input pin "inputs[5]"
+    Warning (15610): No output dependent on input pin "inputs[6]"
+    Warning (15610): No output dependent on input pin "inputs[7]"
+    Warning (15610): No output dependent on input pin "set"
+    Warning (15610): No output dependent on input pin "show"
+    Warning (15610): No output dependent on input pin "try"
+Info (21057): Implemented 25 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 11 input pins
+    Info (21059): Implemented 14 output pins
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 34 warnings
+    Info: Peak virtual memory: 4631 megabytes
+    Info: Processing ended: Mon Apr 24 10:21:09 2023
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 

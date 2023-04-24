@@ -31,7 +31,7 @@ architecture guess_game_beh of guess_game is
 begin
 	
 
-	latch_inst : entity work.latch port map(
+	latch_inst : entity work.mylatch port map(
         set => set,
         secret_value => secret_value,
         input => inputs
@@ -50,11 +50,12 @@ begin
 	bin => mux1toBinToHex
 	);
 	
---	binToHex : entity work.binToHex port map(
-	
---	);
-	
-	
+	binToHex_inst : entity work.binToHex port map(
+		--bin	   : in std_logic_vector	(3 downto 0);
+		--segment : out std_logic_vector (6 downto 0)
+		
+		
+	);
 	
 	 
 end guess_game_beh;

@@ -172,6 +172,56 @@ SIGNAL("SW[17]")
 	PARENT = "";
 }
 
+SIGNAL("count_alt")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 4;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("count_alt[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "count_alt";
+}
+
+SIGNAL("count_alt[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "count_alt";
+}
+
+SIGNAL("count_alt[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "count_alt";
+}
+
+SIGNAL("count_alt[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "count_alt";
+}
+
 TRANSITION_LIST("HEX0[0]")
 {
 	NODE
@@ -240,7 +290,15 @@ TRANSITION_LIST("KEY[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 860.0;
 	}
 }
 
@@ -295,6 +353,42 @@ TRANSITION_LIST("SW[17]")
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("count_alt[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("count_alt[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("count_alt[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("count_alt[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -422,6 +516,56 @@ DISPLAY_LINE
 	RADIX = Binary;
 	TREE_INDEX = 13;
 	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "count_alt";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 14;
+	TREE_LEVEL = 0;
+	CHILDREN = 15, 16, 17, 18;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "count_alt[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 15;
+	TREE_LEVEL = 1;
+	PARENT = 14;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "count_alt[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 16;
+	TREE_LEVEL = 1;
+	PARENT = 14;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "count_alt[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 17;
+	TREE_LEVEL = 1;
+	PARENT = 14;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "count_alt[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 18;
+	TREE_LEVEL = 1;
+	PARENT = 14;
 }
 
 TIME_BAR

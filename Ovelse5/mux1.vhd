@@ -18,14 +18,14 @@ architecture mux1_impl of mux1 is
 begin
 	
 	
-	bin <= std_logic_vector(to_unsigned(0, 4));
+	--bin <= std_logic_vector(to_unsigned(0, 4));
 	
 	process (show, input, secret_value)
 	begin
 		if show = '1' then
-			bin <= secret_value(7 downto 4);
+			bin <= secret_value;
 		else
-			bin <= input(3 downto 0);
+			bin <= input(7 downto 0);
 		end if;
 	end process;
 	
