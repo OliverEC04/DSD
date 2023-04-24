@@ -38,7 +38,11 @@
 
 set_global_assignment -name FAMILY "Cyclone II"
 set_global_assignment -name DEVICE EP2C35F672C6
+<<<<<<< HEAD
 set_global_assignment -name TOP_LEVEL_ENTITY multi_counter
+=======
+set_global_assignment -name TOP_LEVEL_ENTITY alarm_watch_tester
+>>>>>>> f4b6b8dd97b1ac6d52338002dc03a381b8d16bc8
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "10:38:46  APRIL 20, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
@@ -46,9 +50,6 @@ set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
-set_global_assignment -name VHDL_FILE bin_to_7_seg.vhd
-set_global_assignment -name VHDL_FILE multi_counter.vhd
-set_global_assignment -name VHDL_FILE multi_counter_tester.vhd
 set_location_assignment PIN_N25 -to SW[0]
 set_location_assignment PIN_N26 -to SW[1]
 set_location_assignment PIN_P25 -to SW[2]
@@ -474,11 +475,27 @@ set_location_assignment PIN_V24 -to GPIO_1[32]
 set_location_assignment PIN_V23 -to GPIO_1[33]
 set_location_assignment PIN_W25 -to GPIO_1[34]
 set_location_assignment PIN_W23 -to GPIO_1[35]
+<<<<<<< HEAD
 set_global_assignment -name SIMULATION_MODE FUNCTIONAL
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/Waveform.vwf
+=======
+set_global_assignment -name VHDL_FILE watch_tester.vhd
+set_global_assignment -name VHDL_FILE watch.vhd
+set_global_assignment -name VHDL_FILE reset_logic.vhd
+set_global_assignment -name VHDL_FILE one_digit_clock_tester.vhd
+set_global_assignment -name VHDL_FILE input_limiter.vhd
+set_global_assignment -name VHDL_FILE compare.vhd
+set_global_assignment -name VHDL_FILE clock_gen.vhd
+set_global_assignment -name VHDL_FILE alarm_watch_tester.vhd
+set_global_assignment -name VHDL_FILE alarm_watch.vhd
+set_global_assignment -name VHDL_FILE bin_to_7_seg.vhd
+set_global_assignment -name VHDL_FILE multi_counter.vhd
+set_global_assignment -name VHDL_FILE multi_counter_tester.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE funcSimMulticounter.vwf
+>>>>>>> f4b6b8dd97b1ac6d52338002dc03a381b8d16bc8
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

@@ -1,5 +1,9 @@
 Analysis & Synthesis report for Ovelse6
+<<<<<<< HEAD
 Mon Apr 24 10:30:15 2023
+=======
+Mon Apr 24 10:30:28 2023
+>>>>>>> f4b6b8dd97b1ac6d52338002dc03a381b8d16bc8
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -15,8 +19,19 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
   9. Multiplexer Restructuring Statistics (Restructuring Performed)
+<<<<<<< HEAD
  10. Elapsed Time Per Partition
  11. Analysis & Synthesis Messages
+=======
+ 10. Port Connectivity Checks: "alarm_watch:watch|multi_counter:counter_hrs_10"
+ 11. Port Connectivity Checks: "alarm_watch:watch|multi_counter:counter_hrs_1"
+ 12. Port Connectivity Checks: "alarm_watch:watch|multi_counter:counter_min_10"
+ 13. Port Connectivity Checks: "alarm_watch:watch|multi_counter:counter_min_1"
+ 14. Port Connectivity Checks: "alarm_watch:watch|multi_counter:counter_sec_10"
+ 15. Port Connectivity Checks: "alarm_watch:watch|multi_counter:counter_sec_1"
+ 16. Elapsed Time Per Partition
+ 17. Analysis & Synthesis Messages
+>>>>>>> f4b6b8dd97b1ac6d52338002dc03a381b8d16bc8
 
 
 
@@ -42,6 +57,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
+<<<<<<< HEAD
 ; Analysis & Synthesis Status        ; Successful - Mon Apr 24 10:30:15 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Ovelse6                                         ;
@@ -52,6 +68,18 @@ applicable agreement for further details.
 ;     Dedicated logic registers      ; 5                                               ;
 ; Total registers                    ; 5                                               ;
 ; Total pins                         ; 10                                              ;
+=======
+; Analysis & Synthesis Status        ; Successful - Mon Apr 24 10:30:27 2023           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; Ovelse6                                         ;
+; Top-level Entity Name              ; alarm_watch_tester                              ;
+; Family                             ; Cyclone II                                      ;
+; Total logic elements               ; 229                                             ;
+;     Total combinational functions  ; 229                                             ;
+;     Dedicated logic registers      ; 62                                              ;
+; Total registers                    ; 62                                              ;
+; Total pins                         ; 64                                              ;
+>>>>>>> f4b6b8dd97b1ac6d52338002dc03a381b8d16bc8
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -65,7 +93,11 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C35F672C6       ;                    ;
+<<<<<<< HEAD
 ; Top-level entity name                                                      ; multi_counter      ; Ovelse6            ;
+=======
+; Top-level entity name                                                      ; alarm_watch_tester ; Ovelse6            ;
+>>>>>>> f4b6b8dd97b1ac6d52338002dc03a381b8d16bc8
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -150,11 +182,12 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 4      ;
+; Number detected on machine ; 20     ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
+<<<<<<< HEAD
 +-------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Source Files Read                                                                                  ;
 +----------------------------------+-----------------+-----------------+----------------------------------------+---------+
@@ -201,6 +234,84 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; |multi_counter             ; 8 (8)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 10   ; 0            ; |multi_counter      ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+=======
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                           ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                    ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------+---------+
+; watch_tester.vhd                 ; yes             ; User VHDL File  ; C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse6/watch_tester.vhd           ;         ;
+; watch.vhd                        ; yes             ; User VHDL File  ; C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse6/watch.vhd                  ;         ;
+; reset_logic.vhd                  ; yes             ; User VHDL File  ; C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse6/reset_logic.vhd            ;         ;
+; one_digit_clock_tester.vhd       ; yes             ; User VHDL File  ; C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse6/one_digit_clock_tester.vhd ;         ;
+; input_limiter.vhd                ; yes             ; User VHDL File  ; C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse6/input_limiter.vhd          ;         ;
+; compare.vhd                      ; yes             ; User VHDL File  ; C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse6/compare.vhd                ;         ;
+; clock_gen.vhd                    ; yes             ; User VHDL File  ; C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse6/clock_gen.vhd              ;         ;
+; alarm_watch_tester.vhd           ; yes             ; User VHDL File  ; C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse6/alarm_watch_tester.vhd     ;         ;
+; alarm_watch.vhd                  ; yes             ; User VHDL File  ; C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse6/alarm_watch.vhd            ;         ;
+; bin_to_7_seg.vhd                 ; yes             ; User VHDL File  ; C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse6/bin_to_7_seg.vhd           ;         ;
+; multi_counter.vhd                ; yes             ; User VHDL File  ; C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse6/multi_counter.vhd          ;         ;
+; multi_counter_tester.vhd         ; yes             ; User VHDL File  ; C:/Users/olive/Nextcloud/Seagate Hub/Libraries/Skole/DSD/DSD/Ovelse6/multi_counter_tester.vhd   ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------+---------+
+
+
++--------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary            ;
++---------------------------------------------+----------+
+; Resource                                    ; Usage    ;
++---------------------------------------------+----------+
+; Estimated Total logic elements              ; 229      ;
+;                                             ;          ;
+; Total combinational functions               ; 229      ;
+; Logic element usage by number of LUT inputs ;          ;
+;     -- 4 input functions                    ; 140      ;
+;     -- 3 input functions                    ; 24       ;
+;     -- <=2 input functions                  ; 65       ;
+;                                             ;          ;
+; Logic elements by mode                      ;          ;
+;     -- normal mode                          ; 199      ;
+;     -- arithmetic mode                      ; 30       ;
+;                                             ;          ;
+; Total registers                             ; 62       ;
+;     -- Dedicated logic registers            ; 62       ;
+;     -- I/O registers                        ; 0        ;
+;                                             ;          ;
+; I/O pins                                    ; 64       ;
+; Embedded Multiplier 9-bit elements          ; 0        ;
+; Maximum fan-out node                        ; CLOCK_50 ;
+; Maximum fan-out                             ; 62       ;
+; Total fan-out                               ; 1002     ;
+; Average fan-out                             ; 2.82     ;
++---------------------------------------------+----------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                  ;
++--------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node           ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                ; Library Name ;
++--------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------+--------------+
+; |alarm_watch_tester                  ; 229 (34)          ; 62 (0)       ; 0           ; 0            ; 0       ; 0         ; 64   ; 0            ; |alarm_watch_tester                                                ; work         ;
+;    |alarm_watch:watch|               ; 155 (0)           ; 62 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alarm_watch_tester|alarm_watch:watch                              ; work         ;
+;       |bin_to_7_seg:b27_hrs_10|      ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alarm_watch_tester|alarm_watch:watch|bin_to_7_seg:b27_hrs_10      ; work         ;
+;       |bin_to_7_seg:b27_hrs_1|       ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alarm_watch_tester|alarm_watch:watch|bin_to_7_seg:b27_hrs_1       ; work         ;
+;       |bin_to_7_seg:b27_min_10|      ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alarm_watch_tester|alarm_watch:watch|bin_to_7_seg:b27_min_10      ; work         ;
+;       |bin_to_7_seg:b27_min_1|       ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alarm_watch_tester|alarm_watch:watch|bin_to_7_seg:b27_min_1       ; work         ;
+;       |bin_to_7_seg:b27_sec_10|      ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alarm_watch_tester|alarm_watch:watch|bin_to_7_seg:b27_sec_10      ; work         ;
+;       |bin_to_7_seg:b27_sec_1|       ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alarm_watch_tester|alarm_watch:watch|bin_to_7_seg:b27_sec_1       ; work         ;
+;       |clock_gen:clock_gen|          ; 59 (59)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alarm_watch_tester|alarm_watch:watch|clock_gen:clock_gen          ; work         ;
+;       |multi_counter:counter_hrs_10| ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alarm_watch_tester|alarm_watch:watch|multi_counter:counter_hrs_10 ; work         ;
+;       |multi_counter:counter_hrs_1|  ; 6 (6)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alarm_watch_tester|alarm_watch:watch|multi_counter:counter_hrs_1  ; work         ;
+;       |multi_counter:counter_min_10| ; 7 (7)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alarm_watch_tester|alarm_watch:watch|multi_counter:counter_min_10 ; work         ;
+;       |multi_counter:counter_min_1|  ; 6 (6)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alarm_watch_tester|alarm_watch:watch|multi_counter:counter_min_1  ; work         ;
+;       |multi_counter:counter_sec_10| ; 7 (7)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alarm_watch_tester|alarm_watch:watch|multi_counter:counter_sec_10 ; work         ;
+;       |multi_counter:counter_sec_1|  ; 6 (6)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alarm_watch_tester|alarm_watch:watch|multi_counter:counter_sec_1  ; work         ;
+;       |reset_logic:reset_logic|      ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alarm_watch_tester|alarm_watch:watch|reset_logic:reset_logic      ; work         ;
+;    |bin_to_7_seg:b27_hrs_1|          ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alarm_watch_tester|bin_to_7_seg:b27_hrs_1                         ; work         ;
+;    |bin_to_7_seg:b27_min_1|          ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alarm_watch_tester|bin_to_7_seg:b27_min_1                         ; work         ;
+;    |compare:compare|                 ; 10 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alarm_watch_tester|compare:compare                                ; work         ;
+;    |input_limiter:input_limiter|     ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alarm_watch_tester|input_limiter:input_limiter                    ; work         ;
++--------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------+--------------+
+>>>>>>> f4b6b8dd97b1ac6d52338002dc03a381b8d16bc8
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -209,16 +320,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 5     ;
+; Total registers                              ; 62    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 5     ;
+; Number of registers using Asynchronous Clear ; 62    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
+<<<<<<< HEAD
 ; Number of registers using Clock Enable       ; 4     ;
+=======
+; Number of registers using Clock Enable       ; 17    ;
+>>>>>>> f4b6b8dd97b1ac6d52338002dc03a381b8d16bc8
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
+<<<<<<< HEAD
 +-------------------------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------+
@@ -226,6 +342,72 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------+
 ; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |multi_counter|count_alt[0] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------+
+=======
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------+
+; 3:1                ; 31 bits   ; 62 LEs        ; 31 LEs               ; 31 LEs                 ; Yes        ; |alarm_watch_tester|alarm_watch:watch|clock_gen:clock_gen|tick[29] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alarm_watch:watch|multi_counter:counter_hrs_10"                                     ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; mode ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------+
+; Port Connectivity Checks: "alarm_watch:watch|multi_counter:counter_hrs_1" ;
++------+-------+----------+-------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                         ;
++------+-------+----------+-------------------------------------------------+
+; mode ; Input ; Info     ; Stuck at GND                                    ;
++------+-------+----------+-------------------------------------------------+
+
+
++----------------------------------------------------------------------------+
+; Port Connectivity Checks: "alarm_watch:watch|multi_counter:counter_min_10" ;
++---------+-------+----------+-----------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                       ;
++---------+-------+----------+-----------------------------------------------+
+; mode[1] ; Input ; Info     ; Stuck at GND                                  ;
+; mode[0] ; Input ; Info     ; Stuck at VCC                                  ;
++---------+-------+----------+-----------------------------------------------+
+
+
++---------------------------------------------------------------------------+
+; Port Connectivity Checks: "alarm_watch:watch|multi_counter:counter_min_1" ;
++------+-------+----------+-------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                         ;
++------+-------+----------+-------------------------------------------------+
+; mode ; Input ; Info     ; Stuck at GND                                    ;
++------+-------+----------+-------------------------------------------------+
+
+
++----------------------------------------------------------------------------+
+; Port Connectivity Checks: "alarm_watch:watch|multi_counter:counter_sec_10" ;
++---------+-------+----------+-----------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                       ;
++---------+-------+----------+-----------------------------------------------+
+; mode[1] ; Input ; Info     ; Stuck at GND                                  ;
+; mode[0] ; Input ; Info     ; Stuck at VCC                                  ;
++---------+-------+----------+-----------------------------------------------+
+
+
++---------------------------------------------------------------------------+
+; Port Connectivity Checks: "alarm_watch:watch|multi_counter:counter_sec_1" ;
++------+-------+----------+-------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                         ;
++------+-------+----------+-------------------------------------------------+
+; mode ; Input ; Info     ; Stuck at GND                                    ;
++------+-------+----------+-------------------------------------------------+
+>>>>>>> f4b6b8dd97b1ac6d52338002dc03a381b8d16bc8
 
 
 +-------------------------------+
@@ -243,9 +425,40 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+<<<<<<< HEAD
     Info: Processing started: Mon Apr 24 10:30:13 2023
+=======
+    Info: Processing started: Mon Apr 24 10:30:25 2023
+>>>>>>> f4b6b8dd97b1ac6d52338002dc03a381b8d16bc8
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Ovelse6 -c Ovelse6
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file watch_tester.vhd
+    Info (12022): Found design unit 1: watch_tester-watch_tester_impl
+    Info (12023): Found entity 1: watch_tester
+Info (12021): Found 2 design units, including 1 entities, in source file watch.vhd
+    Info (12022): Found design unit 1: watch-watch_impl
+    Info (12023): Found entity 1: watch
+Info (12021): Found 2 design units, including 1 entities, in source file reset_logic.vhd
+    Info (12022): Found design unit 1: reset_logic-reset_logic_impl
+    Info (12023): Found entity 1: reset_logic
+Info (12021): Found 2 design units, including 1 entities, in source file one_digit_clock_tester.vhd
+    Info (12022): Found design unit 1: one_digit_clock_tester-one_digit_clock_tester_impl
+    Info (12023): Found entity 1: one_digit_clock_tester
+Info (12021): Found 2 design units, including 1 entities, in source file input_limiter.vhd
+    Info (12022): Found design unit 1: input_limiter-input_limiter_impl
+    Info (12023): Found entity 1: input_limiter
+Info (12021): Found 2 design units, including 1 entities, in source file compare.vhd
+    Info (12022): Found design unit 1: compare-compare_impl
+    Info (12023): Found entity 1: compare
+Info (12021): Found 2 design units, including 1 entities, in source file clock_gen.vhd
+    Info (12022): Found design unit 1: clock_gen-clock_gen_impl
+    Info (12023): Found entity 1: clock_gen
+Info (12021): Found 2 design units, including 1 entities, in source file alarm_watch_tester.vhd
+    Info (12022): Found design unit 1: alarm_watch_tester-alarm_watch_tester_impl
+    Info (12023): Found entity 1: alarm_watch_tester
+Info (12021): Found 2 design units, including 1 entities, in source file alarm_watch.vhd
+    Info (12022): Found design unit 1: alarm_watch-alarm_watch_impl
+    Info (12023): Found entity 1: alarm_watch
 Info (12021): Found 2 design units, including 1 entities, in source file bin_to_7_seg.vhd
     Info (12022): Found design unit 1: bin_to_7_seg-bin_to_7_seg_impl
     Info (12023): Found entity 1: bin_to_7_seg
@@ -255,6 +468,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file multi_c
 Info (12021): Found 2 design units, including 1 entities, in source file multi_counter_tester.vhd
     Info (12022): Found design unit 1: multi_counter_tester-multi_counter_tester_impl
     Info (12023): Found entity 1: multi_counter_tester
+<<<<<<< HEAD
 Info (12127): Elaborating entity "multi_counter" for the top level hierarchy
 Warning (10492): VHDL Process Statement warning at multi_counter.vhd(55): signal "count_alt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -268,5 +482,40 @@ Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warning
     Info: Processing ended: Mon Apr 24 10:30:15 2023
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
+=======
+Info (12127): Elaborating entity "alarm_watch_tester" for the top level hierarchy
+Warning (10492): VHDL Process Statement warning at alarm_watch_tester.vhd(48): signal "alarm_min_1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at alarm_watch_tester.vhd(49): signal "alarm_min_10" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at alarm_watch_tester.vhd(50): signal "alarm_hrs_1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at alarm_watch_tester.vhd(51): signal "alarm_hrs_10" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at alarm_watch_tester.vhd(53): signal "watch_sec_1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at alarm_watch_tester.vhd(54): signal "watch_sec_10" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at alarm_watch_tester.vhd(55): signal "watch_min_1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at alarm_watch_tester.vhd(56): signal "watch_min_10" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at alarm_watch_tester.vhd(57): signal "watch_hrs_1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at alarm_watch_tester.vhd(58): signal "watch_hrs_10" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "input_limiter" for hierarchy "input_limiter:input_limiter"
+Info (12128): Elaborating entity "compare" for hierarchy "compare:compare"
+Info (12128): Elaborating entity "alarm_watch" for hierarchy "alarm_watch:watch"
+Warning (10036): Verilog HDL or VHDL warning at alarm_watch.vhd(42): object "cout_hrs_10" assigned a value but never read
+Info (12128): Elaborating entity "clock_gen" for hierarchy "alarm_watch:watch|clock_gen:clock_gen"
+Info (12128): Elaborating entity "reset_logic" for hierarchy "alarm_watch:watch|reset_logic:reset_logic"
+Info (12128): Elaborating entity "multi_counter" for hierarchy "alarm_watch:watch|multi_counter:counter_sec_1"
+Warning (10492): VHDL Process Statement warning at multi_counter.vhd(55): signal "count_alt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "bin_to_7_seg" for hierarchy "alarm_watch:watch|bin_to_7_seg:b27_sec_1"
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "KEY[1]"
+Info (21057): Implemented 310 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 21 input pins
+    Info (21059): Implemented 43 output pins
+    Info (21061): Implemented 246 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 15 warnings
+    Info: Peak virtual memory: 4647 megabytes
+    Info: Processing ended: Mon Apr 24 10:30:28 2023
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:00
+>>>>>>> f4b6b8dd97b1ac6d52338002dc03a381b8d16bc8
 
 

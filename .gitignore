@@ -54,6 +54,7 @@
 *~
 *example*
 *sopc_*
+*.code-workspace
 # *.sdc # I want those timing files
 
 # ignore Quartus II generated folders

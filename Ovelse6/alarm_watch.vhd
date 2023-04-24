@@ -2,13 +2,13 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-entity watch is
+entity alarm_watch is
 	port
 	( 
 		-- inputs
 		clk : in STD_LOGIC;
-      speed : in STD_LOGIC;
-      reset : in STD_LOGIC;
+		speed : in STD_LOGIC;
+      	reset : in STD_LOGIC;
 
 		-- outputs
 		sec_1 : out std_LOGIC_vector (6 downto 0);
@@ -19,9 +19,9 @@ entity watch is
 		hrs_10 : out std_LOGIC_vector (6 downto 0);
 		watch_time : out std_LOGIC_vector (15 downto 0)
 	);
-end watch;
+end alarm_watch;
 
-architecture watch_impl of watch is
+architecture alarm_watch_impl of alarm_watch is
 
 	signal reset_counters : std_logic; -- reset all counters
 
@@ -162,4 +162,4 @@ begin
 		watch_time <= bin_count_hrs_10 & bin_count_hrs_1 & bin_count_min_10 & bin_count_min_1;
 	end process;
 	
-end watch_impl;
+end alarm_watch_impl;
