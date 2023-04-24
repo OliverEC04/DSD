@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-SOURCE
-=======
-FIT
->>>>>>> f4b6b8dd97b1ac6d52338002dc03a381b8d16bc8
+DONE
