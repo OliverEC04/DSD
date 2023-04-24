@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for binToHex
-Thu Apr 20 12:46:04 2023
+Mon Apr 24 12:51:30 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -16,19 +16,25 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   8. Slow Model Recovery Summary
   9. Slow Model Removal Summary
  10. Slow Model Minimum Pulse Width Summary
- 11. Slow Model Datasheet Report
- 12. Fast Model Setup Summary
- 13. Fast Model Hold Summary
- 14. Fast Model Recovery Summary
- 15. Fast Model Removal Summary
- 16. Fast Model Minimum Pulse Width Summary
- 17. Fast Model Datasheet Report
- 18. Multicorner Timing Analysis Summary
- 19. Clock Transfers
- 20. Report TCCS
- 21. Report RSKM
- 22. Unconstrained Paths
- 23. TimeQuest Timing Analyzer Messages
+ 11. Slow Model Minimum Pulse Width: 'KEY[0]'
+ 12. Setup Times
+ 13. Hold Times
+ 14. Fast Model Setup Summary
+ 15. Fast Model Hold Summary
+ 16. Fast Model Recovery Summary
+ 17. Fast Model Removal Summary
+ 18. Fast Model Minimum Pulse Width Summary
+ 19. Fast Model Minimum Pulse Width: 'KEY[0]'
+ 20. Setup Times
+ 21. Hold Times
+ 22. Multicorner Timing Analysis Summary
+ 23. Setup Times
+ 24. Hold Times
+ 25. Clock Transfers
+ 26. Report TCCS
+ 27. Report RSKM
+ 28. Unconstrained Paths
+ 29. TimeQuest Timing Analyzer Messages
 
 
 
@@ -70,15 +76,18 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 4      ;
+; Number detected on machine ; 20     ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-----------
-; Clocks ;
-----------
-No clocks to report.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                             ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets    ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------+
+; KEY[0]     ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { KEY[0] } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------+
 
 
 ---------------------------
@@ -111,16 +120,90 @@ No paths to report.
 No paths to report.
 
 
-------------------------------------------
++----------------------------------------+
 ; Slow Model Minimum Pulse Width Summary ;
-------------------------------------------
-No paths to report.
++--------+--------+----------------------+
+; Clock  ; Slack  ; End Point TNS        ;
++--------+--------+----------------------+
+; KEY[0] ; -1.222 ; -1.222               ;
++--------+--------+----------------------+
 
 
--------------------------------
-; Slow Model Datasheet Report ;
--------------------------------
-Nothing to report.
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'KEY[0]'                                                                                                   ;
++--------+--------------+----------------+------------------+--------+------------+----------------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock  ; Clock Edge ; Target                                                   ;
++--------+--------------+----------------+------------------+--------+------------+----------------------------------------------------------+
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; KEY[0] ; Rise       ; KEY[0]                                                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[0] ; Rise       ; KEY[0]|combout                                           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; KEY[0]|combout                                           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[0] ; Rise       ; guess_game:guess_game|mylatch:latch_inst|secret_value[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; guess_game:guess_game|mylatch:latch_inst|secret_value[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[0] ; Rise       ; guess_game:guess_game|mylatch:latch_inst|secret_value[1] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; guess_game:guess_game|mylatch:latch_inst|secret_value[1] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[0] ; Rise       ; guess_game:guess_game|mylatch:latch_inst|secret_value[2] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; guess_game:guess_game|mylatch:latch_inst|secret_value[2] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[0] ; Rise       ; guess_game:guess_game|mylatch:latch_inst|secret_value[3] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; guess_game:guess_game|mylatch:latch_inst|secret_value[3] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[0] ; Rise       ; guess_game:guess_game|mylatch:latch_inst|secret_value[4] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; guess_game:guess_game|mylatch:latch_inst|secret_value[4] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[0] ; Rise       ; guess_game:guess_game|mylatch:latch_inst|secret_value[5] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; guess_game:guess_game|mylatch:latch_inst|secret_value[5] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[0] ; Rise       ; guess_game:guess_game|mylatch:latch_inst|secret_value[6] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; guess_game:guess_game|mylatch:latch_inst|secret_value[6] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[0] ; Rise       ; guess_game:guess_game|mylatch:latch_inst|secret_value[7] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; guess_game:guess_game|mylatch:latch_inst|secret_value[7] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[0] ; Rise       ; guess_game|latch_inst|secret_value[0]|datad              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; guess_game|latch_inst|secret_value[0]|datad              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[0] ; Rise       ; guess_game|latch_inst|secret_value[1]|datad              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; guess_game|latch_inst|secret_value[1]|datad              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[0] ; Rise       ; guess_game|latch_inst|secret_value[2]|datad              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; guess_game|latch_inst|secret_value[2]|datad              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[0] ; Rise       ; guess_game|latch_inst|secret_value[3]|datad              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; guess_game|latch_inst|secret_value[3]|datad              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[0] ; Rise       ; guess_game|latch_inst|secret_value[4]|datad              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; guess_game|latch_inst|secret_value[4]|datad              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[0] ; Rise       ; guess_game|latch_inst|secret_value[5]|datad              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; guess_game|latch_inst|secret_value[5]|datad              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[0] ; Rise       ; guess_game|latch_inst|secret_value[6]|datad              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; guess_game|latch_inst|secret_value[6]|datad              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[0] ; Rise       ; guess_game|latch_inst|secret_value[7]|datad              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; guess_game|latch_inst|secret_value[7]|datad              ;
++--------+--------------+----------------+------------------+--------+------------+----------------------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; SW[*]     ; KEY[0]     ; 2.589 ; 2.589 ; Rise       ; KEY[0]          ;
+;  SW[0]    ; KEY[0]     ; 1.167 ; 1.167 ; Rise       ; KEY[0]          ;
+;  SW[1]    ; KEY[0]     ; 0.758 ; 0.758 ; Rise       ; KEY[0]          ;
+;  SW[2]    ; KEY[0]     ; 0.732 ; 0.732 ; Rise       ; KEY[0]          ;
+;  SW[3]    ; KEY[0]     ; 2.589 ; 2.589 ; Rise       ; KEY[0]          ;
+;  SW[4]    ; KEY[0]     ; 2.176 ; 2.176 ; Rise       ; KEY[0]          ;
+;  SW[5]    ; KEY[0]     ; 1.989 ; 1.989 ; Rise       ; KEY[0]          ;
+;  SW[6]    ; KEY[0]     ; 2.122 ; 2.122 ; Rise       ; KEY[0]          ;
+;  SW[7]    ; KEY[0]     ; 1.871 ; 1.871 ; Rise       ; KEY[0]          ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; SW[*]     ; KEY[0]     ; -0.060 ; -0.060 ; Rise       ; KEY[0]          ;
+;  SW[0]    ; KEY[0]     ; -0.327 ; -0.327 ; Rise       ; KEY[0]          ;
+;  SW[1]    ; KEY[0]     ; -0.067 ; -0.067 ; Rise       ; KEY[0]          ;
+;  SW[2]    ; KEY[0]     ; -0.060 ; -0.060 ; Rise       ; KEY[0]          ;
+;  SW[3]    ; KEY[0]     ; -1.757 ; -1.757 ; Rise       ; KEY[0]          ;
+;  SW[4]    ; KEY[0]     ; -1.309 ; -1.309 ; Rise       ; KEY[0]          ;
+;  SW[5]    ; KEY[0]     ; -1.164 ; -1.164 ; Rise       ; KEY[0]          ;
+;  SW[6]    ; KEY[0]     ; -1.277 ; -1.277 ; Rise       ; KEY[0]          ;
+;  SW[7]    ; KEY[0]     ; -1.029 ; -1.029 ; Rise       ; KEY[0]          ;
++-----------+------------+--------+--------+------------+-----------------+
 
 
 ----------------------------
@@ -147,16 +230,90 @@ No paths to report.
 No paths to report.
 
 
-------------------------------------------
++----------------------------------------+
 ; Fast Model Minimum Pulse Width Summary ;
-------------------------------------------
-No paths to report.
++--------+--------+----------------------+
+; Clock  ; Slack  ; End Point TNS        ;
++--------+--------+----------------------+
+; KEY[0] ; -1.222 ; -1.222               ;
++--------+--------+----------------------+
 
 
--------------------------------
-; Fast Model Datasheet Report ;
--------------------------------
-Nothing to report.
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'KEY[0]'                                                                                                   ;
++--------+--------------+----------------+------------------+--------+------------+----------------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock  ; Clock Edge ; Target                                                   ;
++--------+--------------+----------------+------------------+--------+------------+----------------------------------------------------------+
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; KEY[0] ; Rise       ; KEY[0]                                                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[0] ; Rise       ; KEY[0]|combout                                           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; KEY[0]|combout                                           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[0] ; Rise       ; guess_game:guess_game|mylatch:latch_inst|secret_value[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; guess_game:guess_game|mylatch:latch_inst|secret_value[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[0] ; Rise       ; guess_game:guess_game|mylatch:latch_inst|secret_value[1] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; guess_game:guess_game|mylatch:latch_inst|secret_value[1] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[0] ; Rise       ; guess_game:guess_game|mylatch:latch_inst|secret_value[2] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; guess_game:guess_game|mylatch:latch_inst|secret_value[2] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[0] ; Rise       ; guess_game:guess_game|mylatch:latch_inst|secret_value[3] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; guess_game:guess_game|mylatch:latch_inst|secret_value[3] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[0] ; Rise       ; guess_game:guess_game|mylatch:latch_inst|secret_value[4] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; guess_game:guess_game|mylatch:latch_inst|secret_value[4] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[0] ; Rise       ; guess_game:guess_game|mylatch:latch_inst|secret_value[5] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; guess_game:guess_game|mylatch:latch_inst|secret_value[5] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[0] ; Rise       ; guess_game:guess_game|mylatch:latch_inst|secret_value[6] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; guess_game:guess_game|mylatch:latch_inst|secret_value[6] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[0] ; Rise       ; guess_game:guess_game|mylatch:latch_inst|secret_value[7] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; guess_game:guess_game|mylatch:latch_inst|secret_value[7] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[0] ; Rise       ; guess_game|latch_inst|secret_value[0]|datad              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; guess_game|latch_inst|secret_value[0]|datad              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[0] ; Rise       ; guess_game|latch_inst|secret_value[1]|datad              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; guess_game|latch_inst|secret_value[1]|datad              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[0] ; Rise       ; guess_game|latch_inst|secret_value[2]|datad              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; guess_game|latch_inst|secret_value[2]|datad              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[0] ; Rise       ; guess_game|latch_inst|secret_value[3]|datad              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; guess_game|latch_inst|secret_value[3]|datad              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[0] ; Rise       ; guess_game|latch_inst|secret_value[4]|datad              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; guess_game|latch_inst|secret_value[4]|datad              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[0] ; Rise       ; guess_game|latch_inst|secret_value[5]|datad              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; guess_game|latch_inst|secret_value[5]|datad              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[0] ; Rise       ; guess_game|latch_inst|secret_value[6]|datad              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; guess_game|latch_inst|secret_value[6]|datad              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[0] ; Rise       ; guess_game|latch_inst|secret_value[7]|datad              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; guess_game|latch_inst|secret_value[7]|datad              ;
++--------+--------------+----------------+------------------+--------+------------+----------------------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; SW[*]     ; KEY[0]     ; 1.227 ; 1.227 ; Rise       ; KEY[0]          ;
+;  SW[0]    ; KEY[0]     ; 0.476 ; 0.476 ; Rise       ; KEY[0]          ;
+;  SW[1]    ; KEY[0]     ; 0.290 ; 0.290 ; Rise       ; KEY[0]          ;
+;  SW[2]    ; KEY[0]     ; 0.284 ; 0.284 ; Rise       ; KEY[0]          ;
+;  SW[3]    ; KEY[0]     ; 1.227 ; 1.227 ; Rise       ; KEY[0]          ;
+;  SW[4]    ; KEY[0]     ; 1.045 ; 1.045 ; Rise       ; KEY[0]          ;
+;  SW[5]    ; KEY[0]     ; 0.955 ; 0.955 ; Rise       ; KEY[0]          ;
+;  SW[6]    ; KEY[0]     ; 1.010 ; 1.010 ; Rise       ; KEY[0]          ;
+;  SW[7]    ; KEY[0]     ; 0.900 ; 0.900 ; Rise       ; KEY[0]          ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; SW[*]     ; KEY[0]     ; -0.007 ; -0.007 ; Rise       ; KEY[0]          ;
+;  SW[0]    ; KEY[0]     ; -0.122 ; -0.122 ; Rise       ; KEY[0]          ;
+;  SW[1]    ; KEY[0]     ; -0.007 ; -0.007 ; Rise       ; KEY[0]          ;
+;  SW[2]    ; KEY[0]     ; -0.010 ; -0.010 ; Rise       ; KEY[0]          ;
+;  SW[3]    ; KEY[0]     ; -0.876 ; -0.876 ; Rise       ; KEY[0]          ;
+;  SW[4]    ; KEY[0]     ; -0.680 ; -0.680 ; Rise       ; KEY[0]          ;
+;  SW[5]    ; KEY[0]     ; -0.609 ; -0.609 ; Rise       ; KEY[0]          ;
+;  SW[6]    ; KEY[0]     ; -0.652 ; -0.652 ; Rise       ; KEY[0]          ;
+;  SW[7]    ; KEY[0]     ; -0.543 ; -0.543 ; Rise       ; KEY[0]          ;
++-----------+------------+--------+--------+------------+-----------------+
 
 
 +----------------------------------------------------------------------------+
@@ -164,9 +321,45 @@ Nothing to report.
 +------------------+-------+------+----------+---------+---------------------+
 ; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+-------+------+----------+---------+---------------------+
-; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
-; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; -1.222              ;
+;  KEY[0]          ; N/A   ; N/A  ; N/A      ; N/A     ; -1.222              ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; -1.222              ;
+;  KEY[0]          ; N/A   ; N/A  ; N/A      ; N/A     ; -1.222              ;
 +------------------+-------+------+----------+---------+---------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; SW[*]     ; KEY[0]     ; 2.589 ; 2.589 ; Rise       ; KEY[0]          ;
+;  SW[0]    ; KEY[0]     ; 1.167 ; 1.167 ; Rise       ; KEY[0]          ;
+;  SW[1]    ; KEY[0]     ; 0.758 ; 0.758 ; Rise       ; KEY[0]          ;
+;  SW[2]    ; KEY[0]     ; 0.732 ; 0.732 ; Rise       ; KEY[0]          ;
+;  SW[3]    ; KEY[0]     ; 2.589 ; 2.589 ; Rise       ; KEY[0]          ;
+;  SW[4]    ; KEY[0]     ; 2.176 ; 2.176 ; Rise       ; KEY[0]          ;
+;  SW[5]    ; KEY[0]     ; 1.989 ; 1.989 ; Rise       ; KEY[0]          ;
+;  SW[6]    ; KEY[0]     ; 2.122 ; 2.122 ; Rise       ; KEY[0]          ;
+;  SW[7]    ; KEY[0]     ; 1.871 ; 1.871 ; Rise       ; KEY[0]          ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; SW[*]     ; KEY[0]     ; -0.007 ; -0.007 ; Rise       ; KEY[0]          ;
+;  SW[0]    ; KEY[0]     ; -0.122 ; -0.122 ; Rise       ; KEY[0]          ;
+;  SW[1]    ; KEY[0]     ; -0.007 ; -0.007 ; Rise       ; KEY[0]          ;
+;  SW[2]    ; KEY[0]     ; -0.010 ; -0.010 ; Rise       ; KEY[0]          ;
+;  SW[3]    ; KEY[0]     ; -0.876 ; -0.876 ; Rise       ; KEY[0]          ;
+;  SW[4]    ; KEY[0]     ; -0.680 ; -0.680 ; Rise       ; KEY[0]          ;
+;  SW[5]    ; KEY[0]     ; -0.609 ; -0.609 ; Rise       ; KEY[0]          ;
+;  SW[6]    ; KEY[0]     ; -0.652 ; -0.652 ; Rise       ; KEY[0]          ;
+;  SW[7]    ; KEY[0]     ; -0.543 ; -0.543 ; Rise       ; KEY[0]          ;
++-----------+------------+--------+--------+------------+-----------------+
 
 
 -------------------
@@ -194,10 +387,10 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 0     ; 0    ;
-; Unconstrained Input Port Paths  ; 0     ; 0    ;
-; Unconstrained Output Ports      ; 0     ; 0    ;
-; Unconstrained Output Port Paths ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 9     ; 9    ;
+; Unconstrained Input Port Paths  ; 26    ; 26   ;
+; Unconstrained Output Ports      ; 12    ; 12   ;
+; Unconstrained Output Port Paths ; 20    ; 20   ;
 +---------------------------------+-------+------+
 
 
@@ -207,42 +400,47 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Apr 20 12:46:03 2023
+    Info: Processing started: Mon Apr 24 12:51:29 2023
 Info: Command: quartus_sta Ovelse5 -c binToHex
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
+Warning (335093): TimeQuest Timing Analyzer is analyzing 10 combinational loops as latches.
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'binToHex.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
-Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
-Warning (332068): No clocks defined in design.
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name KEY[0] KEY[0]
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
-Info (332159): No clocks to report
 Info: Analyzing Slow Model
 Info (332140): No fmax paths to report
 Info (332140): No Setup paths to report
 Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332140): No Minimum Pulse Width paths to report
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case minimum pulse width slack is -1.222
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.222        -1.222 KEY[0] 
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info: Analyzing Fast Model
-Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
-Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
-Warning (332068): No clocks defined in design.
 Info (332140): No Setup paths to report
 Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332140): No Minimum Pulse Width paths to report
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case minimum pulse width slack is -1.222
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.222        -1.222 KEY[0] 
 Info (332001): The selected device family is not supported by the report_metastability command.
-Info (332101): Design is fully constrained for setup requirements
-Info (332101): Design is fully constrained for hold requirements
-Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4534 megabytes
-    Info: Processing ended: Thu Apr 20 12:46:04 2023
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4541 megabytes
+    Info: Processing ended: Mon Apr 24 12:51:30 2023
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
 
 
