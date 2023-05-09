@@ -22,3 +22,4 @@ begin
 	my_and_or(SW(0), SW(1), LEDR(1), LEDR(2));
 
 end my_gates_tester_impl;
+ 
