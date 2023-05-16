@@ -4,11 +4,14 @@ use ieee.numeric_std.all;
 
 entity mux2 is 
 port (
+	-- Inputs
     result    : in std_logic_vector(1 downto 0);
-    segment   : in std_logic_vector(6 downto 0);
-    hex1      : out std_logic_vector (6 downto 0);
-    hex10     : out std_logic_vector (6 downto 0);
-    try_btn   : in std_logic
+    segment   : in std_logic_vector(13 downto 0);
+	 try_btn   : in std_logic;
+	 
+	 -- Outputs
+    hexEt      : out std_logic_vector (6 downto 0);
+    hexTi     : out std_logic_vector (6 downto 0)
 );
 end entity;
 
@@ -54,8 +57,8 @@ begin
 
         guess <= guess_var; -- Assign the variable value to the signal
 
-        hex1 <= hex_out;
-        hex10 <= hex_out;
+        hexEt <= hex_out;
+        hexTi <= hex_out;
     end process;
 	
 end mux2_impl;
