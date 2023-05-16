@@ -49,7 +49,32 @@ architecture testGenerator of vga is
 	attribute keep of hSyncCounter : signal is true;  --   ||   --
 
 	-- INSERT YOUR PROCEDURE HERE.
-	-- Your procedure should circular increment syncCounter, produce blanking and sync output.  
+	-- Your procedure should circular increment syncCounter, produce blanking and sync output.
+	procedure syncGenerator (
+		signal syncCounter : inout integer;
+		signal syncOut : out std_logic;
+		signal blank : out std_logic;
+		constant frontPorch : in natural;
+		constant backPorch : in natural;
+		constant dataLen : in natural;
+		constant synWidth : in natural
+	) is
+	begin
+		
+		if (syncCounter > dataLen + frontPorch + backPorch) then
+			syncOut <= '0';
+			
+		end if;
+		
+		if (syncCounter >= dataLen + frontPorch + backPorch + synWidth) then
+			syncCounter <= 0;
+			syncOut <= '1';
+			
+		else
+			syncCounter <= syncCounter + 1;
+		
+		end if;
+	end syncGenerator;
 
 begin
 
@@ -87,17 +112,17 @@ begin
 	color: process (reset, hSyncCounter,vSyncCounter)  -- draws italian flag color scheme
 	begin
 		if ((hSyncCounter > hBackPorch) and (hSyncCounter <= hBackPorch+213)) then
-			red   <= (others => '0');  -- Green
-			green <= (others => '1');
+			red   <= (others => '1');  -- Green
+			green <= (others => '0');
 			blue  <= (others => '0');  
 		elsif ((hSyncCounter > hBackPorch+213) and (hSyncCounter <= hBackPorch+426)) then
 			red   <= (others => '1');  -- White
 			green <= (others => '1');
 			blue  <= (others => '1');
 		else
-			red   <= (others => '1');  -- Red
+			red   <= (others => '0');  -- Red
 			green <= (others => '0');
-			blue  <= (others => '0');   
+			blue  <= (others => '1');   
 		end if;
 	end process;
 
