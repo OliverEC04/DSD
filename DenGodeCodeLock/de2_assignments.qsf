@@ -18,14 +18,14 @@
 #
 # Quartus II 64-Bit
 # Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-# Date created = 11:20:00  May 22, 2023
+# Date created = 10:39:09  February 05, 2015
 #
 # -------------------------------------------------------------------------- #
 #
 # Notes:
 #
 # 1) The default values for assignments are stored in the file:
-#		DenGodeCodeLock_assignment_defaults.qdf
+#		parallel_adder_assignment_defaults.qdf
 #    If this file doesn't exist, see file:
 #		assignment_defaults.qdf
 #
@@ -38,17 +38,17 @@
 
 set_global_assignment -name FAMILY "Cyclone II"
 set_global_assignment -name DEVICE EP2C35F672C6
-set_global_assignment -name TOP_LEVEL_ENTITY code_lock_test
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:20:00  MAY 22, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 672
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 6
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
-set_global_assignment -name VHDL_FILE code_lock_test.vhd
-set_global_assignment -name VHDL_FILE code_lock_err.vhd
-set_global_assignment -name VHDL_FILE code_lock.vhd
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
@@ -477,10 +477,6 @@ set_location_assignment PIN_V24 -to GPIO_1[32]
 set_location_assignment PIN_V23 -to GPIO_1[33]
 set_location_assignment PIN_W25 -to GPIO_1[34]
 set_location_assignment PIN_W23 -to GPIO_1[35]
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/Waveform.vwf
-set_global_assignment -name SIMULATION_MODE FUNCTIONAL
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/igors/OneDrive/Pulpit/AU/DSD/Git/DSD/DenGodeCodeLock/output_files/Waveform.vwf"
-set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
-set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
-set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name MESSAGE_DISABLE 15705 # Invalid Fitter Assignments
+set_global_assignment -name MESSAGE_DISABLE 20028 # Parallel Compilation Disabled
+set_global_assignment -name MESSAGE_DISABLE 292013 # Logilock
