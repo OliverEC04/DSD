@@ -4,13 +4,21 @@ use ieee.numeric_std.all;
 use work.all;
 
 entity code_lock_err is
-port (clk, reset, enter : in std_logic;
+	port 
+	(
+		-- Inputs
+		clk : in std_logic;
+		reset : in std_logic;
+		enter : in std_logic;
 		pin : in std_logic_vector(3 downto 0);
-		lock : out std_logic);
+		
+		-- Outputs
+		lock : out std_logic
+	);
 end code_lock_err;
 
-architecture code_lock_err_arch of code_lock_err is
-type state is (idle, eva_code_1, eva_code_2, get_code_2, go_idle, unlock, W_pin, P_lock);
+architecture code_lock_err_impl of code_lock_err is
+type state is (idle, ev_code_1, ev_code_2, get_code_2, go_idle, unlock, W_pin, P_lock);
 signal present_state, next_state : state;
 
 type wc_state is (Err_0, Err_1, Err_2, Err_3 );
@@ -42,10 +50,10 @@ begin
 				next_state <= idle;
 				locked <= '1';
 				if enter = '0' then 
-					next_state <= eva_code_1;
+					next_state <= ev_code_1;
 				end if;
 				
-			when eva_code_1 =>
+			when ev_code_1 =>
 				locked <= '1';
 				err_event <= '0';
 				if enter = '1' and pin = code1 then
@@ -59,10 +67,10 @@ begin
 				locked <= '1';
 				err_event <= '0';
 				if enter = '0' then
-					next_state <= eva_code_2;
+					next_state <= ev_code_2;
 				end if;
 				
-			when eva_code_2 => 
+			when ev_code_2 => 
 				locked <= '1';
 				err_event <= '0';
 				if enter = '1' and pin = code2 then
@@ -150,4 +158,4 @@ begin
 		end case;
 	end process;
 	
-end code_lock_err_arch;
+end code_lock_err_impl;
